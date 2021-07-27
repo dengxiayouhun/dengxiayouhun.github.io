@@ -324,7 +324,7 @@
 <p><img src="https://i.loli.net/2021/07/19/7Lx2PbNjnfDurVg.png" alt="休息"></p>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
@@ -391,7 +391,27 @@
 </ol>
 <h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
       <categories>
-        <category>Java</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java语言的特点</title>
+    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h4 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h4><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
+<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
+<h4 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h4><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
+<p>ps：JVM是不能跨平台的</p>
+<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
+<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
+<p>C++应用程序的执行过程（从右往左）</p>
+<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
+      <categories>
+        <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
@@ -503,23 +523,19 @@
       </tags>
   </entry>
   <entry>
-    <title>java语言的特点</title>
-    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h4 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h4><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
-<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
-<h4 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h4><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
-<p>ps：JVM是不能跨平台的</p>
-<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
-<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
-<p>C++应用程序的执行过程（从右往左）</p>
-<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
+    <title>声明</title>
+    <url>/2021/07/17/%E5%A3%B0%E6%98%8E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h1><p>本博客的所有规划类文章都是以博主的现实情况为根据而写的。每个人的实际情况都是不同的，所以这类文章对小伙伴们只有参考价值，切勿照搬。</p>
+<p>每个人都是独一无二的个体，都有着自己的发展路线。不同的性格也没有高下之分，外向、活泼的人可以通过情商走向成功；内向、老实的人可以通过脚踏实地、不断钻研走向成功。每个人都有适合自己的路，不应该照搬别人的方法。</p>
+<p>规划是为自己做的，为自己做规划要时刻问自己：”这是否适合自己 ?”，千万不要做出”内向的人走了情商路线”这样本末倒置的事。</p>
+<p>比如说：</p>
+<p>博主抗压能力比较强（这个由于生长环境缘故 ）。对于博主来说每天敲6、7个小时代码，偶尔通宵都问题不大。但对于比较适合劳逸结合的人来说，一昧追求数量的累积反而会降低效率，甚至危害健康，得不偿失。</p>
+]]></content>
       <categories>
-        <category>Java</category>
+        <category>前言</category>
       </categories>
       <tags>
-        <tag>java</tag>
-        <tag>学习笔记</tag>
+        <tag>声明</tag>
       </tags>
   </entry>
   <entry>
@@ -556,22 +572,6 @@
       </categories>
       <tags>
         <tag>搭建博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>声明</title>
-    <url>/2021/07/17/%E5%A3%B0%E6%98%8E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h1><p>本博客的所有规划类文章都是以博主的现实情况为根据而写的。每个人的实际情况都是不同的，所以这类文章对小伙伴们只有参考价值，切勿照搬。</p>
-<p>每个人都是独一无二的个体，都有着自己的发展路线。不同的性格也没有高下之分，外向、活泼的人可以通过情商走向成功；内向、老实的人可以通过脚踏实地、不断钻研走向成功。每个人都有适合自己的路，不应该照搬别人的方法。</p>
-<p>规划是为自己做的，为自己做规划要时刻问自己：”这是否适合自己 ?”，千万不要做出”内向的人走了情商路线”这样本末倒置的事。</p>
-<p>比如说：</p>
-<p>博主抗压能力比较强（这个由于生长环境缘故 ）。对于博主来说每天敲6、7个小时代码，偶尔通宵都问题不大。但对于比较适合劳逸结合的人来说，一昧追求数量的累积反而会降低效率，甚至危害健康，得不偿失。</p>
-]]></content>
-      <categories>
-        <category>前言</category>
-      </categories>
-      <tags>
-        <tag>声明</tag>
       </tags>
   </entry>
   <entry>
@@ -691,7 +691,7 @@
 </ol>
 ]]></content>
       <categories>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
