@@ -17,6 +17,112 @@
       </tags>
   </entry>
   <entry>
+    <title>Java SE学习规划</title>
+    <url>/2021/07/28/Java-SE%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>本篇文章尚未完善,不具备参考价值</p>
+<p>持续更新中 . . .</p>
+</blockquote>
+<h1 id="Java的相关基础概念"><a href="#Java的相关基础概念" class="headerlink" title="Java的相关基础概念"></a>Java的相关基础概念</h1><h2 id="简单的计算机组成原理（计算机硬件）"><a href="#简单的计算机组成原理（计算机硬件）" class="headerlink" title="简单的计算机组成原理（计算机硬件）"></a>简单的计算机组成原理（计算机硬件）</h2><ol>
+<li>计算机硬件组成</li>
+<li>CPU</li>
+<li>储存设备</li>
+<li>bit与byte</li>
+<li>内存</li>
+<li>输入输出设备</li>
+<li>网络连接设备</li>
+</ol>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="图形画面操作与命令行操作"><a href="#图形画面操作与命令行操作" class="headerlink" title="图形画面操作与命令行操作"></a>图形画面操作与命令行操作</h2><ol>
+<li>图形画面操作</li>
+<li>命令行操作</li>
+<li>常用dos命令行指令</li>
+</ol>
+<h1 id="Java前期准备"><a href="#Java前期准备" class="headerlink" title="Java前期准备"></a>Java前期准备</h1><h2 id="Java语言的特点"><a href="#Java语言的特点" class="headerlink" title="Java语言的特点"></a>Java语言的特点</h2><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><ol>
+<li>JRE、JDK、JVM关系于介绍</li>
+<li>安装JDK</li>
+<li>配置环境变量</li>
+</ol>
+<h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><ol>
+<li>java文档的建立</li>
+<li>java文档的编译和运行</li>
+<li>一些环境变量的配置</li>
+</ol>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+<li>单行注释与多行注释</li>
+<li>文档注释</li>
+</ol>
+<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h2><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ol>
+<li>命名规则</li>
+<li>命名规范</li>
+</ol>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ol>
+<li><p>定义</p>
+</li>
+<li><p>定义变量的规范</p>
+</li>
+<li><p>分类</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">整型变量</span><br><span class="line">浮点型变量</span><br><span class="line">char型变量</span><br><span class="line">boolean型变量</span><br><span class="line">String类型变量</span><br></pre></td></tr></table></figure></li>
+<li><p>自动类型提升运算</p>
+</li>
+<li><p>强制类型转换运算</p>
+</li>
+<li><p>进制转换</p>
+</li>
+</ol>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
+<li><p>算术运算符</p>
+</li>
+<li><p>赋值运算符</p>
+</li>
+<li><p>比较运算符</p>
+</li>
+<li><p>逻辑运算符</p>
+</li>
+<li><p>位运算符</p>
+</li>
+<li><p>三元运算符</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">三元运算符</span><br><span class="line">三元运算符与“if-else”</span><br></pre></td></tr></table></figure></li>
+<li><p>运算符优先级</p>
+</li>
+</ol>
+<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><ol>
+<li><p>条件结构</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if-else</span><br><span class="line">swith-case</span><br></pre></td></tr></table></figure></li>
+<li><p>循环结构</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for</span><br><span class="line">while</span><br><span class="line">do-while</span><br><span class="line">嵌套循环</span><br><span class="line">break和continue</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="Eclipse与数组"><a href="#Eclipse与数组" class="headerlink" title="Eclipse与数组"></a>Eclipse与数组</h2><ol>
+<li><p>Eclipse</p>
+</li>
+<li><p>数组</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">二维数组</span><br><span class="line">数组内存解析</span><br><span class="line">数组初始化</span><br><span class="line">数组元素的调用</span><br><span class="line">数组（元素）赋值</span><br><span class="line">数组的复制</span><br><span class="line">数组元素的反转</span><br><span class="line">简单的数组算法</span><br><span class="line">  1. 线性查找</span><br><span class="line">  2. 二分法查找</span><br><span class="line">  3. 排序</span><br><span class="line">  4. 冒泡法排序</span><br><span class="line">  5. 快速排序</span><br><span class="line"> *6. 排序算法的横向对比</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="面向过程与面向对象"><a href="#面向过程与面向对象" class="headerlink" title="面向过程与面向对象"></a>面向过程与面向对象</h2><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
+<li>类的结构</li>
+<li>类和对象的创建</li>
+<li>类的多个对象的关系</li>
+<li>对象的内存解析</li>
+</ol>
+<h2 id="属性与局部变量的对比"><a href="#属性与局部变量的对比" class="headerlink" title="属性与局部变量的对比"></a>属性与局部变量的对比</h2><h2 id="方法与声明"><a href="#方法与声明" class="headerlink" title="方法与声明"></a>方法与声明</h2><ol>
+<li>方法</li>
+<li>方法的重载</li>
+<li>形参个数可变的方法</li>
+</ol>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><ol>
+<li>理解“万物皆对象”</li>
+<li>对象数组的内存解析</li>
+<li>匿名对象</li>
+</ol>
+<h2 id="值传递机制"><a href="#值传递机制" class="headerlink" title="值传递机制"></a>值传递机制</h2><h2 id="封装性"><a href="#封装性" class="headerlink" title="封装性"></a>封装性</h2><h2 id="四种权限修饰"><a href="#四种权限修饰" class="headerlink" title="四种权限修饰"></a>四种权限修饰</h2><h2 id="构造器"><a href="#构造器" class="headerlink" title="构造器"></a>构造器</h2><h2 id="JavaBean"><a href="#JavaBean" class="headerlink" title="JavaBean"></a>JavaBean</h2><h2 id="UML类图"><a href="#UML类图" class="headerlink" title="UML类图"></a>UML类图</h2><h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><h2 id="MVC设计模式的理解"><a href="#MVC设计模式的理解" class="headerlink" title="MVC设计模式的理解"></a>MVC设计模式的理解</h2><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><h2 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h2><h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><h1 id="泛型与File"><a href="#泛型与File" class="headerlink" title="泛型与File"></a>泛型与File</h1><h1 id="I-O流"><a href="#I-O流" class="headerlink" title="I/O流"></a>I/O流</h1><h1 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h1><h1 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h1><h1 id="动态管理"><a href="#动态管理" class="headerlink" title="动态管理"></a>动态管理</h1>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习规划</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据结构与算法的简单规划</title>
     <url>/2021/07/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="数据结构的的基本概念与术语"><a href="#数据结构的的基本概念与术语" class="headerlink" title="数据结构的的基本概念与术语"></a>数据结构的的基本概念与术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
@@ -136,8 +242,8 @@
         <category>Java</category>
       </categories>
       <tags>
+        <tag>java</tag>
         <tag>学习笔记</tag>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
