@@ -444,7 +444,7 @@
 <p><img src="https://i.loli.net/2021/07/19/xoP2Yf71DcyIeGQ.jpg" alt="进入文件夹"></p>
 <p><img src="https://i.loli.net/2021/07/19/x9CauovqGc23wF1.jpg" alt="cd \ "></p>
 <p>)</p>
-<h4 id="返回上一级目录"><a href="#返回上一级目录" class="headerlink" title="返回上一级目录"></a>返回上一级目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法：</span></span><br><span class="line">cd..</span><br><span class="line">cd\</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">返回上一级目录</span><br><span class="line">返回主磁盘</span><br></pre></td></tr></table></figure>
+<h4 id="返回上一级目录"><a href="#返回上一级目录" class="headerlink" title="返回上一级目录"></a>返回上一级目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法：</span></span><br><span class="line">cd..</span><br><span class="line">cd\</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">返回上一级目录</span><br><span class="line">返回主根目录</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/07/19/isV14gIWtjDwKBq.jpg" alt="cd..."></p>
 <p><img src="https://i.loli.net/2021/07/19/BitazJ3Yhf9MuS7.jpg" alt="cd \ "></p>
