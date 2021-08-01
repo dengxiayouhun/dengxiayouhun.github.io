@@ -148,11 +148,11 @@
 <li>单行注释与多行注释</li>
 <li>文档注释</li>
 </ol>
-<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h2><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ol>
+<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ol>
 <li>命名规则</li>
 <li>命名规范</li>
 </ol>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ol>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ol>
 <li><p>定义</p>
 </li>
 <li><p>定义变量的规范</p>
@@ -182,41 +182,32 @@
 <li><p>运算符优先级</p>
 </li>
 </ol>
-<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><ol>
+<h2 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h2><ol>
 <li><p>条件结构</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if-else</span><br><span class="line">swith-case</span><br></pre></td></tr></table></figure></li>
 <li><p>循环结构</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for</span><br><span class="line">while</span><br><span class="line">do-while</span><br><span class="line">嵌套循环</span><br><span class="line">break和continue</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h2 id="Eclipse与数组"><a href="#Eclipse与数组" class="headerlink" title="Eclipse与数组"></a>Eclipse与数组</h2><ol>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
 <li><p>Eclipse</p>
 </li>
 <li><p>数组</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">二维数组</span><br><span class="line">数组内存解析</span><br><span class="line">数组初始化</span><br><span class="line">数组元素的调用</span><br><span class="line">数组（元素）赋值</span><br><span class="line">数组的复制</span><br><span class="line">数组元素的反转</span><br><span class="line">简单的数组算法</span><br><span class="line">  1. 线性查找</span><br><span class="line">  2. 二分法查找</span><br><span class="line">  3. 排序</span><br><span class="line">  4. 冒泡法排序</span><br><span class="line">  5. 快速排序</span><br><span class="line"> *6. 排序算法的横向对比</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="面向过程与面向对象"><a href="#面向过程与面向对象" class="headerlink" title="面向过程与面向对象"></a>面向过程与面向对象</h2><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
+<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
 <li>类的结构</li>
 <li>类和对象的创建</li>
 <li>类的多个对象的关系</li>
 <li>对象的内存解析</li>
 </ol>
-<h2 id="属性与局部变量的对比"><a href="#属性与局部变量的对比" class="headerlink" title="属性与局部变量的对比"></a>属性与局部变量的对比</h2><h2 id="方法与声明"><a href="#方法与声明" class="headerlink" title="方法与声明"></a>方法与声明</h2><ol>
-<li>方法</li>
-<li>方法的重载</li>
-<li>形参个数可变的方法</li>
-</ol>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><ol>
-<li>理解“万物皆对象”</li>
-<li>对象数组的内存解析</li>
-<li>匿名对象</li>
-</ol>
-<h2 id="值传递机制"><a href="#值传递机制" class="headerlink" title="值传递机制"></a>值传递机制</h2><h2 id="封装性"><a href="#封装性" class="headerlink" title="封装性"></a>封装性</h2><h2 id="四种权限修饰"><a href="#四种权限修饰" class="headerlink" title="四种权限修饰"></a>四种权限修饰</h2><h2 id="构造器"><a href="#构造器" class="headerlink" title="构造器"></a>构造器</h2><h2 id="JavaBean"><a href="#JavaBean" class="headerlink" title="JavaBean"></a>JavaBean</h2><h2 id="UML类图"><a href="#UML类图" class="headerlink" title="UML类图"></a>UML类图</h2><h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><h2 id="MVC设计模式的理解"><a href="#MVC设计模式的理解" class="headerlink" title="MVC设计模式的理解"></a>MVC设计模式的理解</h2><h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><h2 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h2><h2 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h2><h2 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><h1 id="泛型与File"><a href="#泛型与File" class="headerlink" title="泛型与File"></a>泛型与File</h1><h1 id="I-O流"><a href="#I-O流" class="headerlink" title="I/O流"></a>I/O流</h1><h1 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h1><h1 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h1><h1 id="动态管理"><a href="#动态管理" class="headerlink" title="动态管理"></a>动态管理</h1>]]></content>
+<h2 id="三大特性"><a href="#三大特性" class="headerlink" title="三大特性"></a>三大特性</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h1 id="应用程序开发"><a href="#应用程序开发" class="headerlink" title="应用程序开发"></a>应用程序开发</h1><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="IO-NIO"><a href="#IO-NIO" class="headerlink" title="IO/NIO"></a>IO/NIO</h2><h2 id="类库"><a href="#类库" class="headerlink" title="类库"></a>类库</h2><p>##多线程</p>
+<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2>]]></content>
       <categories>
         <category>Java</category>
       </categories>
       <tags>
         <tag>java</tag>
-        <tag>学习规划</tag>
+        <tag>规划</tag>
       </tags>
   </entry>
   <entry>
