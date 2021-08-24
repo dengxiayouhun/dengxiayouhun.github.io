@@ -141,74 +141,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java环境搭建</title>
-    <url>/2021/07/22/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="JRE与JDK"><a href="#JRE与JDK" class="headerlink" title="JRE与JDK"></a>JRE与JDK</h1><h2 id="什么是JRE"><a href="#什么是JRE" class="headerlink" title="什么是JRE ?"></a>什么是JRE ?</h2><p>JRE全称Java Runtime Environment，即Java运行环境。</p>
-<p>其主要包括Java虚拟机和Java的一些核心类库，用来运行Java程序。</p>
-<h2 id="什么是JDK？"><a href="#什么是JDK？" class="headerlink" title="什么是JDK？"></a>什么是JDK？</h2><p>JDK全称Java Development Kit , 即Java开发工具包。</p>
-<p>其主要包括Java的开发工具（编译工具、打包工具等），也包括了JRE，用来开发运行Java程序。</p>
-<p>*注：因此，安装了JDk就不用安装JRE。</p>
-<h1 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h1><p><a href="https://www.oracle.com/">官方网址</a></p>
-<p><img src="https://i.loli.net/2021/07/22/aWqHLzuyrgO7k4R.jpg" alt="JDK"></p>
-<p>点击Products -&gt; Java</p>
-<p><img src="https://i.loli.net/2021/07/22/qGkfjZtyzEp5PvQ.jpg" alt="JDk"></p>
-<p>点击Download Java now</p>
-<p><img src="https://i.loli.net/2021/07/22/Fum4IVRv3OBoUdP.jpg" alt="JDK"></p>
-<p>点击 JDK Download</p>
-<p><img src="https://i.loli.net/2021/07/22/YrsZ8gXC5PHFRmb.jpg" alt="JDK"></p>
-<p>点击Windows x64 Installer 行的下载，安装即可（也可以i下载Windows x64 Compressed Archive 后解压到自己想存放的位置）</p>
-<p><img src="https://i.loli.net/2021/07/23/62OZUkx3umwhWc8.jpg" alt="JDK"></p>
-<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="为什么要配置环境"><a href="#为什么要配置环境" class="headerlink" title="为什么要配置环境 ?"></a>为什么要配置环境 ?</h2><p>首先，我们要知道在命令行中我们只能打开当前目录下的文件，否则就会报错,如下图所示：</p>
-<p><img src="https://i.loli.net/2021/07/23/S7OygTc1W59JHb8.jpg" alt="erro"></p>
-<p>我们不可能每次开发java都要cd到对应目录下打开开发工具，这未免也太过麻烦。所以我们要通过配置环境来让我们可以在任意目录下都能够直接执行bin目录（里面都是Java开发工具）里的程序。效果如图所示：</p>
-<p><img src="https://i.loli.net/2021/07/23/Powb3SQFJZeGHh7.jpg" alt="result"></p>
-<h2 id="如何配置环境-？"><a href="#如何配置环境-？" class="headerlink" title="如何配置环境 ？"></a>如何配置环境 ？</h2><ol>
-<li><p>打开环境变量配置窗口</p>
-<p>Windows设置–&gt;系统–&gt;关于–&gt;系统信息</p>
-<p><img src="https://i.loli.net/2021/07/23/qS7TwruPNB9e3ij.jpg" alt="系统信息"></p>
-</li>
-<li><p>高级系统设置–&gt;高级–&gt;环境变量</p>
-<p><img src="https://i.loli.net/2021/07/23/9s8FBGkXMoPANtQ.jpg" alt="环境变量"></p>
-</li>
-<li><p>在系统变量里创建新的变量“JAVA_HOME”并将它写进Path变量里去。（这一步的目的是把bin目录的路径储存在Path中)</p>
-<p><img src="https://i.loli.net/2021/07/23/7hX5ySGbRuroOPT.jpg" alt="wdad"></p>
-<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg" alt="add"></p>
-</li>
-</ol>
-<h2 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h2><p><img src="https://i.loli.net/2021/07/23/Powb3SQFJZeGHh7.jpg" alt="result"></p>
-<p>当我们在C盘执行javac时，cmd会把命令提交给Windows系统。Windows会在当前目录里寻找，而且还会在环境变量Path的路径里寻找，因此，当我们把bin目录的路径存放在Path变量里后，我们就可以在任何目录执行bin目录里的文件了。</p>
-<p>*path环境变量：Windows系统执行命令时需要搜寻的路径。</p>
-<h2 id="环境的临时配置"><a href="#环境的临时配置" class="headerlink" title="环境的临时配置"></a>环境的临时配置</h2><h3 id="为什么要临时配置环境？"><a href="#为什么要临时配置环境？" class="headerlink" title="为什么要临时配置环境？"></a>为什么要临时配置环境？</h3><p>通常来说我们一般都是用自己的设备进行程序开发。但有些时候我们也需要插上U盘，用别人的设备进行开发。这时候，我们就不能随便改变别人设备的参数了，所以只能进行临时配置，使我们不仅能够良好的的进行开发，而且不改变设备参数。</p>
-<h3 id="如何进行临时配置"><a href="#如何进行临时配置" class="headerlink" title="如何进行临时配置?"></a>如何进行临时配置?</h3><ol>
-<li><p>打开cmd，执行set命令，查看环境变量</p>
-<p><img src="https://i.loli.net/2021/07/23/9HcPdFA6mX3KbvB.jpg" alt="set"></p>
-</li>
-<li><p>执行set path，查看path变量</p>
-<p><img src="https://i.loli.net/2021/07/23/HKpoLlvBsXjuNV9.jpg" alt="set path"></p>
-</li>
-<li><p>执行set path=bin储存路径，修改path变量（使用时，直接执行这一步即可）</p>
-<p><img src="https://i.loli.net/2021/07/23/BWhqfEFiwOS63NG.jpg" alt="path="></p>
-</li>
-<li><p>执行set path，查看path变量</p>
-<p><img src="https://i.loli.net/2021/07/23/U4hAajTluOZWr3J.jpg" alt="set path"></p>
-</li>
-<li><p>执行javac,结果：可执行</p>
-<p><img src="https://i.loli.net/2021/07/23/5IqzjKg2yJdV3oD.jpg" alt="javac"></p>
-</li>
-<li><p>关闭窗口，重新打开cmd，执行set path，查看path变量，path变量未被修改</p>
-<p><img src="https://i.loli.net/2021/07/23/uAsftHQyRxqZFh2.jpg" alt="set path"></p>
-</li>
-</ol>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java后端学习路线及规划</title>
     <url>/2021/07/17/Java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
@@ -505,10 +437,77 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2021/08/03/Java%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>title: Java的基本程序设计结构（一）<br>date: 2021-08-03 19:11:50<br>tags:<br>      - java<br>      - 学习笔记<br>categories: Java<br>top: 0</p>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+    <title>Java环境搭建</title>
+    <url>/2021/07/22/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="JRE与JDK"><a href="#JRE与JDK" class="headerlink" title="JRE与JDK"></a>JRE与JDK</h1><h2 id="什么是JRE"><a href="#什么是JRE" class="headerlink" title="什么是JRE ?"></a>什么是JRE ?</h2><p>JRE全称Java Runtime Environment，即Java运行环境。</p>
+<p>其主要包括Java虚拟机和Java的一些核心类库，用来运行Java程序。</p>
+<h2 id="什么是JDK？"><a href="#什么是JDK？" class="headerlink" title="什么是JDK？"></a>什么是JDK？</h2><p>JDK全称Java Development Kit , 即Java开发工具包。</p>
+<p>其主要包括Java的开发工具（编译工具、打包工具等），也包括了JRE，用来开发运行Java程序。</p>
+<p>*注：因此，安装了JDk就不用安装JRE。</p>
+<h1 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h1><p><a href="https://www.oracle.com/">官方网址</a></p>
+<p><img src="https://i.loli.net/2021/07/22/aWqHLzuyrgO7k4R.jpg" alt="JDK"></p>
+<p>点击Products -&gt; Java</p>
+<p><img src="https://i.loli.net/2021/07/22/qGkfjZtyzEp5PvQ.jpg" alt="JDk"></p>
+<p>点击Download Java now</p>
+<p><img src="https://i.loli.net/2021/07/22/Fum4IVRv3OBoUdP.jpg" alt="JDK"></p>
+<p>点击 JDK Download</p>
+<p><img src="https://i.loli.net/2021/07/22/YrsZ8gXC5PHFRmb.jpg" alt="JDK"></p>
+<p>点击Windows x64 Installer 行的下载，安装即可（也可以i下载Windows x64 Compressed Archive 后解压到自己想存放的位置）</p>
+<p><img src="https://i.loli.net/2021/07/23/62OZUkx3umwhWc8.jpg" alt="JDK"></p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="为什么要配置环境"><a href="#为什么要配置环境" class="headerlink" title="为什么要配置环境 ?"></a>为什么要配置环境 ?</h2><p>首先，我们要知道在命令行中我们只能打开当前目录下的文件，否则就会报错,如下图所示：</p>
+<p><img src="https://i.loli.net/2021/07/23/S7OygTc1W59JHb8.jpg" alt="erro"></p>
+<p>我们不可能每次开发java都要cd到对应目录下打开开发工具，这未免也太过麻烦。所以我们要通过配置环境来让我们可以在任意目录下都能够直接执行bin目录（里面都是Java开发工具）里的程序。效果如图所示：</p>
+<p><img src="https://i.loli.net/2021/07/23/Powb3SQFJZeGHh7.jpg" alt="result"></p>
+<h2 id="如何配置环境-？"><a href="#如何配置环境-？" class="headerlink" title="如何配置环境 ？"></a>如何配置环境 ？</h2><ol>
+<li><p>打开环境变量配置窗口</p>
+<p>Windows设置–&gt;系统–&gt;关于–&gt;系统信息</p>
+<p><img src="https://i.loli.net/2021/07/23/qS7TwruPNB9e3ij.jpg" alt="系统信息"></p>
+</li>
+<li><p>高级系统设置–&gt;高级–&gt;环境变量</p>
+<p><img src="https://i.loli.net/2021/07/23/9s8FBGkXMoPANtQ.jpg" alt="环境变量"></p>
+</li>
+<li><p>在系统变量里创建新的变量“JAVA_HOME”并将它写进Path变量里去。（这一步的目的是把bin目录的路径储存在Path中)</p>
+<p><img src="https://i.loli.net/2021/07/23/7hX5ySGbRuroOPT.jpg" alt="wdad"></p>
+<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg" alt="add"></p>
+</li>
+</ol>
+<h2 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h2><p><img src="https://i.loli.net/2021/07/23/Powb3SQFJZeGHh7.jpg" alt="result"></p>
+<p>当我们在C盘执行javac时，cmd会把命令提交给Windows系统。Windows会在当前目录里寻找，而且还会在环境变量Path的路径里寻找，因此，当我们把bin目录的路径存放在Path变量里后，我们就可以在任何目录执行bin目录里的文件了。</p>
+<p>*path环境变量：Windows系统执行命令时需要搜寻的路径。</p>
+<h2 id="环境的临时配置"><a href="#环境的临时配置" class="headerlink" title="环境的临时配置"></a>环境的临时配置</h2><h3 id="为什么要临时配置环境？"><a href="#为什么要临时配置环境？" class="headerlink" title="为什么要临时配置环境？"></a>为什么要临时配置环境？</h3><p>通常来说我们一般都是用自己的设备进行程序开发。但有些时候我们也需要插上U盘，用别人的设备进行开发。这时候，我们就不能随便改变别人设备的参数了，所以只能进行临时配置，使我们不仅能够良好的的进行开发，而且不改变设备参数。</p>
+<h3 id="如何进行临时配置"><a href="#如何进行临时配置" class="headerlink" title="如何进行临时配置?"></a>如何进行临时配置?</h3><ol>
+<li><p>打开cmd，执行set命令，查看环境变量</p>
+<p><img src="https://i.loli.net/2021/07/23/9HcPdFA6mX3KbvB.jpg" alt="set"></p>
+</li>
+<li><p>执行set path，查看path变量</p>
+<p><img src="https://i.loli.net/2021/07/23/HKpoLlvBsXjuNV9.jpg" alt="set path"></p>
+</li>
+<li><p>执行set path=bin储存路径，修改path变量（使用时，直接执行这一步即可）</p>
+<p><img src="https://i.loli.net/2021/07/23/BWhqfEFiwOS63NG.jpg" alt="path="></p>
+</li>
+<li><p>执行set path，查看path变量</p>
+<p><img src="https://i.loli.net/2021/07/23/U4hAajTluOZWr3J.jpg" alt="set path"></p>
+</li>
+<li><p>执行javac,结果：可执行</p>
+<p><img src="https://i.loli.net/2021/07/23/5IqzjKg2yJdV3oD.jpg" alt="javac"></p>
+</li>
+<li><p>关闭窗口，重新打开cmd，执行set path，查看path变量，path变量未被修改</p>
+<p><img src="https://i.loli.net/2021/07/23/uAsftHQyRxqZFh2.jpg" alt="set path"></p>
+</li>
+</ol>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h1>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java的基本程序设计结构</title>
+    <url>/2021/08/23/Java%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
 <li><p>//注释</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//打印Hello World！</span></span><br><span class="line">        System.out.println(<span class="string">&quot;HHello World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>/* 注释 */</p>
@@ -712,7 +711,7 @@
 </ol>
 <h3 id="数值类型之间的转换"><a href="#数值类型之间的转换" class="headerlink" title="数值类型之间的转换"></a>数值类型之间的转换</h3><h4 id="数值类型之间存在的合法转换"><a href="#数值类型之间存在的合法转换" class="headerlink" title="数值类型之间存在的合法转换"></a>数值类型之间存在的合法转换</h4><p><img src="https://i.loli.net/2021/08/05/nJif4GI2kHjA7ro.jpg"></p>
 <p>实线箭头的类型转换不会有信息丢失，但虚线箭头的类型转换可能会导致信息缺失，精度降低。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Change</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> number1=<span class="number">123</span>;</span><br><span class="line">        <span class="keyword">int</span> number2=<span class="number">123456789</span>;</span><br><span class="line">        <span class="keyword">float</span> number3=number1;</span><br><span class="line">        <span class="keyword">float</span> number4=number2;</span><br><span class="line">        <span class="keyword">double</span> number5=number1;</span><br><span class="line">        <span class="keyword">double</span> number6=number2;</span><br><span class="line">        </span><br><span class="line">        System.out.println(<span class="string">&quot;123由整型转化为单精度浮点型是：&quot;</span>+number3);</span><br><span class="line">        System.out.println(<span class="string">&quot;123456789由整型转化为单精度浮点型是：&quot;</span>+number4);</span><br><span class="line">        System.out.println(<span class="string">&quot;123由整型转化为双精度浮点型是：&quot;</span>+number5);</span><br><span class="line">        System.out.println(<span class="string">&quot;123456789由整型转化为双精度浮点型是：&quot;</span>+number6);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Change</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> number1=<span class="number">123</span>;</span><br><span class="line">        <span class="keyword">int</span> number2=<span class="number">123456789</span>;</span><br><span class="line">        <span class="keyword">float</span> number3=number1;</span><br><span class="line">        <span class="keyword">float</span> number4=number2;</span><br><span class="line">        <span class="keyword">double</span> number5=number1;</span><br><span class="line">        <span class="keyword">double</span> number6=number2;</span><br><span class="line">        System.out.println(<span class="string">&quot;123由整型转化为单精度浮点型是：&quot;</span>+number3);</span><br><span class="line">        System.out.println(<span class="string">&quot;123456789由整型转化为单精度浮点型是：&quot;</span>+number4);</span><br><span class="line">        System.out.println(<span class="string">&quot;123由整型转化为双精度浮点型是：&quot;</span>+number5);</span><br><span class="line">        System.out.println(<span class="string">&quot;123456789由整型转化为双精度浮点型是：&quot;</span>+number6);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/08/05/MEeUAuIOhDQspWP.jpg"></p>
 <p>####强制类型转换</p>
@@ -734,7 +733,7 @@
 
 <p><img src="https://i.loli.net/2021/08/05/Q2qSUGvcknRzJCO.jpg"></p>
 <h3 id="结合赋值和运算符"><a href="#结合赋值和运算符" class="headerlink" title="结合赋值和运算符"></a>结合赋值和运算符</h3><p>是对赋值和运算符的一种简写。比如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">x=x+<span class="number">4</span>;可以简写成x+=<span class="number">4</span>;</span><br><span class="line"><span class="comment">//所有算术运算符都可以这么做</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">x=x+<span class="number">4</span>;可以简写成x+=<span class="number">4</span>;<span class="comment">//所有算术运算符都可以这么做</span></span><br></pre></td></tr></table></figure>
 
 <p>注意：</p>
 <p>如果运算符得到一个值，并且与左侧的操作数类型不同则会发生强制转换，把运算符的值强制转换为左边操作数的值，而且是直接截断，比如:</p>
@@ -742,7 +741,7 @@
 
 <p><img src="https://i.loli.net/2021/08/05/62GYe9faXu57oV8.jpg"></p>
 <h3 id="自增和自减运算符"><a href="#自增和自减运算符" class="headerlink" title="自增和自减运算符"></a>自增和自减运算符</h3><p>由于在平时开发中，变量加一或减一都很常见。所以，java就借鉴了C / C++，推出了自增和自减运算符，即++，–。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">x=x+<span class="number">1</span>;可以转换为x++;</span><br><span class="line"><span class="comment">//当++的位置不同时，其运算方式也会发生不同。</span></span><br><span class="line"><span class="keyword">int</span> m=<span class="number">8</span>;</span><br><span class="line"><span class="keyword">int</span> n=<span class="number">8</span>;</span><br><span class="line"><span class="keyword">int</span> x=<span class="number">2</span>*++m;<span class="comment">//x=18,m=9</span></span><br><span class="line"><span class="keyword">int</span> y=<span class="number">2</span>*n++;<span class="comment">//x=16,m=9</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">x=x+<span class="number">1</span>;可以转换为x++;<span class="comment">//当++的位置不同时，其运算方式也会发生不同。int m=8;int n=8;int x=2*++m;//x=18,m=9int y=2*n++;//x=16,m=9</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="关系和boolean运算符"><a href="#关系和boolean运算符" class="headerlink" title="关系和boolean运算符"></a>关系和boolean运算符</h3><ul>
 <li><p>关系运算符有大于( &gt; )、小于( &lt; )、大于等于( &gt;= )、小于等于( &lt;= )、等于( = ).它们的值为true / false（boolean类型）。</p>
@@ -758,7 +757,7 @@
 </ul>
 <h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>学习位运算符之前我们要先了解计算机二进制和一些偏底层的相关知识</p>
 <h4 id="数据是如何被储存在计算机的？"><a href="#数据是如何被储存在计算机的？" class="headerlink" title="数据是如何被储存在计算机的？"></a>数据是如何被储存在计算机的？</h4><p>计算机中能够储存数据的硬件只有内存和存储设备（以下统称内存），然而数据是怎么存入其中的呢？所有的数据都是有类型的，比如整型、浮点型、char型、String型等。当我们要存储数据10时，我们首先要声明变量，其次把10放进这个变量里（其实就是变量赋值），就完成了数据的储存。然而，深入到底层硬件层次，这一通操作是怎么实现的呢？客官，您请看！</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> number;<span class="comment">//声明变量</span></span><br><span class="line"><span class="comment">//在内内存中划出一块4个字节大小的空间口口口口口口口口 口口口口口口口口 口口口口口口口口 口口口口口口口口 口口口口口口口口，命名为number。</span></span><br><span class="line">number=<span class="number">10</span>;<span class="comment">//变量赋值</span></span><br><span class="line"><span class="comment">//编译器把10转换为二进制1010，然后把二进制的10储存在number空间里，即0000 0000 0000 1010.</span></span><br><span class="line"><span class="comment">//这样，一个数据就成功地存入内存里了。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> number;<span class="comment">//声明变量//在内内存中划出一块4个字节大小的空间口口口口口口口口 口口口口口口口口 口口口口口口口口 口口口口口口口口 口口口口口口口口，命名为number。number=10;//变量赋值//编译器把10转换为二进制1010，然后把二进制的10储存在number空间里，即0000 0000 0000 1010.//这样，一个数据就成功地存入内存里了。</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -767,7 +766,7 @@
 <ul>
 <li><p>有符号数</p>
 <p>有符号数就是指一个变量既可以存储正数，也可以存储负数。这是因为有符号数的二进制首项是符号位。比如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> number1=<span class="number">10</span>;</span><br><span class="line"><span class="comment">//它储存在空间里的样子是：00000000 00000000 00000000 </span></span><br><span class="line"><span class="number">1010</span></span><br><span class="line"><span class="keyword">int</span> number2=-<span class="number">10</span>;</span><br><span class="line"><span class="comment">//它储存在空间里的样子是：10000000 00000000 00000000 00001010</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> number1=<span class="number">10</span>;<span class="comment">//它储存在空间里的样子是：00000000 00000000 00000000 1010int number2=-10;//它储存在空间里的样子是：10000000 00000000 00000000 00001010</span></span><br></pre></td></tr></table></figure></li>
 <li><p>无符号运算符</p>
 <p>无符号数是指只能存放正数不能存放负数，其原理就是去掉了符号位，这样可以使一个变量能够存储更大的数。比如：C / C++中的unsigned int 等。</p>
 </li>
@@ -878,12 +877,12 @@
 <p>| 的规则是对应位两个都为0，则结果取0，否则都取1.</p>
 </li>
 <li><p>非运算符（~）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> m=<span class="number">15</span>;<span class="comment">//n=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">        <span class="keyword">int</span> number1=~m;<span class="comment">//number=1000 0001 0000-&gt;1111 1111 0000(补码)</span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number=-16</span></span><br><span class="line">        <span class="keyword">int</span> x=-<span class="number">15</span>;<span class="comment">//x=1000 1111-&gt;1111 0001(补码)</span></span><br><span class="line">        <span class="keyword">int</span> number2=~x;<span class="comment">//number2=0000 1110-&gt;0000 1110(补码)</span></span><br><span class="line">        System.out.println(number2);<span class="comment">//number2=14</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> m=<span class="number">15</span>;<span class="comment">//n=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">        <span class="keyword">int</span> number1=~m;<span class="comment">//number=1000 0001 0000-&gt;1111 1111 0000(补码) </span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number=-16 </span></span><br><span class="line">        <span class="keyword">int</span> x=-<span class="number">15</span>;<span class="comment">//x=1000 1111-&gt;1111 0001(补码)  </span></span><br><span class="line">        <span class="keyword">int</span> number2=~x;<span class="comment">//number2=0000 1110-&gt;0000 1110(补码)   </span></span><br><span class="line">        System.out.println(number2);<span class="comment">//number2=14  </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>~ 的规则是每一位都取反。</p>
 </li>
 <li><p>异或运算符（^）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> m=<span class="number">15</span>;<span class="comment">//n=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">        <span class="keyword">int</span> n=<span class="number">127</span>;<span class="comment">//m=0000 0111 1111-&gt;0000 0111 1111(补码)</span></span><br><span class="line">        <span class="keyword">int</span> number1=n^m;<span class="comment">//number=0000 0111 0000-&gt;0000 0111 0000(补码)</span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number=112</span></span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">        <span class="keyword">int</span> y=-<span class="number">127</span>;<span class="comment">//y=1000 0111 1111-&gt;1111 1000 0001 (补码)</span></span><br><span class="line">        <span class="keyword">int</span> number2=x^y;<span class="comment">//number2=1000 0111 0010-&gt;1111 1000 1110(补码)</span></span><br><span class="line">        System.out.println(number2);<span class="comment">//number2=-114</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;  </span><br><span class="line">        <span class="keyword">int</span> m=<span class="number">15</span>;<span class="comment">//n=0000 1111-&gt;0000 1111(补码)  </span></span><br><span class="line">        <span class="keyword">int</span> n=<span class="number">127</span>;<span class="comment">//m=0000 0111 1111-&gt;0000 0111 1111(补码) </span></span><br><span class="line">        <span class="keyword">int</span> number1=n^m;<span class="comment">//number=0000 0111 0000-&gt;0000 0111 0000(补码)  </span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number=112  </span></span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)   </span></span><br><span class="line">        <span class="keyword">int</span> y=-<span class="number">127</span>;<span class="comment">//y=1000 0111 1111-&gt;1111 1000 0001 (补码) </span></span><br><span class="line">        <span class="keyword">int</span> number2=x^y;<span class="comment">//number2=1000 0111 0010-&gt;1111 1000 1110(补码)  </span></span><br><span class="line">        System.out.println(number2);<span class="comment">//number2=-114  </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>^ 的规则是对应位相同取0，不同取1</p>
 </li>
@@ -892,35 +891,35 @@
 <li><p>位移运算符</p>
 <ol>
 <li><p>左移运算符（&lt;&lt;）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">    <span class="keyword">int</span> y=-<span class="number">15</span>;<span class="comment">//y=1000 1111-&gt;1111 0001(补码)</span></span><br><span class="line">    <span class="keyword">int</span> number1=x&lt;&lt;<span class="number">1</span>;<span class="comment">//number1=0000 0001 1110-&gt;0000 0001 1110(补码)</span></span><br><span class="line">    System.out.println(number1);<span class="comment">//number1=30</span></span><br><span class="line">    <span class="keyword">int</span> number2=y&lt;&lt;<span class="number">1</span>;<span class="comment">//number2=1000 0001 1110-&gt;1111 1110 0010(补码)</span></span><br><span class="line">    System.out.println(number2);<span class="comment">//nuber2=-30</span></span><br><span class="line">    <span class="keyword">int</span> number3=x&lt;&lt;<span class="number">33</span>;<span class="comment">//number3=0000 0001 1110-&gt;0000 0001 1110(补码)</span></span><br><span class="line">    System.out.println(number3);<span class="comment">//number3=30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)  </span></span><br><span class="line">        <span class="keyword">int</span> y=-<span class="number">15</span>;<span class="comment">//y=1000 1111-&gt;1111 0001(补码) </span></span><br><span class="line">        <span class="keyword">int</span> number1=x&lt;&lt;<span class="number">1</span>;<span class="comment">//number1=0000 0001 1110-&gt;0000 0001 1110(补码)</span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number1=30</span></span><br><span class="line">        <span class="keyword">int</span> number2=y&lt;&lt;<span class="number">1</span>;<span class="comment">//number2=1000 0001 1110-&gt;1111 1110 0010(补码)</span></span><br><span class="line">        System.out.println(number2);<span class="comment">//nuber2=-30   </span></span><br><span class="line">        <span class="keyword">int</span> number3=x&lt;&lt;<span class="number">33</span>;<span class="comment">//number3=0000 0001 1110-&gt;0000 0001 1110(补码) </span></span><br><span class="line">        System.out.println(number3);<span class="comment">//number3=30</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>&lt;&lt;运算符的规则是:当x&lt;&lt;n时，所有对应位左移x%32位，右端补0，左端溢出的丢弃。（大部分时候等同于*2的x%32次方）</p>
 </li>
 <li><p>右移运算符(&gt;&gt;)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">    <span class="keyword">int</span> y=-<span class="number">15</span>;<span class="comment">//y=1000 1111-&gt;1111 0001(补码)</span></span><br><span class="line">    <span class="keyword">int</span> number1=x&gt;&gt;<span class="number">1</span>;<span class="comment">//number1=0000 0001 1110-&gt;0000 0111(补码)</span></span><br><span class="line">    System.out.println(number1);<span class="comment">//number1=7</span></span><br><span class="line">    <span class="keyword">int</span> number2=y&gt;&gt;<span class="number">1</span>;<span class="comment">//number2=1000 1000-&gt;1111 1000(补码)</span></span><br><span class="line">    System.out.println(number2);<span class="comment">//nuber2=-8</span></span><br><span class="line">    <span class="keyword">int</span> number3=x&gt;&gt;<span class="number">33</span>;<span class="comment">//number3=0000 0111-&gt;0000 0111(补码)</span></span><br><span class="line">    System.out.println(number3);<span class="comment">//number3=7</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123; </span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码) </span></span><br><span class="line">        <span class="keyword">int</span> y=-<span class="number">15</span>;<span class="comment">//y=1000 1111-&gt;1111 0001(补码)  </span></span><br><span class="line">        <span class="keyword">int</span> number1=x&gt;&gt;<span class="number">1</span>;<span class="comment">//number1=0000 0001 1110-&gt;0000 0111(补码)   </span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number1=7 </span></span><br><span class="line">        <span class="keyword">int</span> number2=y&gt;&gt;<span class="number">1</span>;<span class="comment">//number2=1000 1000-&gt;1111 1000(补码)</span></span><br><span class="line">        System.out.println(number2);<span class="comment">//nuber2=-8 </span></span><br><span class="line">        <span class="keyword">int</span> number3=x&gt;&gt;<span class="number">33</span>;<span class="comment">//number3=0000 0111-&gt;0000 0111(补码) </span></span><br><span class="line">        System.out.println(number3);<span class="comment">//number3=7 </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>.&gt;&gt;运算符的规则是：当x&gt;&gt;&gt;n时，所有对应位右移x%32位，左端端正数补0、负数补1，右端溢出的丢弃。</p>
 </li>
 <li><p>无符号右移运算符(&gt;&gt;&gt;)</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)</span></span><br><span class="line">    <span class="keyword">int</span> y=-<span class="number">15</span>;<span class="comment">//y=1000 1111-&gt;1111 0001(补码)</span></span><br><span class="line">    <span class="keyword">int</span> number1=x&gt;&gt;&gt;<span class="number">1</span>;<span class="comment">//number1=0000 0001 1110-&gt;0000 0111(补码)</span></span><br><span class="line">    System.out.println(number1);<span class="comment">//number1=7</span></span><br><span class="line">    <span class="keyword">int</span> number2=y&gt;&gt;&gt;<span class="number">1</span>;<span class="comment">//number2=0111 1000-&gt;0111 1000(补码)</span></span><br><span class="line">    System.out.println(number2);<span class="comment">//nuber2=2147483640</span></span><br><span class="line">    <span class="keyword">int</span> number3=x&gt;&gt;&gt;<span class="number">33</span>;<span class="comment">//number3=0000 0111-&gt;0000 0111(补码)</span></span><br><span class="line">    System.out.println(number3);<span class="comment">//number3=7</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Count</span></span>&#123;   </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;  </span><br><span class="line">        <span class="keyword">int</span> x=<span class="number">15</span>;<span class="comment">//x=0000 1111-&gt;0000 1111(补码)  </span></span><br><span class="line">        <span class="keyword">int</span> y=-<span class="number">15</span>;<span class="comment">//y=1000 1111-&gt;1111 0001(补码)  </span></span><br><span class="line">        <span class="keyword">int</span> number1=x&gt;&gt;&gt;<span class="number">1</span>;<span class="comment">//number1=0000 0001 1110-&gt;0000 0111(补码) </span></span><br><span class="line">        System.out.println(number1);<span class="comment">//number1=7 </span></span><br><span class="line">        <span class="keyword">int</span> number2=y&gt;&gt;&gt;<span class="number">1</span>;<span class="comment">//number2=0111 1000-&gt;0111 1000(补码)  </span></span><br><span class="line">        System.out.println(number2);<span class="comment">//nuber2=2147483640    </span></span><br><span class="line">        <span class="keyword">int</span> number3=x&gt;&gt;&gt;<span class="number">33</span>;<span class="comment">//number3=0000 0111-&gt;0000 0111(补码)   </span></span><br><span class="line">        System.out.println(number3);<span class="comment">//number3=7  </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>.&gt;&gt;&gt;的规则是：当x&gt;&gt;&gt;n时，所有对应位右移x%32位，左端补0，右端溢出的丢弃。</p>
 </li>
 </ol>
 </li>
 </ul>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>Java中是没有字符串类型，而是在标准Java类库中提供了一个预定义类，遇到很自然的就叫做了String</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>Java没有字符串类型，而是在标准Java类库中提供了一个预定义类来使用字符串，也就是String</p>
 <p>简单示例：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String name=<span class="string">&quot;China&quot;</span>;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
 
 <p> <img src="https://i.loli.net/2021/08/14/9xZRTYDb4vEXztw.jpg"></p>
-<h3 id="子串"><a href="#子串" class="headerlink" title="子串"></a>子串</h3><p>String类中的substring方法可以从字符串中提取一个子串。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String name=<span class="string">&quot;China&quot;</span>;</span><br><span class="line">        String name1=name.substring(<span class="number">0</span>,<span class="number">3</span>);</span><br><span class="line">        System.out.println(name1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<h3 id="子串"><a href="#子串" class="headerlink" title="子串"></a>子串</h3><p>String类中的<strong>substring</strong>方法可以从字符串中提取一个子串。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;   </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;   </span><br><span class="line">        String name=<span class="string">&quot;China&quot;</span>;   </span><br><span class="line">        String name1=name.substring(<span class="number">0</span>,<span class="number">3</span>);    </span><br><span class="line">        System.out.println(name1);   </span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/08/14/mBEN1iGKFuWfwMJ.jpg"></p>
 <p>name.substring(m,n) 中m是起始字符位置n是终止字符位置，且取n不取m。（注：0是第一个）</p>
 <h3 id="拼接"><a href="#拼接" class="headerlink" title="拼接"></a>拼接</h3><p>和绝大多数语言一样，java语言中字符串是可以通过+号对字符串进行连接的。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String name1=<span class="string">&quot;China&quot;</span>;</span><br><span class="line">        String name2=<span class="string">&quot; is &quot;</span>;</span><br><span class="line">        String name3=<span class="string">&quot; very &quot;</span>;</span><br><span class="line">        String name4=<span class="string">&quot; good!&quot;</span>;</span><br><span class="line">        String name=name1+name2+name3+name4;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String name1=<span class="string">&quot;China&quot;</span>; </span><br><span class="line">        String name2=<span class="string">&quot; is &quot;</span>;</span><br><span class="line">        String name3=<span class="string">&quot; very &quot;</span>;   </span><br><span class="line">        String name4=<span class="string">&quot; good!&quot;</span>;   </span><br><span class="line">        String name=name1+name2+name3+name4;    </span><br><span class="line">        System.out.println(name); </span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/08/14/yf6gPuc59Wp2AKT.jpg"></p>
 <p>当字符串和非字符串连接时，非字符串会被转换成字符串并和字符串进行拼接，常见的例子比如输出语句：</p>
@@ -928,18 +927,30 @@
 
 <p>####填充</p>
 <p>这个用的比较少，是静态方法join的方法。当我们把多个字符串连接在一起并用一个界定符分割时，我们可以用 join 实现。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String all1=String.join(<span class="string">&quot;/&quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);</span><br><span class="line">        System.out.println(all);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;    </span><br><span class="line">        String all1=String.join(<span class="string">&quot;/&quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);      </span><br><span class="line">        System.out.println(all);   </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>当然我们也不一定非要加界定符，可以尽可能的发挥我们的想象力。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String all1=String.join(<span class="string">&quot; &quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);</span><br><span class="line">        String all2=String.join(<span class="string">&quot;+&quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);</span><br><span class="line">        String all3=String.join(<span class="string">&quot;Q&quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);</span><br><span class="line">        System.out.println(all1);</span><br><span class="line">        System.out.println(all2);</span><br><span class="line">        System.out.println(all3);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;   </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;  </span><br><span class="line">        String all1=String.join(<span class="string">&quot; &quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);  </span><br><span class="line">        String all2=String.join(<span class="string">&quot;+&quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);   </span><br><span class="line">        String all3=String.join(<span class="string">&quot;Q&quot;</span>,<span class="string">&quot;Time&quot;</span>,<span class="string">&quot;Money&quot;</span>,<span class="string">&quot;Health&quot;</span>);   </span><br><span class="line">        System.out.println(all1);   </span><br><span class="line">        System.out.println(all2);   </span><br><span class="line">        System.out.println(all3); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/08/15/PjMhugBO6F97DqY.jpg"></p>
 <p>​        </p>
 <h4 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h4><p>有些时候我们需要复制很多相同的字符串然而我们也不能傻乎乎的把一个字符串输入几百上千次。Java11中提供了一个repeat方法来解决这个问题。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String one=<span class="string">&quot; ~(&gt;_&lt;)~ &quot;</span>;</span><br><span class="line">        String all=one.repeat(<span class="number">10</span>);</span><br><span class="line">        System.out.println(all);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;   </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;  </span><br><span class="line">        String one=<span class="string">&quot; ~(&gt;_&lt;)~ &quot;</span>;      </span><br><span class="line">        String all=one.repeat(<span class="number">10</span>);    </span><br><span class="line">        System.out.println(all);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://i.loli.net/2021/08/15/DR8Pa2evUgomGbH.jpg">  </p>
+<h3 id="不可变字符串"><a href="#不可变字符串" class="headerlink" title="不可变字符串"></a>不可变字符串</h3><p>在Java中String类是不允许单独修改一个字符串中的某个字符的，我们一般可以通过提取字串加拼接的方式来构造新的字符串。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String start=<span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        start=start.substring(<span class="number">0</span>,<span class="number">3</span>)+<span class="string">&quot;p&quot;</span>;</span><br><span class="line">        System.out.println(start);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
   </entry>
   <entry>
     <title>Java编程语言单词汇总</title>
@@ -2319,6 +2330,62 @@
       </tags>
   </entry>
   <entry>
+    <title>java语言的特点</title>
+    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h4 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h4><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
+<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
+<h4 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h4><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
+<p>ps：JVM是不能跨平台的</p>
+<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
+<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
+<p>C++应用程序的执行过程（从右往左）</p>
+<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前言-关于搭建博客</title>
+    <url>/2021/07/13/%E5%89%8D%E8%A8%80-%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><h3 id="零基础能搭建个人博客吗-？"><a href="#零基础能搭建个人博客吗-？" class="headerlink" title="零基础能搭建个人博客吗 ？"></a>零基础能搭建个人博客吗 ？</h3><p>当然可以 ！</p>
+<p>博主搭建这个博客时就是零基础。刚开始搭建做这个的时候，博主也只会一些浅显的C语言和C++的语法，其他的像计算机网络，框架，数据结构与算法之类的和搭建网站相关知识一概不知。但最后我依旧断断续续的搭建出了这么一个不错的静态博客，用时一个星期左右 。</p>
+<h3 id="零基础搭建博客难吗-？"><a href="#零基础搭建博客难吗-？" class="headerlink" title="零基础搭建博客难吗 ？"></a>零基础搭建博客难吗 ？</h3><p>说实话，零基础搭建博客是比较难的。</p>
+<p>它的难点主要在于“从0到1”这个过程，因为在这个过程中，我们基本处于盲人摸象的状态，任何一个bug都可能劝退我们。而大部分人也是在在这个过程中放弃的。</p>
+<p>但是，“从1到10”甚至“从1到100”这个过程却是越来越容易。因为当我们达到“1”这个水平后，我们对搭建博客就有了一个大概的了解，遇到的问题都能够做到对症下药，越来越熟练，也越来越容易。并且，搭建静态博客所用到的框架，插件，代码包，主题等都不需要我们去学，我们在只需要学会怎么拿来用即可。所以，每当我们遇到问题时，只要我们去查资料、问大佬，持之以恒，坚持不懈、最后一定会成功的。</p>
+<h3 id="大学生需要写博客吗"><a href="#大学生需要写博客吗" class="headerlink" title="大学生需要写博客吗"></a>大学生需要写博客吗</h3><p>博主对其他专业并不了解，也不敢多加妄言。但对于未来准备从事程序员工作的同学们，我可以负责任的告诉大家：“写自己的个人博客几乎是必需的，写不写无非是早晚的问题。” </p>
+<p>写博客的理由具体如下：</p>
+<ul>
+<li><p>能够加深对于知识和技术的理解</p>
+<p>像程序员这种行业，完全就是靠技术吃饭。所以，如果我们不能在学生时期把基础知识打的足够牢固，未来我们就会付出更大的代价去弥补基础上上的不足。</p>
+<p>相信大家都体验过“一听就会，一写就废”。出现这种情况有很大一部分原因是因为很多知识我们只是看懂了，但却没有深刻理解其核心原理。深入理解每一个知识的核心原理是我们平时必须要做的事，而输出知识就成为了一种加深理解知识核心原理的重要手段，写博客的重要目的之一就是为了输出知识。</p>
+<p>ps：当我们学习变量的时候，我们很轻易地就能学会，然后就跳过去学习其他知识了，然而我们大多数却并不知道变量这个知识点的根本原理。放在平时学习，我们不会去深究这些，但当我们写学习笔记的时候我们就会不由自主地去深究其原理（正常人应该不会花费时间写一些没有意义的东西吧）。比如：”int a”就是在储存空间中划出一个int类型大小的空间，并将其命名为a，之后无论是赋值，运算都是围绕着“a”这个空间进行的。这就是写学习博客的作用，他会引导我们潜移默化地加深对知识的理解。</p>
+</li>
+<li><p>增强逻辑总结能力</p>
+<p>优秀的程序员都是技术宅，但这并不意味着优秀程序员情商低。优秀的程序员可以不八面玲珑，但必须逻辑缜密、头脑清晰、善于总结。因为程序员的工作并不只有写代码，与同事交流沟通也是其工作中极其重要的一环。据我所知，程序员的工作中至少有1/3的时间是在开会，因为一个大的项目往往是由很多个程序员共同完成的，所以在实际项目之中，沟通交流能力是十分重要的。如果我们在沟通过程中不能将自己想要说的说出来，那么一定会在未来的工作中栽大跟头。</p>
+<p>写博客就是一个不断总结、不断提高自身逻辑思维能力的事。如果我们能坚持写博客2年以上，沟通与交流将不会成为我们未来职业道路上的拦路虎。</p>
+</li>
+<li><p>写进简历、找工作的加分项</p>
+<p>首先，在简历中写上自己的个人博客的链接本身就是一件十分有逼格的事。</p>
+<p>其次，搭建个人博客实际上就是一个实战项目（指那种每一行代码都是有自己敲出来的博客），我们的博客就是我们掌握知识的最好证明，每当我们学习新的知识我们就可以优化我们的博客。当HR看到我们的个人博客时，就能很直观地知道我们拥有那些技能知识，获得好感度，这是个很大的加分项。</p>
+<p>我们写在博客里的内容HR或许并不会看，但HR进入我们的博客就会看到比如：Java核心技术 卷一学习笔记 100篇博客 、实战项目一 30篇博客、踩坑记录 200篇博客等东西。当HR看到这些东西，哪怕他不点进去看具体的文章内容，他也会大致了解我们基础知识掌握的如何，对知识技术的态度到什么程度。在这种情况下下，如果我们有一个十分优秀的个人博客，只要我们其他面试环节不太拉跨，通过面试的几率就会高上不少</p>
+</li>
+</ul>
+<h3 id="怎么搭建博客？"><a href="#怎么搭建博客？" class="headerlink" title="怎么搭建博客？"></a>怎么搭建博客？</h3><p>这个我就不能乱说了，因为我本身也是通过参考各种资料、视频才把个人博客搭建起来的。让我搭建一个博客没啥问题，但让我教别人 . . . . . .  说实话，我自认还没达到那个水平。如果有想自己搭建博客的小伙伴，可以在右下角的小弹窗（一个短信的图标）上私信我，我会把我搭建博客时用到过的资料、视频发给你。</p>
+<p>如果搭建博客的过程中遇到什么问题也可以来问我，如果我能知道，一定会解答。</p>
+]]></content>
+      <categories>
+        <category>前言</category>
+      </categories>
+      <tags>
+        <tag>搭建博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法简单教程</title>
     <url>/2021/07/16/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>markdown语言是一种轻量级的标记语言，主要通过一些简单的符号对文本进行处理，可以说是程序员写博客的首选语言。</p>
@@ -2423,59 +2490,31 @@
       </tags>
   </entry>
   <entry>
-    <title>java语言的特点</title>
-    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h4 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h4><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
-<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
-<h4 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h4><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
-<p>ps：JVM是不能跨平台的</p>
-<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
-<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
-<p>C++应用程序的执行过程（从右往左）</p>
-<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前言-关于搭建博客</title>
-    <url>/2021/07/13/%E5%89%8D%E8%A8%80-%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><h3 id="零基础能搭建个人博客吗-？"><a href="#零基础能搭建个人博客吗-？" class="headerlink" title="零基础能搭建个人博客吗 ？"></a>零基础能搭建个人博客吗 ？</h3><p>当然可以 ！</p>
-<p>博主搭建这个博客时就是零基础。刚开始搭建做这个的时候，博主也只会一些浅显的C语言和C++的语法，其他的像计算机网络，框架，数据结构与算法之类的和搭建网站相关知识一概不知。但最后我依旧断断续续的搭建出了这么一个不错的静态博客，用时一个星期左右 。</p>
-<h3 id="零基础搭建博客难吗-？"><a href="#零基础搭建博客难吗-？" class="headerlink" title="零基础搭建博客难吗 ？"></a>零基础搭建博客难吗 ？</h3><p>说实话，零基础搭建博客是比较难的。</p>
-<p>它的难点主要在于“从0到1”这个过程，因为在这个过程中，我们基本处于盲人摸象的状态，任何一个bug都可能劝退我们。而大部分人也是在在这个过程中放弃的。</p>
-<p>但是，“从1到10”甚至“从1到100”这个过程却是越来越容易。因为当我们达到“1”这个水平后，我们对搭建博客就有了一个大概的了解，遇到的问题都能够做到对症下药，越来越熟练，也越来越容易。并且，搭建静态博客所用到的框架，插件，代码包，主题等都不需要我们去学，我们在只需要学会怎么拿来用即可。所以，每当我们遇到问题时，只要我们去查资料、问大佬，持之以恒，坚持不懈、最后一定会成功的。</p>
-<h3 id="大学生需要写博客吗"><a href="#大学生需要写博客吗" class="headerlink" title="大学生需要写博客吗"></a>大学生需要写博客吗</h3><p>博主对其他专业并不了解，也不敢多加妄言。但对于未来准备从事程序员工作的同学们，我可以负责任的告诉大家：“写自己的个人博客几乎是必需的，写不写无非是早晚的问题。” </p>
-<p>写博客的理由具体如下：</p>
-<ul>
-<li><p>能够加深对于知识和技术的理解</p>
-<p>像程序员这种行业，完全就是靠技术吃饭。所以，如果我们不能在学生时期把基础知识打的足够牢固，未来我们就会付出更大的代价去弥补基础上上的不足。</p>
-<p>相信大家都体验过“一听就会，一写就废”。出现这种情况有很大一部分原因是因为很多知识我们只是看懂了，但却没有深刻理解其核心原理。深入理解每一个知识的核心原理是我们平时必须要做的事，而输出知识就成为了一种加深理解知识核心原理的重要手段，写博客的重要目的之一就是为了输出知识。</p>
-<p>ps：当我们学习变量的时候，我们很轻易地就能学会，然后就跳过去学习其他知识了，然而我们大多数却并不知道变量这个知识点的根本原理。放在平时学习，我们不会去深究这些，但当我们写学习笔记的时候我们就会不由自主地去深究其原理（正常人应该不会花费时间写一些没有意义的东西吧）。比如：”int a”就是在储存空间中划出一个int类型大小的空间，并将其命名为a，之后无论是赋值，运算都是围绕着“a”这个空间进行的。这就是写学习博客的作用，他会引导我们潜移默化地加深对知识的理解。</p>
-</li>
-<li><p>增强逻辑总结能力</p>
-<p>优秀的程序员都是技术宅，但这并不意味着优秀程序员情商低。优秀的程序员可以不八面玲珑，但必须逻辑缜密、头脑清晰、善于总结。因为程序员的工作并不只有写代码，与同事交流沟通也是其工作中极其重要的一环。据我所知，程序员的工作中至少有1/3的时间是在开会，因为一个大的项目往往是由很多个程序员共同完成的，所以在实际项目之中，沟通交流能力是十分重要的。如果我们在沟通过程中不能将自己想要说的说出来，那么一定会在未来的工作中栽大跟头。</p>
-<p>写博客就是一个不断总结、不断提高自身逻辑思维能力的事。如果我们能坚持写博客2年以上，沟通与交流将不会成为我们未来职业道路上的拦路虎。</p>
-</li>
-<li><p>写进简历、找工作的加分项</p>
-<p>首先，在简历中写上自己的个人博客的链接本身就是一件十分有逼格的事。</p>
-<p>其次，搭建个人博客实际上就是一个实战项目（指那种每一行代码都是有自己敲出来的博客），我们的博客就是我们掌握知识的最好证明，每当我们学习新的知识我们就可以优化我们的博客。当HR看到我们的个人博客时，就能很直观地知道我们拥有那些技能知识，获得好感度，这是个很大的加分项。</p>
-<p>我们写在博客里的内容HR或许并不会看，但HR进入我们的博客就会看到比如：Java核心技术 卷一学习笔记 100篇博客 、实战项目一 30篇博客、踩坑记录 200篇博客等东西。当HR看到这些东西，哪怕他不点进去看具体的文章内容，他也会大致了解我们基础知识掌握的如何，对知识技术的态度到什么程度。在这种情况下下，如果我们有一个十分优秀的个人博客，只要我们其他面试环节不太拉跨，通过面试的几率就会高上不少</p>
-</li>
-</ul>
-<h3 id="怎么搭建博客？"><a href="#怎么搭建博客？" class="headerlink" title="怎么搭建博客？"></a>怎么搭建博客？</h3><p>这个我就不能乱说了，因为我本身也是通过参考各种资料、视频才把个人博客搭建起来的。让我搭建一个博客没啥问题，但让我教别人 . . . . . .  说实话，我自认还没达到那个水平。如果有想自己搭建博客的小伙伴，可以在右下角的小弹窗（一个短信的图标）上私信我，我会把我搭建博客时用到过的资料、视频发给你。</p>
-<p>如果搭建博客的过程中遇到什么问题也可以来问我，如果我能知道，一定会解答。</p>
+    <title>数据结构与算法的简单规划</title>
+    <url>/2021/07/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="数据结构的的基本概念与术语"><a href="#数据结构的的基本概念与术语" class="headerlink" title="数据结构的的基本概念与术语"></a>数据结构的的基本概念与术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
+<li>数据</li>
+<li>数据元素</li>
+<li>数据项</li>
+<li>数据对象</li>
+<li>数据结构</li>
+</ol>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><ol>
+<li>逻辑结构</li>
+<li>物理结构</li>
+</ol>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ol>
+<li>数据类型</li>
+<li>抽象数据类型</li>
+</ol>
+<h2 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a>算法的基本概念</h2><h3 id="算法与数据结构"><a href="#算法与数据结构" class="headerlink" title="算法与数据结构"></a>算法与数据结构</h3><h3 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h3><h3 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h3><h3 id="算法设计的要求"><a href="#算法设计的要求" class="headerlink" title="算法设计的要求"></a>算法设计的要求</h3><h3 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><h3 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h3><h3 id="串"><a href="#串" class="headerlink" title="串"></a>串</h3><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续  . . ."></a>未完待续  . . .</h2><p>持续更新，未完待续，本规划参考《大话数据结构》</p>
 ]]></content>
       <categories>
-        <category>前言</category>
+        <category>数据结构与算法</category>
       </categories>
       <tags>
-        <tag>搭建博客</tag>
+        <tag>规划</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -2758,34 +2797,6 @@
       </categories>
       <tags>
         <tag>驾考</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构与算法的简单规划</title>
-    <url>/2021/07/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="数据结构的的基本概念与术语"><a href="#数据结构的的基本概念与术语" class="headerlink" title="数据结构的的基本概念与术语"></a>数据结构的的基本概念与术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
-<li>数据</li>
-<li>数据元素</li>
-<li>数据项</li>
-<li>数据对象</li>
-<li>数据结构</li>
-</ol>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><ol>
-<li>逻辑结构</li>
-<li>物理结构</li>
-</ol>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ol>
-<li>数据类型</li>
-<li>抽象数据类型</li>
-</ol>
-<h2 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a>算法的基本概念</h2><h3 id="算法与数据结构"><a href="#算法与数据结构" class="headerlink" title="算法与数据结构"></a>算法与数据结构</h3><h3 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h3><h3 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h3><h3 id="算法设计的要求"><a href="#算法设计的要求" class="headerlink" title="算法设计的要求"></a>算法设计的要求</h3><h3 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><h3 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h3><h3 id="串"><a href="#串" class="headerlink" title="串"></a>串</h3><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续  . . ."></a>未完待续  . . .</h2><p>持续更新，未完待续，本规划参考《大话数据结构》</p>
-]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>规划</tag>
-        <tag>数据结构</tag>
       </tags>
   </entry>
 </search>
