@@ -36,111 +36,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java SE学习规划</title>
-    <url>/2021/07/28/Java-SE%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
-<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>本篇文章尚未完善,不具备参考价值</p>
-<p>持续更新中 . . .</p>
-</blockquote>
-<h1 id="Java的相关基础概念"><a href="#Java的相关基础概念" class="headerlink" title="Java的相关基础概念"></a>Java的相关基础概念</h1><h2 id="简单的计算机组成原理（计算机硬件）"><a href="#简单的计算机组成原理（计算机硬件）" class="headerlink" title="简单的计算机组成原理（计算机硬件）"></a>简单的计算机组成原理（计算机硬件）</h2><ol>
-<li>计算机硬件组成</li>
-<li>CPU</li>
-<li>储存设备</li>
-<li>bit与byte</li>
-<li>内存</li>
-<li>输入输出设备</li>
-<li>网络连接设备</li>
-</ol>
-<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="图形画面操作与命令行操作"><a href="#图形画面操作与命令行操作" class="headerlink" title="图形画面操作与命令行操作"></a>图形画面操作与命令行操作</h2><ol>
-<li>图形画面操作</li>
-<li>命令行操作</li>
-<li>常用dos命令行指令</li>
-</ol>
-<h1 id="Java前期准备"><a href="#Java前期准备" class="headerlink" title="Java前期准备"></a>Java前期准备</h1><h2 id="Java语言的特点"><a href="#Java语言的特点" class="headerlink" title="Java语言的特点"></a>Java语言的特点</h2><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><ol>
-<li>JRE、JDK、JVM关系于介绍</li>
-<li>安装JDK</li>
-<li>配置环境变量</li>
-</ol>
-<h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><ol>
-<li>java文档的建立</li>
-<li>java文档的编译和运行</li>
-<li>一些环境变量的配置</li>
-</ol>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
-<li>单行注释与多行注释</li>
-<li>文档注释</li>
-</ol>
-<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
-<li>整型</li>
-<li>浮点类型</li>
-<li>char类型</li>
-<li>Unicode和char类型</li>
-<li>boolean类型</li>
-</ol>
-<h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ol>
-<li>声明变量</li>
-<li>变量初始化</li>
-<li>常量</li>
-<li>枚举类型</li>
-</ol>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
-<li>算术运算符</li>
-<li>数学学函数与常量</li>
-<li>数值类型之间的展缓</li>
-<li>强制类型转换</li>
-<li>结合赋值和运算符</li>
-<li>自增与自减运算符</li>
-<li>关系和boolean运算符</li>
-<li>位运算符</li>
-<li>括号与运算符级别</li>
-</ol>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ol>
-<li>子串</li>
-<li>拼接</li>
-<li>不可变字符串穿</li>
-<li>检测字符串是否相等</li>
-<li>空串与Null串</li>
-<li>码点与代码单元</li>
-<li>String API</li>
-<li>阅读联机API文档</li>
-<li>构建字符串</li>
-</ol>
-<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><ol>
-<li>读取输入</li>
-<li>格式化输出</li>
-<li>文件输入与输出</li>
-</ol>
-<h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><ol>
-<li>块作用域</li>
-<li>条件语句</li>
-<li>循环</li>
-<li>确定循环</li>
-<li>多重选择：switch语句</li>
-<li>终断控制流程的语句</li>
-</ol>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
-<li><p>Eclipse</p>
-</li>
-<li><p>数组</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">二维数组</span><br><span class="line">数组内存解析</span><br><span class="line">数组初始化</span><br><span class="line">数组元素的调用</span><br><span class="line">数组（元素）赋值</span><br><span class="line">数组的复制</span><br><span class="line">数组元素的反转</span><br><span class="line">简单的数组算法</span><br><span class="line">  1. 线性查找</span><br><span class="line">  2. 二分法查找</span><br><span class="line">  3. 排序</span><br><span class="line">  4. 冒泡法排序</span><br><span class="line">  5. 快速排序</span><br><span class="line"> *6. 排序算法的横向对比</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
-<li>类的结构</li>
-<li>类和对象的创建</li>
-<li>类的多个对象的关系</li>
-<li>对象的内存解析</li>
-</ol>
-<h2 id="三大特性"><a href="#三大特性" class="headerlink" title="三大特性"></a>三大特性</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h1 id="应用程序开发"><a href="#应用程序开发" class="headerlink" title="应用程序开发"></a>应用程序开发</h1><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="IO-NIO"><a href="#IO-NIO" class="headerlink" title="IO/NIO"></a>IO/NIO</h2><h2 id="类库"><a href="#类库" class="headerlink" title="类库"></a>类库</h2><p>##多线程</p>
-<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>规划</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java后端学习路线及规划</title>
     <url>/2021/07/17/Java%E5%90%8E%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8E%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
@@ -502,6 +397,111 @@
       <tags>
         <tag>java</tag>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java SE学习规划</title>
+    <url>/2021/07/28/Java-SE%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>本篇文章尚未完善,不具备参考价值</p>
+<p>持续更新中 . . .</p>
+</blockquote>
+<h1 id="Java的相关基础概念"><a href="#Java的相关基础概念" class="headerlink" title="Java的相关基础概念"></a>Java的相关基础概念</h1><h2 id="简单的计算机组成原理（计算机硬件）"><a href="#简单的计算机组成原理（计算机硬件）" class="headerlink" title="简单的计算机组成原理（计算机硬件）"></a>简单的计算机组成原理（计算机硬件）</h2><ol>
+<li>计算机硬件组成</li>
+<li>CPU</li>
+<li>储存设备</li>
+<li>bit与byte</li>
+<li>内存</li>
+<li>输入输出设备</li>
+<li>网络连接设备</li>
+</ol>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="图形画面操作与命令行操作"><a href="#图形画面操作与命令行操作" class="headerlink" title="图形画面操作与命令行操作"></a>图形画面操作与命令行操作</h2><ol>
+<li>图形画面操作</li>
+<li>命令行操作</li>
+<li>常用dos命令行指令</li>
+</ol>
+<h1 id="Java前期准备"><a href="#Java前期准备" class="headerlink" title="Java前期准备"></a>Java前期准备</h1><h2 id="Java语言的特点"><a href="#Java语言的特点" class="headerlink" title="Java语言的特点"></a>Java语言的特点</h2><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><ol>
+<li>JRE、JDK、JVM关系于介绍</li>
+<li>安装JDK</li>
+<li>配置环境变量</li>
+</ol>
+<h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><ol>
+<li>java文档的建立</li>
+<li>java文档的编译和运行</li>
+<li>一些环境变量的配置</li>
+</ol>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+<li>单行注释与多行注释</li>
+<li>文档注释</li>
+</ol>
+<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
+<li>整型</li>
+<li>浮点类型</li>
+<li>char类型</li>
+<li>Unicode和char类型</li>
+<li>boolean类型</li>
+</ol>
+<h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ol>
+<li>声明变量</li>
+<li>变量初始化</li>
+<li>常量</li>
+<li>枚举类型</li>
+</ol>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
+<li>算术运算符</li>
+<li>数学学函数与常量</li>
+<li>数值类型之间的展缓</li>
+<li>强制类型转换</li>
+<li>结合赋值和运算符</li>
+<li>自增与自减运算符</li>
+<li>关系和boolean运算符</li>
+<li>位运算符</li>
+<li>括号与运算符级别</li>
+</ol>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ol>
+<li>子串</li>
+<li>拼接</li>
+<li>不可变字符串穿</li>
+<li>检测字符串是否相等</li>
+<li>空串与Null串</li>
+<li>码点与代码单元</li>
+<li>String API</li>
+<li>阅读联机API文档</li>
+<li>构建字符串</li>
+</ol>
+<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><ol>
+<li>读取输入</li>
+<li>格式化输出</li>
+<li>文件输入与输出</li>
+</ol>
+<h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><ol>
+<li>块作用域</li>
+<li>条件语句</li>
+<li>循环</li>
+<li>确定循环</li>
+<li>多重选择：switch语句</li>
+<li>终断控制流程的语句</li>
+</ol>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
+<li><p>Eclipse</p>
+</li>
+<li><p>数组</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">二维数组</span><br><span class="line">数组内存解析</span><br><span class="line">数组初始化</span><br><span class="line">数组元素的调用</span><br><span class="line">数组（元素）赋值</span><br><span class="line">数组的复制</span><br><span class="line">数组元素的反转</span><br><span class="line">简单的数组算法</span><br><span class="line">  1. 线性查找</span><br><span class="line">  2. 二分法查找</span><br><span class="line">  3. 排序</span><br><span class="line">  4. 冒泡法排序</span><br><span class="line">  5. 快速排序</span><br><span class="line"> *6. 排序算法的横向对比</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
+<li>类的结构</li>
+<li>类和对象的创建</li>
+<li>类的多个对象的关系</li>
+<li>对象的内存解析</li>
+</ol>
+<h2 id="三大特性"><a href="#三大特性" class="headerlink" title="三大特性"></a>三大特性</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h1 id="应用程序开发"><a href="#应用程序开发" class="headerlink" title="应用程序开发"></a>应用程序开发</h1><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="IO-NIO"><a href="#IO-NIO" class="headerlink" title="IO/NIO"></a>IO/NIO</h2><h2 id="类库"><a href="#类库" class="headerlink" title="类库"></a>类库</h2><p>##多线程</p>
+<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>规划</tag>
       </tags>
   </entry>
   <entry>
@@ -941,9 +941,20 @@
 <h3 id="不可变字符串"><a href="#不可变字符串" class="headerlink" title="不可变字符串"></a>不可变字符串</h3><p>在Java中String类是不允许单独修改一个字符串中的某个字符的，我们一般可以通过提取字串加拼接的方式来构造新的字符串。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String start=<span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        start=start.substring(<span class="number">0</span>,<span class="number">3</span>)+<span class="string">&quot;p&quot;</span>;</span><br><span class="line">        System.out.println(start);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h3 id="检查字符串是否相等"><a href="#检查字符串是否相等" class="headerlink" title="检查字符串是否相等"></a>检查字符串是否相等</h3><p>要想检查两个字符串是否相等需要使用equals方法，相同返回true，不同返回false。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String s=<span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        String t=<span class="string">&quot;help&quot;</span>;</span><br><span class="line">        <span class="keyword">boolean</span> b;</span><br><span class="line">        </span><br><span class="line">        b=s.equals(t);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        </span><br><span class="line">        b=<span class="string">&quot;Hello&quot;</span>.equals(s);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><img src="https://i.loli.net/2021/08/24/wPebXGxTLHqNFC4.jpg"></p>
+<p>如果不想区分大小写可以用equalsIgnoreCase方法：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String s=<span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        <span class="keyword">boolean</span> b;</span><br><span class="line">        </span><br><span class="line">        b=<span class="string">&quot;hello&quot;</span>.equals(s);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        </span><br><span class="line">        b=<span class="string">&quot;hello&quot;</span>.equalsIgnoreCase(s);</span><br><span class="line">        System.out.println(b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-]]></content>
+<p><img src="https://i.loli.net/2021/08/25/mbGFUNtj2igrn9e.jpg"></p>
+<p>不要用==来检查字符串是否相等，只有当两个字符串相同并且位置相同时才会返回true，否则返回false。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Strings</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        String s=<span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        <span class="keyword">boolean</span> b;</span><br><span class="line">        </span><br><span class="line">        b=<span class="string">&quot;Hel&quot;</span>.equals(s.substring(<span class="number">0</span>,<span class="number">3</span>));</span><br><span class="line">        System.out.println(b);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(<span class="string">&quot;Hel&quot;</span>==s.substring(<span class="number">0</span>,<span class="number">3</span>))&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;true&quot;</span>);            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;flase&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/08/25/jKEdhQa5lUSWAY6.jpg"></p>
+<p>##输入与输出：</p>
+<h3 id="读取输入："><a href="#读取输入：" class="headerlink" title="读取输入："></a>读取输入：</h3>]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -2350,42 +2361,6 @@
       </tags>
   </entry>
   <entry>
-    <title>前言-关于搭建博客</title>
-    <url>/2021/07/13/%E5%89%8D%E8%A8%80-%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><h3 id="零基础能搭建个人博客吗-？"><a href="#零基础能搭建个人博客吗-？" class="headerlink" title="零基础能搭建个人博客吗 ？"></a>零基础能搭建个人博客吗 ？</h3><p>当然可以 ！</p>
-<p>博主搭建这个博客时就是零基础。刚开始搭建做这个的时候，博主也只会一些浅显的C语言和C++的语法，其他的像计算机网络，框架，数据结构与算法之类的和搭建网站相关知识一概不知。但最后我依旧断断续续的搭建出了这么一个不错的静态博客，用时一个星期左右 。</p>
-<h3 id="零基础搭建博客难吗-？"><a href="#零基础搭建博客难吗-？" class="headerlink" title="零基础搭建博客难吗 ？"></a>零基础搭建博客难吗 ？</h3><p>说实话，零基础搭建博客是比较难的。</p>
-<p>它的难点主要在于“从0到1”这个过程，因为在这个过程中，我们基本处于盲人摸象的状态，任何一个bug都可能劝退我们。而大部分人也是在在这个过程中放弃的。</p>
-<p>但是，“从1到10”甚至“从1到100”这个过程却是越来越容易。因为当我们达到“1”这个水平后，我们对搭建博客就有了一个大概的了解，遇到的问题都能够做到对症下药，越来越熟练，也越来越容易。并且，搭建静态博客所用到的框架，插件，代码包，主题等都不需要我们去学，我们在只需要学会怎么拿来用即可。所以，每当我们遇到问题时，只要我们去查资料、问大佬，持之以恒，坚持不懈、最后一定会成功的。</p>
-<h3 id="大学生需要写博客吗"><a href="#大学生需要写博客吗" class="headerlink" title="大学生需要写博客吗"></a>大学生需要写博客吗</h3><p>博主对其他专业并不了解，也不敢多加妄言。但对于未来准备从事程序员工作的同学们，我可以负责任的告诉大家：“写自己的个人博客几乎是必需的，写不写无非是早晚的问题。” </p>
-<p>写博客的理由具体如下：</p>
-<ul>
-<li><p>能够加深对于知识和技术的理解</p>
-<p>像程序员这种行业，完全就是靠技术吃饭。所以，如果我们不能在学生时期把基础知识打的足够牢固，未来我们就会付出更大的代价去弥补基础上上的不足。</p>
-<p>相信大家都体验过“一听就会，一写就废”。出现这种情况有很大一部分原因是因为很多知识我们只是看懂了，但却没有深刻理解其核心原理。深入理解每一个知识的核心原理是我们平时必须要做的事，而输出知识就成为了一种加深理解知识核心原理的重要手段，写博客的重要目的之一就是为了输出知识。</p>
-<p>ps：当我们学习变量的时候，我们很轻易地就能学会，然后就跳过去学习其他知识了，然而我们大多数却并不知道变量这个知识点的根本原理。放在平时学习，我们不会去深究这些，但当我们写学习笔记的时候我们就会不由自主地去深究其原理（正常人应该不会花费时间写一些没有意义的东西吧）。比如：”int a”就是在储存空间中划出一个int类型大小的空间，并将其命名为a，之后无论是赋值，运算都是围绕着“a”这个空间进行的。这就是写学习博客的作用，他会引导我们潜移默化地加深对知识的理解。</p>
-</li>
-<li><p>增强逻辑总结能力</p>
-<p>优秀的程序员都是技术宅，但这并不意味着优秀程序员情商低。优秀的程序员可以不八面玲珑，但必须逻辑缜密、头脑清晰、善于总结。因为程序员的工作并不只有写代码，与同事交流沟通也是其工作中极其重要的一环。据我所知，程序员的工作中至少有1/3的时间是在开会，因为一个大的项目往往是由很多个程序员共同完成的，所以在实际项目之中，沟通交流能力是十分重要的。如果我们在沟通过程中不能将自己想要说的说出来，那么一定会在未来的工作中栽大跟头。</p>
-<p>写博客就是一个不断总结、不断提高自身逻辑思维能力的事。如果我们能坚持写博客2年以上，沟通与交流将不会成为我们未来职业道路上的拦路虎。</p>
-</li>
-<li><p>写进简历、找工作的加分项</p>
-<p>首先，在简历中写上自己的个人博客的链接本身就是一件十分有逼格的事。</p>
-<p>其次，搭建个人博客实际上就是一个实战项目（指那种每一行代码都是有自己敲出来的博客），我们的博客就是我们掌握知识的最好证明，每当我们学习新的知识我们就可以优化我们的博客。当HR看到我们的个人博客时，就能很直观地知道我们拥有那些技能知识，获得好感度，这是个很大的加分项。</p>
-<p>我们写在博客里的内容HR或许并不会看，但HR进入我们的博客就会看到比如：Java核心技术 卷一学习笔记 100篇博客 、实战项目一 30篇博客、踩坑记录 200篇博客等东西。当HR看到这些东西，哪怕他不点进去看具体的文章内容，他也会大致了解我们基础知识掌握的如何，对知识技术的态度到什么程度。在这种情况下下，如果我们有一个十分优秀的个人博客，只要我们其他面试环节不太拉跨，通过面试的几率就会高上不少</p>
-</li>
-</ul>
-<h3 id="怎么搭建博客？"><a href="#怎么搭建博客？" class="headerlink" title="怎么搭建博客？"></a>怎么搭建博客？</h3><p>这个我就不能乱说了，因为我本身也是通过参考各种资料、视频才把个人博客搭建起来的。让我搭建一个博客没啥问题，但让我教别人 . . . . . .  说实话，我自认还没达到那个水平。如果有想自己搭建博客的小伙伴，可以在右下角的小弹窗（一个短信的图标）上私信我，我会把我搭建博客时用到过的资料、视频发给你。</p>
-<p>如果搭建博客的过程中遇到什么问题也可以来问我，如果我能知道，一定会解答。</p>
-]]></content>
-      <categories>
-        <category>前言</category>
-      </categories>
-      <tags>
-        <tag>搭建博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown语法简单教程</title>
     <url>/2021/07/16/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>markdown语言是一种轻量级的标记语言，主要通过一些简单的符号对文本进行处理，可以说是程序员写博客的首选语言。</p>
@@ -2490,6 +2465,58 @@
       </tags>
   </entry>
   <entry>
+    <title>前言-关于搭建博客</title>
+    <url>/2021/07/13/%E5%89%8D%E8%A8%80-%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><h3 id="零基础能搭建个人博客吗-？"><a href="#零基础能搭建个人博客吗-？" class="headerlink" title="零基础能搭建个人博客吗 ？"></a>零基础能搭建个人博客吗 ？</h3><p>当然可以 ！</p>
+<p>博主搭建这个博客时就是零基础。刚开始搭建做这个的时候，博主也只会一些浅显的C语言和C++的语法，其他的像计算机网络，框架，数据结构与算法之类的和搭建网站相关知识一概不知。但最后我依旧断断续续的搭建出了这么一个不错的静态博客，用时一个星期左右 。</p>
+<h3 id="零基础搭建博客难吗-？"><a href="#零基础搭建博客难吗-？" class="headerlink" title="零基础搭建博客难吗 ？"></a>零基础搭建博客难吗 ？</h3><p>说实话，零基础搭建博客是比较难的。</p>
+<p>它的难点主要在于“从0到1”这个过程，因为在这个过程中，我们基本处于盲人摸象的状态，任何一个bug都可能劝退我们。而大部分人也是在在这个过程中放弃的。</p>
+<p>但是，“从1到10”甚至“从1到100”这个过程却是越来越容易。因为当我们达到“1”这个水平后，我们对搭建博客就有了一个大概的了解，遇到的问题都能够做到对症下药，越来越熟练，也越来越容易。并且，搭建静态博客所用到的框架，插件，代码包，主题等都不需要我们去学，我们在只需要学会怎么拿来用即可。所以，每当我们遇到问题时，只要我们去查资料、问大佬，持之以恒，坚持不懈、最后一定会成功的。</p>
+<h3 id="大学生需要写博客吗"><a href="#大学生需要写博客吗" class="headerlink" title="大学生需要写博客吗"></a>大学生需要写博客吗</h3><p>博主对其他专业并不了解，也不敢多加妄言。但对于未来准备从事程序员工作的同学们，我可以负责任的告诉大家：“写自己的个人博客几乎是必需的，写不写无非是早晚的问题。” </p>
+<p>写博客的理由具体如下：</p>
+<ul>
+<li><p>能够加深对于知识和技术的理解</p>
+<p>像程序员这种行业，完全就是靠技术吃饭。所以，如果我们不能在学生时期把基础知识打的足够牢固，未来我们就会付出更大的代价去弥补基础上上的不足。</p>
+<p>相信大家都体验过“一听就会，一写就废”。出现这种情况有很大一部分原因是因为很多知识我们只是看懂了，但却没有深刻理解其核心原理。深入理解每一个知识的核心原理是我们平时必须要做的事，而输出知识就成为了一种加深理解知识核心原理的重要手段，写博客的重要目的之一就是为了输出知识。</p>
+<p>ps：当我们学习变量的时候，我们很轻易地就能学会，然后就跳过去学习其他知识了，然而我们大多数却并不知道变量这个知识点的根本原理。放在平时学习，我们不会去深究这些，但当我们写学习笔记的时候我们就会不由自主地去深究其原理（正常人应该不会花费时间写一些没有意义的东西吧）。比如：”int a”就是在储存空间中划出一个int类型大小的空间，并将其命名为a，之后无论是赋值，运算都是围绕着“a”这个空间进行的。这就是写学习博客的作用，他会引导我们潜移默化地加深对知识的理解。</p>
+</li>
+<li><p>增强逻辑总结能力</p>
+<p>优秀的程序员都是技术宅，但这并不意味着优秀程序员情商低。优秀的程序员可以不八面玲珑，但必须逻辑缜密、头脑清晰、善于总结。因为程序员的工作并不只有写代码，与同事交流沟通也是其工作中极其重要的一环。据我所知，程序员的工作中至少有1/3的时间是在开会，因为一个大的项目往往是由很多个程序员共同完成的，所以在实际项目之中，沟通交流能力是十分重要的。如果我们在沟通过程中不能将自己想要说的说出来，那么一定会在未来的工作中栽大跟头。</p>
+<p>写博客就是一个不断总结、不断提高自身逻辑思维能力的事。如果我们能坚持写博客2年以上，沟通与交流将不会成为我们未来职业道路上的拦路虎。</p>
+</li>
+<li><p>写进简历、找工作的加分项</p>
+<p>首先，在简历中写上自己的个人博客的链接本身就是一件十分有逼格的事。</p>
+<p>其次，搭建个人博客实际上就是一个实战项目（指那种每一行代码都是有自己敲出来的博客），我们的博客就是我们掌握知识的最好证明，每当我们学习新的知识我们就可以优化我们的博客。当HR看到我们的个人博客时，就能很直观地知道我们拥有那些技能知识，获得好感度，这是个很大的加分项。</p>
+<p>我们写在博客里的内容HR或许并不会看，但HR进入我们的博客就会看到比如：Java核心技术 卷一学习笔记 100篇博客 、实战项目一 30篇博客、踩坑记录 200篇博客等东西。当HR看到这些东西，哪怕他不点进去看具体的文章内容，他也会大致了解我们基础知识掌握的如何，对知识技术的态度到什么程度。在这种情况下下，如果我们有一个十分优秀的个人博客，只要我们其他面试环节不太拉跨，通过面试的几率就会高上不少</p>
+</li>
+</ul>
+<h3 id="怎么搭建博客？"><a href="#怎么搭建博客？" class="headerlink" title="怎么搭建博客？"></a>怎么搭建博客？</h3><p>这个我就不能乱说了，因为我本身也是通过参考各种资料、视频才把个人博客搭建起来的。让我搭建一个博客没啥问题，但让我教别人 . . . . . .  说实话，我自认还没达到那个水平。如果有想自己搭建博客的小伙伴，可以在右下角的小弹窗（一个短信的图标）上私信我，我会把我搭建博客时用到过的资料、视频发给你。</p>
+<p>如果搭建博客的过程中遇到什么问题也可以来问我，如果我能知道，一定会解答。</p>
+]]></content>
+      <categories>
+        <category>前言</category>
+      </categories>
+      <tags>
+        <tag>搭建博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>声明</title>
+    <url>/2021/07/17/%E5%A3%B0%E6%98%8E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h1><p>本博客的所有规划类文章都是以博主的现实情况为根据而写的。每个人的实际情况都是不同的，所以这类文章对小伙伴们只有参考价值，切勿照搬。</p>
+<p>每个人都是独一无二的个体，都有着自己的发展路线。不同的性格也没有高下之分，外向、活泼的人可以通过情商走向成功；内向、老实的人可以通过脚踏实地、不断钻研走向成功。每个人都有适合自己的路，不应该照搬别人的方法。</p>
+<p>规划是为自己做的，为自己做规划要时刻问自己：”这是否适合自己 ?”，千万不要做出”内向的人走了情商路线”这样本末倒置的事。</p>
+<p>比如说：</p>
+<p>博主抗压能力比较强（这个由于生长环境缘故 ）。对于博主来说每天敲6、7个小时代码，偶尔通宵都问题不大。但对于比较适合劳逸结合的人来说，一昧追求数量的累积反而会降低效率，甚至危害健康，得不偿失。</p>
+]]></content>
+      <categories>
+        <category>前言</category>
+      </categories>
+      <tags>
+        <tag>声明</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数据结构与算法的简单规划</title>
     <url>/2021/07/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="数据结构的的基本概念与术语"><a href="#数据结构的的基本概念与术语" class="headerlink" title="数据结构的的基本概念与术语"></a>数据结构的的基本概念与术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
@@ -2515,22 +2542,6 @@
       <tags>
         <tag>规划</tag>
         <tag>数据结构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>声明</title>
-    <url>/2021/07/17/%E5%A3%B0%E6%98%8E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h1><p>本博客的所有规划类文章都是以博主的现实情况为根据而写的。每个人的实际情况都是不同的，所以这类文章对小伙伴们只有参考价值，切勿照搬。</p>
-<p>每个人都是独一无二的个体，都有着自己的发展路线。不同的性格也没有高下之分，外向、活泼的人可以通过情商走向成功；内向、老实的人可以通过脚踏实地、不断钻研走向成功。每个人都有适合自己的路，不应该照搬别人的方法。</p>
-<p>规划是为自己做的，为自己做规划要时刻问自己：”这是否适合自己 ?”，千万不要做出”内向的人走了情商路线”这样本末倒置的事。</p>
-<p>比如说：</p>
-<p>博主抗压能力比较强（这个由于生长环境缘故 ）。对于博主来说每天敲6、7个小时代码，偶尔通宵都问题不大。但对于比较适合劳逸结合的人来说，一昧追求数量的累积反而会降低效率，甚至危害健康，得不偿失。</p>
-]]></content>
-      <categories>
-        <category>前言</category>
-      </categories>
-      <tags>
-        <tag>声明</tag>
       </tags>
   </entry>
   <entry>
