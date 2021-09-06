@@ -23,8 +23,7 @@
 <p><a href="https://dengxiayouhun.github.io/2021/07/22/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Java环境搭建</a></p>
 <p>##下载Eclipse</p>
 <p><a href="https://www.eclipse.org/">官网下载</a></p>
-<p>##创建一个工作区（workspace）</p>
-<p>工作区就是一个目录，用于存放程序和程序所用到的资源，中间缓存文件也在工作区中。</p>
+<h2 id="创建一个工作区（workspace）"><a href="#创建一个工作区（workspace）" class="headerlink" title="创建一个工作区（workspace）"></a>创建一个工作区（workspace）</h2><p>工作区就是一个目录，用于存放程序和程序所用到的资源，中间缓存文件也在工作区中。</p>
 <p>首先，随便在自己想要的位置建一个目录。</p>
 <p><img src="https://i.loli.net/2021/09/05/xRy7XTQ6aLEJN53.jpg"></p>
 <p>打开Eclipse</p>
