@@ -17,6 +17,77 @@
       </tags>
   </entry>
   <entry>
+    <title>如何解决Win 10环境变量配置时Path变量只显示一行的问题</title>
+    <url>/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
+<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
+<p>修改环境变量的时候特别麻烦。</p>
+<h2 id="Win-10的版本"><a href="#Win-10的版本" class="headerlink" title="Win 10的版本"></a>Win 10的版本</h2><p>到了Win 10版本后，这个问题就得到了解决</p>
+<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg"></p>
+<p>变量的显示不再是一行，而是变成了列表形式。</p>
+<h2 id="Win-10又更新了"><a href="#Win-10又更新了" class="headerlink" title="Win 10又更新了"></a>Win 10又更新了</h2><p>但后来，再次打开了环境变量，他又变成了原来的样子 -_-</p>
+<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
+<p>而实际上，并不是又回到了原来的版本，只是Win 10在更新后同时兼顾了两种查看方式。</p>
+<ul>
+<li><p>当%xxxxx%这种变量放在第一个时，就会按照第一行显示</p>
+</li>
+<li><p>当路径变量放在第一行时，就会按照列表显示。</p>
+<p><img src="https://i.loli.net/2021/09/07/XDrNMRWa217bjnJ.jpg"></p>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2021/09/07/ABe3Kvna2QLuhNz.jpg"></p>
+<p><img src="https://i.loli.net/2021/09/07/gy5Pv49reJSQnRj.jpg"></p>
+]]></content>
+      <categories>
+        <category>踩坑小记录</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>搭建环境</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2021/09/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="数据-data"><a href="#数据-data" class="headerlink" title="数据(data)"></a>数据(data)</h2><ul>
+<li><p>什么是数据？</p>
+<p>数据就是描述客观事物的符号，可以是字符、数字、视频、音频、图片等。</p>
+</li>
+<li><p>数据有什么特点？</p>
+<ol>
+<li>可以被计算机识别</li>
+<li>可以被计算级操作</li>
+</ol>
+</li>
+</ul>
+<h2 id="数据元素-data-element"><a href="#数据元素-data-element" class="headerlink" title="数据元素(data element)"></a>数据元素(data element)</h2><p>数据元素是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。（也称结点、元素、记录或者顶点）</p>
+<blockquote>
+<p>比如：在畜禽类这个数据中，鸡、鸭、牛、羊就都是是数据元素。</p>
+</blockquote>
+<h2 id="数据项-（date-item）"><a href="#数据项-（date-item）" class="headerlink" title="数据项 （date item）"></a>数据项 （date item）</h2><p>一个数据元素可以由若干个数据项组成</p>
+<blockquote>
+<p>比如：人这样的数据元素可以有鼻子、嘴巴、眼睛、手、脚这样的数据项，也可以有名字、性别、年龄、家庭住址、身份证号这样的数据项。</p>
+</blockquote>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
+<li><p>数据项是不可分割的最小单位</p>
+</li>
+<li><p>通常研究时我们研究的基本单位是数据元素</p>
+<blockquote>
+<p>比如：当我们研究生物时，我们会以猪、牛、羊等数据元素为基本研究单位，而不是以牛的眼睛、牛的尾巴等数据项作为基本单位去研究。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="数据对象-data-object"><a href="#数据对象-data-object" class="headerlink" title="数据对象(data object)"></a>数据对象(data object)</h2><p>​     </p>
+<h2 id="数据结构-data-structure"><a href="#数据结构-data-structure" class="headerlink" title="数据结构(data structure)"></a>数据结构(data structure)</h2><h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><h2 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h2><h2 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h2><h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Eclipse的使用教程</title>
     <url>/2021/09/03/Eclipse%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><p>跳转我的另一篇博客</p>
