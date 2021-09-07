@@ -2331,11 +2331,11 @@
 <p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg" alt="add"></p>
 </li>
 </ol>
-<p><a href=""><strong>如何解决Win10环境变量Path只显示一行的问题</strong></a></p>
+<p><a href="https://dengxiayouhun.github.io/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/"><strong>如何解决Win10环境变量Path只显示一行的问题</strong></a></p>
 <h2 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h2><p><img src="https://i.loli.net/2021/07/23/Powb3SQFJZeGHh7.jpg" alt="result"></p>
 <p>当我们在C盘执行javac时，cmd会把命令提交给Windows系统。Windows会在当前目录里寻找，而且还会在环境变量Path的路径里寻找，因此，当我们把bin目录的路径存放在Path变量里后，我们就可以在任何目录执行bin目录里的文件了。</p>
 <p>*path环境变量：Windows系统执行命令时需要搜寻的路径。</p>
-<h2 id="环境的临时配置"><a href="#环境的临时配置" class="headerlink" title="环境的临时配置"></a>环境的临时配置</h2><h3 id="为什么要临时配置环境？"><a href="#为什么要临时配置环境？" class="headerlink" title="为什么要临时配置环境？"></a>为什么要临时配置环境？</h3><p>通常来说我们一般都是用自己的设备进行程序开发。但有些时候我们也需要插上U盘，用别人的设备进行开发。这时候，我们就不能随便改变别人设备的参数了，所以只能进行临时配置，使我们不仅能够良好的的进行开发，而且不改变设备参数。</p>
+<h2 id="环境的临时配置"><a href="#环境的临时配置" class="headerlink" title="环境的临时配置"></a>环境的临时配置</h2><h3 id="为什么要临时配置环境？"><a href="#为什么要临时配置环境？" class="headerlink" title="为什么要临时配置环境？"></a>为什么要临时配置环境？</h3><p>通常来说我们一般都是用自己的设备进行程序开RR发。但有些时候我们也需要插上U盘，用别人的设备进行开发。这时候，我们就不能随便改变别人设备的参数了，所以只能进行临时配置，使我们不仅能够良好的的进行开发，而且不改变设备参数。</p>
 <h3 id="如何进行临时配置"><a href="#如何进行临时配置" class="headerlink" title="如何进行临时配置?"></a>如何进行临时配置?</h3><ol>
 <li><p>打开cmd，执行set命令，查看环境变量</p>
 <p><img src="https://i.loli.net/2021/07/23/9HcPdFA6mX3KbvB.jpg" alt="set"></p>
