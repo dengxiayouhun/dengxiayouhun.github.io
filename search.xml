@@ -2125,7 +2125,7 @@
       </categories>
       <tags>
         <tag>规划</tag>
-        <tag>数据结构</tag>
+        <tag>数据结构与算法</tag>
       </tags>
   </entry>
   <entry>
@@ -2260,6 +2260,7 @@
 <p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg" alt="add"></p>
 </li>
 </ol>
+<p><a href=""><strong>如何解决Win10环境变量Path只显示一行的问题</strong></a></p>
 <h2 id="原理解释"><a href="#原理解释" class="headerlink" title="原理解释"></a>原理解释</h2><p><img src="https://i.loli.net/2021/07/23/Powb3SQFJZeGHh7.jpg" alt="result"></p>
 <p>当我们在C盘执行javac时，cmd会把命令提交给Windows系统。Windows会在当前目录里寻找，而且还会在环境变量Path的路径里寻找，因此，当我们把bin目录的路径存放在Path变量里后，我们就可以在任何目录执行bin目录里的文件了。</p>
 <p>*path环境变量：Windows系统执行命令时需要搜寻的路径。</p>
