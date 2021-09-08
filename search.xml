@@ -77,8 +77,139 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="数据对象-data-object"><a href="#数据对象-data-object" class="headerlink" title="数据对象(data object)"></a>数据对象(data object)</h2><p>​     </p>
-<h2 id="数据结构-data-structure"><a href="#数据结构-data-structure" class="headerlink" title="数据结构(data structure)"></a>数据结构(data structure)</h2><h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><h2 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h2><h2 id="物理结构"><a href="#物理结构" class="headerlink" title="物理结构"></a>物理结构</h2><h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1>]]></content>
+<h2 id="数据对象-data-object"><a href="#数据对象-data-object" class="headerlink" title="数据对象(data object)"></a>数据对象(data object)</h2><p>​     数据对象是<strong>性质相同</strong>的数据元素的集合，是数据的子集。</p>
+<ul>
+<li><p>什么是性质相同？</p>
+<p>性质相同就是两个数据元素具有相同数量和类型的数据项。</p>
+</li>
+<li><p>数据和数据对象</p>
+<p>由于数据对象是数据的子集，在实际应用中，数据对象往往和数据有相同的性质。在不产生混淆的情况下，我们都将数据对象简称为数据。</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">姓名</th>
+<th align="center">性别</th>
+<th align="center">年龄</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">小明</td>
+<td align="center">男</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">小红</td>
+<td align="center">女</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">小磊</td>
+<td align="center">男</td>
+<td align="center">13</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">课程名n</th>
+<th align="center">学时</th>
+<th align="center">学分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">数据结构与算法</td>
+<td align="center">40</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">计算机组成原理</td>
+<td align="center">25</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">操作系统</td>
+<td align="center">20</td>
+<td align="center">4</td>
+</tr>
+</tbody></table>
+<p>两个列表都是数据，两个列表是两个数据对象，列表的每一行都是一个数据元素，每一列都是数据项。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="数据结构-data-structure"><a href="#数据结构-data-structure" class="headerlink" title="数据结构(data structure)"></a>数据结构(data structure)</h1><p>数据之间都不是完全独立存在的，不同数据之间都特定的关系，这些关系就是<strong>结构</strong></p>
+<ul>
+<li>按照实际爱哦的不同，我们可以把数据结构分为<strong>逻辑结构</strong>和<strong>物理结构</strong></li>
+</ul>
+<h2 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h2><p>逻辑结构是数据对象中数据元素之间的相互关系</p>
+<ol>
+<li><p>集合结构</p>
+<p>集合结构中的数据元素除了在一个集合之外，没有任何其他关系。</p>
+<blockquote>
+<p>一些数学中的数字集合，比如数据对象自然数中的是数据元素1、2、3、4、5之间就没有任何和其他的逻辑关系。</p>
+</blockquote>
+</li>
+<li><p>线性结构</p>
+<p>线性结构中的数据元素是一对一的关系。</p>
+</li>
+<li><p>树形结构</p>
+<p>数星星结构中的数据元素之间存在一对多的层次关系。</p>
+</li>
+<li><p>图形结构</p>
+<p>图形结构的是数据元素是多对多的关系。</p>
+</li>
+</ol>
+<h2 id="物理结构-存储结构"><a href="#物理结构-存储结构" class="headerlink" title="物理结构(存储结构)"></a>物理结构(存储结构)</h2><p>物理结构是指如何把数据元素储存在存储器中，因此也叫存储结构。数据的存储结构如何正确的反应数据元素之间的逻辑结构是物理结构的难点和重点。</p>
+<ol>
+<li><p>顺序存储结构</p>
+<p>顺序存储出结构是把数据元素存放在地址连续的存储单元里。</p>
+<blockquote>
+<p>数组的存储结构就是顺序存储结构</p>
+</blockquote>
+</li>
+<li><p>链式存储结构</p>
+<p>链式存储结构是把数据元素存放在任意的存储单元里，这组存储单元可以是连续的也可以是不连续的。</p>
+</li>
+</ol>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><ul>
+<li><p>什么是数据类型？</p>
+<p>数据类型是指一组性质相同的值的集合及定义在此集合上的一些此操作的总称。</p>
+</li>
+<li><p>我们为什么要分出各种数据类型？</p>
+<p>根本原因是内存是十分珍贵的，我们必须以最小的内存存放最多的数据，从而降低成本。</p>
+</li>
+<li><p>数据是如何和被储存到内存当中的？</p>
+<p>要想把数据存储在内存中，必须现在内存中开辟出一片空间出来，然后把数据塞到这篇空间中，而且这片空间的大小必须大于等于是数据所占用的空间。</p>
+</li>
+<li><p>为什么需要设置各种数据类型？</p>
+<blockquote>
+<p>比如说：养鸡，我们有一个1平方千米的养鸡场。当我们养的鸡的数量比较少时，我们可以随意地把鸡撒到养鸡场里。这个时候养鸡场的空间价值并没有显得那么珍贵。但随着我们养的鸡的数量不断增多，我们不得通过设置篱笆等方式限制鸡的活动范围，从而使养鸡厂里能养更多的鸡。甚至到最后一个鸡一个笼子，大笼子装大鸡，小笼子装小鸡，把养鸡场的空间价值开发到极致。</p>
+</blockquote>
+<p>数据与内存的关系就是到了后期的鸡与养鸡场的关系，每一份内存都十分珍贵。如果我们把一个2字节的数据存放到一片8字节的空间中，这种操作是极为浪费的行为。因此我们为各种类型的数据设置了各种数据类型，把数据存储到对应数据开辟出的空间当中，既不会因为开辟的空间太小导致数据失真，有可以避免开辟的空间太大，造成过多的浪费。</p>
+</li>
+</ul>
+<h2 id="抽象数据类型"><a href="#抽象数据类型" class="headerlink" title="抽象数据类型"></a>抽象数据类型</h2><ul>
+<li><p>抽象是什么？</p>
+<p>抽象是指抽取出事物具有的普遍性的本质。</p>
+</li>
+<li><p>什么是抽象数据类型？</p>
+<p>一个数学学模型及定义在该模型上的是一组操作。</p>
+<blockquote>
+<p>比如：智能手机、PC、平板上都有整型数据，但他们在各种计算机中事务实现方式并不一样，所以这些整型又不完全相同。但由于整型的本质是1、2、3、4 . . . 等整形数据的集合，所以我们可以抽象出整型这个抽象数据类型。这个整型同时代指各个计算机上的整形数据，并且这个数据类型只用考虑其抽象出来的特性，其他特性都被隐藏不用考虑。</p>
+</blockquote>
+<p>当然，抽象数据类型的应用很广，我们甚至可以抽取几个变量的特性进而抽象出一个新的变量。</p>
+<blockquote>
+<p>比如：当我们编写绘图相关的软件的时候，总会有成对出现的x、y变量（代表横坐标轴和纵坐标轴）。为了方便，我们可以定义一个point的抽象数据类型，他有x、y两种整型变量。</p>
+</blockquote>
+</li>
+<li><p>抽象数据类型的核心理念：</p>
+<p>抽象数据类型体现了程序设计中<strong>问题分解</strong>、<strong>抽象</strong>和<strong>信息隐藏</strong>的特性。</p>
+<blockquote>
+<p>抽象数据类型把实际生活中的问题<strong>分解</strong>为多个规模小且容易处理的问题，然后<strong>建立</strong>一个计算机能处理的数据模型，并把每个功能模块的实现细节作为一个独立的单元，从而使具体实现过程<strong>隐藏</strong>起来。</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
       <categories>
         <category>数据结构与算法</category>
       </categories>
