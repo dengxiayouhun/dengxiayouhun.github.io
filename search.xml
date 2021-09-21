@@ -1,304 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>声明</title>
-    <url>/2021/07/17/%E5%A3%B0%E6%98%8E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h2><p>本博客的所有规划类文章都是以博主的现实情况为根据而写的。每个人的实际情况都是不同的，所以这类文章对小伙伴们只有参考价值，切勿照搬。</p>
-<p>每个人都是独一无二的个体，都有着自己的发展路线。不同的性格也没有高下之分，外向、活泼的人可以通过情商走向成功；内向、老实的人可以通过脚踏实地、不断钻研走向成功。每个人都有适合自己的路，不应该照搬别人的方法。</p>
-<p>规划是为自己做的，为自己做规划要时刻问自己：”这是否适合自己 ?”，千万不要做出”内向的人走了情商路线”这样本末倒置的事。</p>
-<p>比如说：</p>
-<p>博主抗压能力比较强（这个由于生长环境缘故 ）。对于博主来说每天敲6、7个小时代码，偶尔通宵都问题不大。但对于比较适合劳逸结合的人来说，一昧追求数量的累积反而会降低效率，甚至危害健康，得不偿失。</p>
+    <title>DOS命令行的简单操作</title>
+    <url>/2021/07/19/DOS%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="Dos命令行的作用"><a href="#Dos命令行的作用" class="headerlink" title="Dos命令行的作用"></a>Dos命令行的作用</h2><p>通过在控制台输入特定指令使计算机完成一些操作，实现人机交互。</p>
+<h2 id="打开控制台"><a href="#打开控制台" class="headerlink" title="打开控制台"></a>打开控制台</h2><p>开始+R打开快捷运行窗口，输入cmd打开控制台。</p>
+<p><img src="https://i.loli.net/2021/07/19/UAZIDxrnsKVYtpw.jpg" alt="控制台"></p>
+<h2 id="常见Dos命令行"><a href="#常见Dos命令行" class="headerlink" title="常见Dos命令行"></a>常见Dos命令行</h2><h4 id="打开当前目录"><a href="#打开当前目录" class="headerlink" title="打开当前目录"></a>打开当前目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">dir</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">列出当前目录下的文件和和文件夹。</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/19/wJghOLvdmNyX18Q.jpg" alt="dir"></p>
+<h4 id="创建新文件夹"><a href="#创建新文件夹" class="headerlink" title="创建新文件夹"></a>创建新文件夹</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">md</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">在当前目录新建文件夹</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/19/aX73l9xEOyFQiSW.jpg" alt="md"></p>
+<p><img src="https://i.loli.net/2021/07/19/DJYkxZCnpavQbrc.jpg" alt="md"></p>
+<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">rd</span><br><span class="line">del</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">删除当前目录下的空文件夹</span><br><span class="line">删除当前目录下的文件或者清空文件夹</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/19/XMp1HDtzyrGA5cE.jpg" alt="rd"></p>
+<p><img src="https://i.loli.net/2021/07/19/FjOspAvorzPh3Lc.jpg" alt="del"></p>
+<h4 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a>进入文件夹</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法：</span></span><br><span class="line">cd</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">进入文件</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/19/iXraNLjwC4Rv2gq.jpg" alt="进入D盘"></p>
+<p><img src="https://i.loli.net/2021/07/19/xoP2Yf71DcyIeGQ.jpg" alt="进入文件夹"></p>
+<p><img src="https://i.loli.net/2021/07/19/x9CauovqGc23wF1.jpg" alt="cd \ "></p>
+<p>)</p>
+<h4 id="返回上一级目录"><a href="#返回上一级目录" class="headerlink" title="返回上一级目录"></a>返回上一级目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法：</span></span><br><span class="line">cd..</span><br><span class="line">cd\</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">返回上一级目录</span><br><span class="line">返回主根目录</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/19/isV14gIWtjDwKBq.jpg" alt="cd..."></p>
+<p><img src="https://i.loli.net/2021/07/19/BitazJ3Yhf9MuS7.jpg" alt="cd \ "></p>
+<h4 id="退出dos命令行控制台"><a href="#退出dos命令行控制台" class="headerlink" title="退出dos命令行控制台"></a>退出dos命令行控制台</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">exit</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">退出控制台</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/07/19/6bXLPRAMredIHQS.jpg" alt="exit"></p>
 ]]></content>
-      <categories>
-        <category>前言</category>
-      </categories>
       <tags>
-        <tag>声明</tag>
+        <tag>DOS命令行</tag>
       </tags>
   </entry>
   <entry>
-    <title>算法</title>
-    <url>/2021/09/08/%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h2><p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列。并且每条指令表示一个或多个操作。</p>
-<h3 id="为什么要学习更加优秀的算法？"><a href="#为什么要学习更加优秀的算法？" class="headerlink" title="为什么要学习更加优秀的算法？"></a>为什么要学习更加优秀的算法？</h3><p>在此之前先讲一个伟大数学家高斯关于算法的故事：</p>
-<blockquote>
-<p>据说18世纪生于德国小村庄的高斯，上小学的一天，课堂很乱，老师非常生气。于是老师在放学时，就要求每个学生都计算1+2+3+···+100的结果，谁先算出来谁先回家。</p>
-<p>天才当然不会被这样的问题难倒，高斯很快就的处理了答案，是5050.老师非常惊讶，因为他自己也是通过1+2=3，3+3=6,6+4=10, ······，4950+100=5050这样算出来的，也算了很久很久，怕算错，还算了两三遍。可眼前这个少年，一个上小学的孩子为何可以这么快的得出结果？</p>
-<p>高斯解释道：sum=1+2+3+···+99+100</p>
-<p>​                     sum=100+99+98+···+2+1</p>
-<p>​                     2 x sum=101+101+101+···+101=101 x 100=10100</p>
-<p>​                     sum=5050                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </p>
+    <title>Java SE学习规划</title>
+    <url>/2021/07/28/Java-SE%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>前言：</p>
+<p>本篇文章尚未完善,不具备参考价值</p>
+<p>持续更新中 . . .</p>
 </blockquote>
-<p>这里老师和高斯就用了两种算法：</p>
-<p>老师的算法：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>,n=<span class="number">100</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    sum=sum+i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,sum);</span><br></pre></td></tr></table></figure>
-
-<p>高斯的算法：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>,n=<span class="number">100</span>;</span><br><span class="line">sum=(<span class="number">1</span>+n)*n/<span class="number">2</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,sum);</span><br></pre></td></tr></table></figure>
-
-<p>很明显，高斯的算法比老师的算法要好得多，尤其是当n的值越来越大时，高斯的算法简直是对老师算法降维打击。</p>
-<p>现在我们回到主题：<strong>为什么我们要学习更加优秀的算法？</strong></p>
-<p>很简单，节约算力。</p>
-<p>众所周知，计算机的算力要远远强于人类。但如果把n的值换成100亿，计算机用老师的算法，我们用高斯的算法，谁算的更快呢？很显然我们能够轻松地在两三分钟内算出结果，而计算机很可能算一年也算不出来，甚至可能直接嗝屁。</p>
-<p>所以说，一个优秀的算法能够让我们用有限的算力处理更复杂的问题，而且往往越秀的算法往往对垃圾算法是降维打击的。</p>
-<h2 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h2><p>算法有五个基本特性：<strong>输入</strong>、<strong>输出</strong>、<strong>有穷性</strong>、<strong>确定性</strong>和<strong>可行性</strong></p>
-<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><ul>
-<li><p>算法有零个或者多个输入</p>
-</li>
-<li><p>算法至少有一个或者多个输出</p>
-<p>这个输出值可以是打印输出，也可以是返回一个或多个值。</p>
-</li>
-</ul>
-<h3 id="有穷性"><a href="#有穷性" class="headerlink" title="有穷性"></a>有穷性</h3><p>指算法在执行有限的步骤后，自动结束而不会出现无限循环，并且每一个步骤在可接受的时间内完成。</p>
-<h3 id="确定性"><a href="#确定性" class="headerlink" title="确定性"></a>确定性</h3><p>算法的每一步骤都具有确定的含义，不会出现二义性。</p>
-<h3 id="可行性"><a href="#可行性" class="headerlink" title="可行性"></a>可行性</h3><p>算法的每一步都必须是可行的，也就是说，每一步都能够通过执行有限次数完成</p>
-<h2 id="算法的设计要求"><a href="#算法的设计要求" class="headerlink" title="算法的设计要求"></a>算法的设计要求</h2><p>我们要尽可能地去写一些好的算法，然而什么是好的算法呢？</p>
-<p>好的算法一般具有<strong>正确性</strong>、<strong>可读性</strong>、<strong>健壮性</strong>、<strong>时间效率高</strong>和<strong>存储量低</strong>的特点。</p>
-<h3 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h3><p>算法的正确性是指算法至少应该具有输入、输出和加工处理无歧义性能正确反应web提的需求，能够i要得到问题的正确答案。</p>
-<ul>
-<li>算法正确性的级别：<ol>
-<li>算法程序的语法没有错误</li>
-<li>算法程序对于合法的输入数据能够得到满足需求的输出结果</li>
-<li>算法程序对于非法的输入数据能够给出错误说明</li>
-<li>算法程序对于精心选择的、刁钻的测试数据都能给出满足需求的输出结果</li>
+<h1 id="Java的相关基础概念"><a href="#Java的相关基础概念" class="headerlink" title="Java的相关基础概念"></a>Java的相关基础概念</h1><h2 id="简单的计算机组成原理（计算机硬件）"><a href="#简单的计算机组成原理（计算机硬件）" class="headerlink" title="简单的计算机组成原理（计算机硬件）"></a>简单的计算机组成原理（计算机硬件）</h2><ol>
+<li>计算机硬件组成</li>
+<li>CPU</li>
+<li>储存设备</li>
+<li>bit与byte</li>
+<li>内存</li>
+<li>输入输出设备</li>
+<li>网络连接设备</li>
 </ol>
-</li>
-<li>一般我们对算法正确性的要求？<br>算法正确性的四个级别，第一层是最容易做到的，第四层是最难做到的。通常我们如果要写出第四层的算法会消耗大量的时间和精力。因此，综合考虑，一般情况下，我们把第三层作为一个算法是否正确的标准。</li>
-</ul>
-<h3 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h3><p>算法设计的另一目的是为了便于理解阅读和交流。</p>
-<p>算法不仅需要让自己读懂，而且需要让别人读懂。</p>
-<h3 id="健壮性"><a href="#健壮性" class="headerlink" title="健壮性"></a>健壮性</h3><p>健壮性指当输入数据不合法时，算法也能做出相应处理，而不是运行异常，或者输出莫名其妙的结果。</p>
-<h3 id="时间效率高和存储量低"><a href="#时间效率高和存储量低" class="headerlink" title="时间效率高和存储量低"></a>时间效率高和存储量低</h3><p> 好的算法应该具有时间效率高和存储量低的特性。</p>
-<h2 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h2><h3 id="事后统计法"><a href="#事后统计法" class="headerlink" title="事后统计法"></a>事后统计法</h3><p>事后统计法是指通过设计好的程序和数据来对不同的算法进行测试，比较它们运行的时间的多少。</p>
-<ul>
-<li>事后统计法的缺点：<ol>
-<li>必须把算法写出来后才能直达票算法的效率，如果算法不符合要求，写算法花费的工夫就会竹篮打水一场空。</li>
-<li>运行时间不完全依赖于算法，还和软件、操作系统、编译器等因素有关。甚至同一台计算机不同时候测试同一个算法，得到的运行时间也是不完全相同的，因为运行时间还和内存的占用情况相关。因此，测出的时间有时并不能反映什么。</li>
-<li>算法的测试数据实际困难，不同算法间运行速度的差异往往与数据规模有关。比如果我们要将0随机数排序，那么无论我们用任何算法，运行时间几乎都差不多。而如果给一百万个随机数排列，不同算法之间差异会很大，而且有些算法对CPU相当不友好0.0!</li>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="图形画面操作与命令行操作"><a href="#图形画面操作与命令行操作" class="headerlink" title="图形画面操作与命令行操作"></a>图形画面操作与命令行操作</h2><ol>
+<li>图形画面操作</li>
+<li>命令行操作</li>
+<li>常用dos命令行指令</li>
 </ol>
-</li>
-</ul>
-<h3 id="事前分析估算法"><a href="#事前分析估算法" class="headerlink" title="事前分析估算法"></a>事前分析估算法</h3><ul>
-<li><p>一个高级语言编译的程序运行时间取决于哪些因素？</p>
-<ol>
-<li>算法采用的方法、策略</li>
-<li>编译产生的代码的质量</li>
-<li>问题的输入规模</li>
-<li>机器执行指令的速度</li>
+<h1 id="Java前期准备"><a href="#Java前期准备" class="headerlink" title="Java前期准备"></a>Java前期准备</h1><h2 id="Java语言的特点"><a href="#Java语言的特点" class="headerlink" title="Java语言的特点"></a>Java语言的特点</h2><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><ol>
+<li>JRE、JDK、JVM关系于介绍</li>
+<li>安装JDK</li>
+<li>配置环境变量</li>
 </ol>
+<h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><ol>
+<li>java文档的建立</li>
+<li>java文档的编译和运行</li>
+<li>一些环境变量的配置</li>
+</ol>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+<li>单行注释与多行注释</li>
+<li>文档注释</li>
+</ol>
+<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
+<li>整型</li>
+<li>浮点类型</li>
+<li>char类型</li>
+<li>Unicode和char类型</li>
+<li>boolean类型</li>
+</ol>
+<h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ol>
+<li>声明变量</li>
+<li>变量初始化</li>
+<li>常量</li>
+<li>枚举类型</li>
+</ol>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
+<li>算术运算符</li>
+<li>数学学函数与常量</li>
+<li>数值类型之间的展缓</li>
+<li>强制类型转换</li>
+<li>结合赋值和运算符</li>
+<li>自增与自减运算符</li>
+<li>关系和boolean运算符</li>
+<li>位运算符</li>
+<li>括号与运算符级别</li>
+</ol>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ol>
+<li>子串</li>
+<li>拼接</li>
+<li>不可变字符串穿</li>
+<li>检测字符串是否相等</li>
+<li>空串与Null串</li>
+<li>码点与代码单元</li>
+<li>String API</li>
+<li>阅读联机API文档</li>
+<li>构建字符串</li>
+</ol>
+<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><ol>
+<li>读取输入</li>
+<li>格式化输出</li>
+<li>文件输入与输出</li>
+</ol>
+<h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><ol>
+<li>块作用域</li>
+<li>条件语句</li>
+<li>循环</li>
+<li>确定循环</li>
+<li>多重选择：switch语句</li>
+<li>终断控制流程的语句</li>
+</ol>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
+<li><p>Eclipse</p>
 </li>
-</ul>
-<h2 id="函数的渐近增长"><a href="#函数的渐近增长" class="headerlink" title="函数的渐近增长"></a>函数的渐近增长</h2><h2 id="算法的时间复杂度"><a href="#算法的时间复杂度" class="headerlink" title="算法的时间复杂度"></a>算法的时间复杂度</h2><h3 id="算法时间复杂度定义"><a href="#算法时间复杂度定义" class="headerlink" title="算法时间复杂度定义"></a>算法时间复杂度定义</h3><h3 id="推导大O阶方法"><a href="#推导大O阶方法" class="headerlink" title="推导大O阶方法"></a>推导大<em>O</em>阶方法</h3><h3 id="常数阶"><a href="#常数阶" class="headerlink" title="常数阶"></a>常数阶</h3><h3 id="线性阶"><a href="#线性阶" class="headerlink" title="线性阶"></a>线性阶</h3><h3 id="对数阶"><a href="#对数阶" class="headerlink" title="对数阶"></a>对数阶</h3><h3 id="平方阶"><a href="#平方阶" class="headerlink" title="平方阶"></a>平方阶</h3><h2 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h2><h2 id="算法的空间复杂度"><a href="#算法的空间复杂度" class="headerlink" title="算法的空间复杂度"></a>算法的空间复杂度</h2>]]></content>
+<li><p>数组</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">二维数组</span><br><span class="line">数组内存解析</span><br><span class="line">数组初始化</span><br><span class="line">数组元素的调用</span><br><span class="line">数组（元素）赋值</span><br><span class="line">数组的复制</span><br><span class="line">数组元素的反转</span><br><span class="line">简单的数组算法</span><br><span class="line">  1. 线性查找</span><br><span class="line">  2. 二分法查找</span><br><span class="line">  3. 排序</span><br><span class="line">  4. 冒泡法排序</span><br><span class="line">  5. 快速排序</span><br><span class="line"> *6. 排序算法的横向对比</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
+<li>类的结构</li>
+<li>类和对象的创建</li>
+<li>类的多个对象的关系</li>
+<li>对象的内存解析</li>
+</ol>
+<h2 id="三大特性"><a href="#三大特性" class="headerlink" title="三大特性"></a>三大特性</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h1 id="应用程序开发"><a href="#应用程序开发" class="headerlink" title="应用程序开发"></a>应用程序开发</h1><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="IO-NIO"><a href="#IO-NIO" class="headerlink" title="IO/NIO"></a>IO/NIO</h2><h2 id="类库"><a href="#类库" class="headerlink" title="类库"></a>类库</h2><h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2>]]></content>
       <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>数据结构与算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何解决Win 10环境变量配置时Path变量只显示一行的问题</title>
-    <url>/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
-<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
-<p>修改环境变量的时候特别麻烦。</p>
-<h2 id="Win-10的版本"><a href="#Win-10的版本" class="headerlink" title="Win 10的版本"></a>Win 10的版本</h2><p>到了Win 10版本后，这个问题就得到了解决</p>
-<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg"></p>
-<p>变量的显示不再是一行，而是变成了列表形式。</p>
-<h2 id="Win-10又更新了"><a href="#Win-10又更新了" class="headerlink" title="Win 10又更新了"></a>Win 10又更新了</h2><p>但后来，再次打开了环境变量，他又变成了原来的样子 -_-</p>
-<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
-<p>而实际上，并不是又回到了原来的版本，只是Win 10在更新后同时兼顾了两种查看方式。</p>
-<ul>
-<li><p>当%xxxxx%这种变量放在第一个时，就会按照第一行显示</p>
-</li>
-<li><p>当路径变量放在第一行时，就会按照列表显示。</p>
-<p><img src="https://i.loli.net/2021/09/07/XDrNMRWa217bjnJ.jpg"></p>
-</li>
-</ul>
-<p><img src="https://i.loli.net/2021/09/07/ABe3Kvna2QLuhNz.jpg"></p>
-<p><img src="https://i.loli.net/2021/09/07/gy5Pv49reJSQnRj.jpg"></p>
-]]></content>
-      <categories>
-        <category>踩坑小记录</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>java</tag>
-        <tag>搭建环境</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构</title>
-    <url>/2021/09/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="数据-data"><a href="#数据-data" class="headerlink" title="数据(data)"></a>数据(data)</h2><ul>
-<li><p>什么是数据？</p>
-<p>数据就是描述客观事物的符号，可以是字符、数字、视频、音频、图片等。</p>
-</li>
-<li><p>数据有什么特点？</p>
-<ol>
-<li>可以被计算机识别</li>
-<li>可以被计算级操作</li>
-</ol>
-</li>
-</ul>
-<h2 id="数据元素-data-element"><a href="#数据元素-data-element" class="headerlink" title="数据元素(data element)"></a>数据元素(data element)</h2><p>数据元素是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。（也称结点、元素、记录或者顶点）</p>
-<blockquote>
-<p>比如：在畜禽类这个数据中，鸡、鸭、牛、羊就都是是数据元素。</p>
-</blockquote>
-<h2 id="数据项-（date-item）"><a href="#数据项-（date-item）" class="headerlink" title="数据项 （date item）"></a>数据项 （date item）</h2><p>一个数据元素可以由若干个数据项组成</p>
-<blockquote>
-<p>比如：人这样的数据元素可以有鼻子、嘴巴、眼睛、手、脚这样的数据项，也可以有名字、性别、年龄、家庭住址、身份证号这样的数据项。</p>
-</blockquote>
-<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
-<li><p>数据项是不可分割的最小单位</p>
-</li>
-<li><p>通常研究时我们研究的基本单位是数据元素</p>
-<blockquote>
-<p>比如：当我们研究生物时，我们会以猪、牛、羊等数据元素为基本研究单位，而不是以牛的眼睛、牛的尾巴等数据项作为基本单位去研究。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="数据对象-data-object"><a href="#数据对象-data-object" class="headerlink" title="数据对象(data object)"></a>数据对象(data object)</h2><p>​     数据对象是<strong>性质相同</strong>的数据元素的集合，是数据的子集。</p>
-<ul>
-<li><p>什么是性质相同？</p>
-<p>性质相同就是两个数据元素具有相同数量和类型的数据项。</p>
-</li>
-<li><p>数据和数据对象</p>
-<p>由于数据对象是数据的子集，在实际应用中，数据对象往往和数据有相同的性质。在不产生混淆的情况下，我们都将数据对象简称为数据。</p>
-<blockquote>
-<table>
-<thead>
-<tr>
-<th align="center">姓名</th>
-<th align="center">性别</th>
-<th align="center">年龄</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">小明</td>
-<td align="center">男</td>
-<td align="center">12</td>
-</tr>
-<tr>
-<td align="center">小红</td>
-<td align="center">女</td>
-<td align="center">11</td>
-</tr>
-<tr>
-<td align="center">小磊</td>
-<td align="center">男</td>
-<td align="center">13</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">课程名n</th>
-<th align="center">学时</th>
-<th align="center">学分</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">数据结构与算法</td>
-<td align="center">40</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">计算机组成原理</td>
-<td align="center">25</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">操作系统</td>
-<td align="center">20</td>
-<td align="center">4</td>
-</tr>
-</tbody></table>
-<p>两个列表都是数据，两个列表是两个数据对象，列表的每一行都是一个数据元素，每一列都是数据项。</p>
-</blockquote>
-</li>
-</ul>
-<h1 id="数据结构-data-structure"><a href="#数据结构-data-structure" class="headerlink" title="数据结构(data structure)"></a>数据结构(data structure)</h1><p>数据之间都不是完全独立存在的，不同数据之间都特定的关系，这些关系就是<strong>结构</strong></p>
-<ul>
-<li>按照视角的不同，我们可以把数据结构分为<strong>逻辑结构</strong>和<strong>物理结构</strong></li>
-</ul>
-<h2 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h2><p>逻辑结构是数据对象中数据元素之间的相互关系</p>
-<ol>
-<li><p>集合结构</p>
-<p>集合结构中的数据元素除了在一个集合之外，没有任何其他关系。</p>
-<blockquote>
-<p>一些数学中的数字集合，比如数据对象自然数中的是数据元素1、2、3、4、5之间就没有任何和其他的逻辑关系。</p>
-</blockquote>
-</li>
-<li><p>线性结构</p>
-<p>线性结构中的数据元素是一对一的关系。</p>
-</li>
-<li><p>树形结构</p>
-<p>树形结构中的数据元素之间存在一对多的关系。</p>
-</li>
-<li><p>图形结构</p>
-<p>图形结构的是数据元素是多对多的关系。</p>
-</li>
-</ol>
-<h2 id="物理结构-存储结构"><a href="#物理结构-存储结构" class="headerlink" title="物理结构(存储结构)"></a>物理结构(存储结构)</h2><p>物理结构是指如何把数据元素储存在存储器中，因此也叫存储结构。数据的存储结构如何正确的反应数据元素之间的逻辑结构是物理结构的难点和重点。</p>
-<ol>
-<li><p>顺序存储结构</p>
-<p>顺序存储出结构是把数据元素存放在地址连续的存储单元里。</p>
-<blockquote>
-<p>数组的存储结构就是顺序存储结构</p>
-</blockquote>
-</li>
-<li><p>链式存储结构</p>
-<p>链式存储结构是把数据元素存放在任意的存储单元里，这组存储单元可以是连续的也可以是不连续的。</p>
-</li>
-</ol>
-<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><ul>
-<li><p>什么是数据类型？</p>
-<p>数据类型是指一组性质相同的值的集合及定义在此集合上的一些此操作的总称。</p>
-</li>
-<li><p>我们为什么要分出各种数据类型？</p>
-<p>根本原因是内存是十分珍贵的，我们必须以最小的内存存放最多的数据，从而降低成本。</p>
-</li>
-<li><p>数据是如何和被储存到内存当中的？</p>
-<p>要想把数据存储在内存中，必须在内存中开辟出一片空间出来，然后把数据塞到这片空间中，而且这片空间的大小必须大于等于是数据所占用的空间。</p>
-</li>
-<li><p>为什么需要设置各种数据类型？</p>
-<blockquote>
-<p>比如说：养鸡，我们有一个1平方千米的养鸡场。当我们养的鸡的数量比较少时，我们可以随意地把鸡撒到养鸡场里。这个时候养鸡场的空间价值并没有显得那么珍贵。但随着我们养的鸡的数量不断增多，我们不得通过设置篱笆等方式限制鸡的活动范围，从而使养鸡厂里能养更多的鸡。甚至到最后一个鸡一个笼子，大笼子装大鸡，小笼子装小鸡，把养鸡场的空间价值开发到极致。</p>
-</blockquote>
-<p>数据与内存的关系就是到了后期的鸡与养鸡场的关系，每一份内存都十分珍贵。如果我们把一个2字节的数据存放到一片8字节的空间中，这种操作是极为浪费的行为。因此我们为各种类型的数据设置了各种数据类型，把数据存储到对应数据开辟出的空间当中，既不会因为开辟的空间太小导致数据失真，有可以避免开辟的空间太大，造成过多的浪费。</p>
-</li>
-</ul>
-<h2 id="抽象数据类型"><a href="#抽象数据类型" class="headerlink" title="抽象数据类型"></a>抽象数据类型</h2><ul>
-<li><p>抽象是什么？</p>
-<p>抽象是指抽取出事物具有的普遍性的本质。</p>
-</li>
-<li><p>什么是抽象数据类型？</p>
-<p>一个数学学模型及定义在该模型上的是一组操作。</p>
-<blockquote>
-<p>比如：智能手机、PC、平板上都有整型数据，但他们在各种计算机中事务实现方式并不一样，所以这些整型又不完全相同。但由于整型的本质是1、2、3、4 . . . 等整形数据的集合，所以我们可以抽象出整型这个抽象数据类型。这个整型同时代指各个计算机上的整形数据，并且这个数据类型只用考虑其抽象出来的特性，其他特性都被隐藏不用考虑。</p>
-</blockquote>
-<p>当然，抽象数据类型的应用很广，我们甚至可以抽取几个变量的特性进而抽象出一个新的变量。</p>
-<blockquote>
-<p>比如：当我们编写绘图相关的软件的时候，总会有成对出现的x、y变量（代表横坐标轴和纵坐标轴）。为了方便，我们可以定义一个point的抽象数据类型，他有x、y两种整型变量。</p>
-</blockquote>
-</li>
-<li><p>抽象数据类型的核心理念：</p>
-<p>抽象数据类型体现了程序设计中<strong>问题分解</strong>、<strong>抽象</strong>和<strong>信息隐藏</strong>的特性。</p>
-<blockquote>
-<p>抽象数据类型把实际生活中的问题<strong>分解</strong>为多个规模小且容易处理的问题，然后<strong>建立</strong>一个计算机能处理的数据模型，并把每个功能模块的实现细节作为一个独立的单元，从而使具体实现过程<strong>隐藏</strong>起来。</p>
-</blockquote>
-</li>
-</ul>
-<p>​                                                                                                                                 </p>
-<p>​                                                                                                                                                     <strong>——参考资料《大话数据结构》</strong></p>
-]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>数据结构与算法</tag>
+        <tag>规划</tag>
       </tags>
   </entry>
   <entry>
@@ -2184,331 +2023,17 @@
       </tags>
   </entry>
   <entry>
-    <title>计算机硬件的简单学习</title>
-    <url>/2021/07/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="计算机硬件总览"><a href="#计算机硬件总览" class="headerlink" title="计算机硬件总览"></a>计算机硬件总览</h2><p><img src="https://i.loli.net/2021/07/31/T2SMCboJLxkvnzi.jpg"></p>
-<p>*总线：搭建在主板上，数据就是通过总线在各个“设备”之间传递。</p>
-<h2 id="冯·诺伊曼体系结构"><a href="#冯·诺伊曼体系结构" class="headerlink" title="冯·诺伊曼体系结构"></a>冯·诺伊曼体系结构</h2><p><img src="https://i.loli.net/2021/07/31/HrKEZeTph6nbBIw.jpg"></p>
-<p>冯·诺伊曼体系结构是现代计算机的基础，现在大多数计算机仍是基于冯·诺伊曼体系结构，只是做了一些改进而已。冯·诺伊曼也因此被称为“计算机之父”。</p>
-<h2 id="IT行业三大定律"><a href="#IT行业三大定律" class="headerlink" title="IT行业三大定律"></a>IT行业三大定律</h2><ol>
-<li><p>摩尔定律：</p>
-<p>当价格不变时，集成电路上的元器件大约每隔18~24个月便会增加一倍，性能也会增加一倍。</p>
-</li>
-<li><p>安迪·比尔定律：</p>
-<p>当计算机硬件进行更新时，操作系统（软件）也会跟着更新。</p>
-<blockquote>
-<p>ps：这也是为什么我们更换了我们的计算机后，我们并没有感到计算机更加流畅原因。因为操作系统也随着硬件的更新而更新了。</p>
-</blockquote>
-</li>
-<li><p>反摩尔定律：</p>
-<p>一个IT公司如果今天卖出和18个月前同样多的、同样的商品，它的营业额减半。</p>
-</li>
-</ol>
-<blockquote>
-<p>ps：这三大定律其实更像是商业定律，IT行业迭代如此之快，某种意义上也是受了这三大定律的影响。毕竟，如果别的公司遵守这三大定律，而自己的公司不去追赶，早晚会被同行远远甩开。</p>
-</blockquote>
-<h2 id="中央处理器（CPU）"><a href="#中央处理器（CPU）" class="headerlink" title="中央处理器（CPU）"></a>中央处理器（CPU）</h2><p>CPU是计算机的大脑。它从内存中获取指令，然后执行指令。</p>
-<ol>
-<li><p>组成：</p>
-<ul>
-<li>控制单元：从内存中接受指令，并向其他设备、组件发出指令</li>
-<li>算术/逻辑单元：完成对数据的逻辑处理。</li>
-</ul>
-</li>
-<li><p>CPU的速度：CPU的速度用赫兹（Hz）表示，1Hz表示计算机每秒能发射一个电子脉冲（可以理解为高低电压电流，对于CPU来说就是‘０’‘１’信号），速度越快CPU在给定时间内执行的指令就越多。目前CPU的速度一般以千兆赫（ＧＨｚ）作为常用单位。</p>
-</li>
-<li><p>双核ＣＰＵ：</p>
-<p>双核CPU实际上就是两个小CPU组成了一个大CPU，只不过一般把小CPU称为“核”。多核可以提高CPU的处理能力。</p>
-</li>
-</ol>
-<h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h2><h3 id="比特（bit）和字节（byte）"><a href="#比特（bit）和字节（byte）" class="headerlink" title="比特（bit）和字节（byte）"></a>比特（bit）和字节（byte）</h3><ul>
-<li><p>计算机是一系列电路的集合，通过开和关来实现低电压电流（值为0）和高电压电流（值为1）。一个1或一个0存储为1个比特，比特也是计算机最小的存储单位。</p>
-</li>
-<li><p>字节是计算机的最基本存储单位，一个字节由8个连续的比特构成。</p>
-</li>
-<li><p>1千字节（KB）=1024字节（B）</p>
-<p>1兆字节（MB）=1024千字节（KB）</p>
-<p>1千兆字节（GB）=1024兆字节（MB）</p>
-<p>1万亿兆字节（TB）=1024千兆字节（GB）</p>
-</li>
-</ul>
-<h3 id="内存-1"><a href="#内存-1" class="headerlink" title="内存"></a>内存</h3><ul>
-<li><p>内存的特点：</p>
-<ol>
-<li>速度比硬盘快10倍以上，但比CPU慢的多的多。</li>
-<li>只能缓存数据，断电数据就会被清除</li>
-</ol>
-</li>
-<li><p>CPU只在内存中处理数据</p>
-<p>当需要CPU处理数据时，对应的数据会从硬盘中传递到内存中被CPU执行处理</p>
-<blockquote>
-<p>CPU的运算速度比硬盘快的太多，如果在硬盘中处理数据会导致速度奇慢（硬盘太慢了），因此CPU在内存中处理数据</p>
-</blockquote>
-</li>
-<li><p>内存越大与计算机速度越快，但如果内存占有没有饱和，内存增大，计算机速度不会增快。</p>
-</li>
-<li><p>内存的意义：</p>
-<p>相当于为电脑开了一个高速公路，解决了CPU在硬盘中处理数据过于缓慢的问题。</p>
-</li>
-<li><p>内存的每一个字节都对应一个唯一的地址。</p>
-</li>
-</ul>
-<h2 id="存储设备"><a href="#存储设备" class="headerlink" title="存储设备"></a>存储设备</h2><ol>
-<li><p>内存</p>
-<p>速度快，短暂缓存数据，断电即消失</p>
-</li>
-<li><p>硬盘</p>
-<p>速度慢，永久储存数据。</p>
-</li>
-</ol>
-<h2 id="输入输出设备"><a href="#输入输出设备" class="headerlink" title="输入输出设备"></a>输入输出设备</h2><h3 id="输入设备"><a href="#输入设备" class="headerlink" title="输入设备"></a>输入设备</h3><ul>
-<li>键盘</li>
-<li>鼠标</li>
-</ul>
-<h3 id="输出设备"><a href="#输出设备" class="headerlink" title="输出设备"></a>输出设备</h3><ul>
-<li>显示器</li>
-<li>打印机</li>
-<li>音箱</li>
-</ul>
-<h2 id="通信设备"><a href="#通信设备" class="headerlink" title="通信设备"></a>通信设备</h2><p>用于联网</p>
-<ul>
-<li>拨号调制解调器</li>
-<li>DSL（数字用户线）</li>
-<li>电缆调制解调器</li>
-<li>网络接口卡</li>
-<li>无线网络</li>
-</ul>
-]]></content>
-      <categories>
-        <category>计算机组成原理</category>
-      </categories>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>计算机组成原理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java SE学习规划</title>
-    <url>/2021/07/28/Java-SE%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
-<p>前言：</p>
-<p>本篇文章尚未完善,不具备参考价值</p>
-<p>持续更新中 . . .</p>
-</blockquote>
-<h1 id="Java的相关基础概念"><a href="#Java的相关基础概念" class="headerlink" title="Java的相关基础概念"></a>Java的相关基础概念</h1><h2 id="简单的计算机组成原理（计算机硬件）"><a href="#简单的计算机组成原理（计算机硬件）" class="headerlink" title="简单的计算机组成原理（计算机硬件）"></a>简单的计算机组成原理（计算机硬件）</h2><ol>
-<li>计算机硬件组成</li>
-<li>CPU</li>
-<li>储存设备</li>
-<li>bit与byte</li>
-<li>内存</li>
-<li>输入输出设备</li>
-<li>网络连接设备</li>
-</ol>
-<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><h2 id="图形画面操作与命令行操作"><a href="#图形画面操作与命令行操作" class="headerlink" title="图形画面操作与命令行操作"></a>图形画面操作与命令行操作</h2><ol>
-<li>图形画面操作</li>
-<li>命令行操作</li>
-<li>常用dos命令行指令</li>
-</ol>
-<h1 id="Java前期准备"><a href="#Java前期准备" class="headerlink" title="Java前期准备"></a>Java前期准备</h1><h2 id="Java语言的特点"><a href="#Java语言的特点" class="headerlink" title="Java语言的特点"></a>Java语言的特点</h2><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><ol>
-<li>JRE、JDK、JVM关系于介绍</li>
-<li>安装JDK</li>
-<li>配置环境变量</li>
-</ol>
-<h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><ol>
-<li>java文档的建立</li>
-<li>java文档的编译和运行</li>
-<li>一些环境变量的配置</li>
-</ol>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
-<li>单行注释与多行注释</li>
-<li>文档注释</li>
-</ol>
-<h2 id="Java的一些开发工具"><a href="#Java的一些开发工具" class="headerlink" title="Java的一些开发工具"></a>Java的一些开发工具</h2><h1 id="Java基本语法"><a href="#Java基本语法" class="headerlink" title="Java基本语法"></a>Java基本语法</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ol>
-<li>整型</li>
-<li>浮点类型</li>
-<li>char类型</li>
-<li>Unicode和char类型</li>
-<li>boolean类型</li>
-</ol>
-<h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ol>
-<li>声明变量</li>
-<li>变量初始化</li>
-<li>常量</li>
-<li>枚举类型</li>
-</ol>
-<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><ol>
-<li>算术运算符</li>
-<li>数学学函数与常量</li>
-<li>数值类型之间的展缓</li>
-<li>强制类型转换</li>
-<li>结合赋值和运算符</li>
-<li>自增与自减运算符</li>
-<li>关系和boolean运算符</li>
-<li>位运算符</li>
-<li>括号与运算符级别</li>
-</ol>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ol>
-<li>子串</li>
-<li>拼接</li>
-<li>不可变字符串穿</li>
-<li>检测字符串是否相等</li>
-<li>空串与Null串</li>
-<li>码点与代码单元</li>
-<li>String API</li>
-<li>阅读联机API文档</li>
-<li>构建字符串</li>
-</ol>
-<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><ol>
-<li>读取输入</li>
-<li>格式化输出</li>
-<li>文件输入与输出</li>
-</ol>
-<h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><ol>
-<li>块作用域</li>
-<li>条件语句</li>
-<li>循环</li>
-<li>确定循环</li>
-<li>多重选择：switch语句</li>
-<li>终断控制流程的语句</li>
-</ol>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><ol>
-<li><p>Eclipse</p>
-</li>
-<li><p>数组</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">二维数组</span><br><span class="line">数组内存解析</span><br><span class="line">数组初始化</span><br><span class="line">数组元素的调用</span><br><span class="line">数组（元素）赋值</span><br><span class="line">数组的复制</span><br><span class="line">数组元素的反转</span><br><span class="line">简单的数组算法</span><br><span class="line">  1. 线性查找</span><br><span class="line">  2. 二分法查找</span><br><span class="line">  3. 排序</span><br><span class="line">  4. 冒泡法排序</span><br><span class="line">  5. 快速排序</span><br><span class="line"> *6. 排序算法的横向对比</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><ol>
-<li>类的结构</li>
-<li>类和对象的创建</li>
-<li>类的多个对象的关系</li>
-<li>对象的内存解析</li>
-</ol>
-<h2 id="三大特性"><a href="#三大特性" class="headerlink" title="三大特性"></a>三大特性</h2><h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h1 id="应用程序开发"><a href="#应用程序开发" class="headerlink" title="应用程序开发"></a>应用程序开发</h1><h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h2><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h2 id="IO-NIO"><a href="#IO-NIO" class="headerlink" title="IO/NIO"></a>IO/NIO</h2><h2 id="类库"><a href="#类库" class="headerlink" title="类库"></a>类库</h2><h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据结构与算法的简单规划</title>
-    <url>/2021/07/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="数据结构的的基本概念与术语"><a href="#数据结构的的基本概念与术语" class="headerlink" title="数据结构的的基本概念与术语"></a>数据结构的的基本概念与术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
-<li>数据</li>
-<li>数据元素</li>
-<li>数据项</li>
-<li>数据对象</li>
-<li>数据结构</li>
-</ol>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><ol>
-<li>逻辑结构</li>
-<li>物理结构</li>
-</ol>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ol>
-<li>数据类型</li>
-<li>抽象数据类型</li>
-</ol>
-<h2 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a>算法的基本概念</h2><h3 id="算法与数据结构"><a href="#算法与数据结构" class="headerlink" title="算法与数据结构"></a>算法与数据结构</h3><h3 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h3><h3 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h3><h3 id="算法设计的要求"><a href="#算法设计的要求" class="headerlink" title="算法设计的要求"></a>算法设计的要求</h3><h3 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><h3 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h3><h3 id="串"><a href="#串" class="headerlink" title="串"></a>串</h3><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续  . . ."></a>未完待续  . . .</h2><p>持续更新，未完待续，本规划参考《大话数据结构》</p>
-]]></content>
-      <categories>
-        <category>数据结构与算法</category>
-      </categories>
-      <tags>
-        <tag>规划</tag>
-        <tag>数据结构与算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>编译运行一个简单的Java程序&quot;Hello XX&quot;</title>
-    <url>/2021/07/24/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84Java%E7%A8%8B%E5%BA%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
-<p>前言：</p>
-<p>java有些高级编译器用着是是非常方便的，但是对于初学者并不建议使用。编程过程中很多东西都会由高级编译器自动生成，不利于初学者对于底层原理的理解和手感的锻炼。所以建议初学者只用记事本和命令行进行初期的学习，不要嫌low，这对初学者的学习很有何好处。</p>
-</blockquote>
-<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="打开记事本"><a href="#打开记事本" class="headerlink" title="打开记事本"></a>打开记事本</h2><p>打开Windows开始界面–&gt;Windows附件–&gt;记事本</p>
-<p><img src="https://i.loli.net/2021/07/24/T4j3Qgrmxklpou6.jpg" alt="text"></p>
-<h2 id="写一个简单的代码"><a href="#写一个简单的代码" class="headerlink" title="写一个简单的代码"></a>写一个简单的代码</h2><p><img src="https://i.loli.net/2021/07/24/JsE95o2uUgTkyOp.jpg" alt="java"></p>
-<p>代码看不懂没关系西，以后总会看懂的 ! </p>
-<h2 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h2><p><img src="https://i.loli.net/2021/07/24/EJ3p9jyqVaIYAxw.jpg" alt="s"></p>
-<p>文件名：xxx.java</p>
-<p>编码要调到ANSI</p>
-<h1 id="打开命令行进行操作（敲黑板！！！）"><a href="#打开命令行进行操作（敲黑板！！！）" class="headerlink" title="打开命令行进行操作（敲黑板！！！）"></a>打开命令行进行操作（敲黑板！！！）</h1><p><img src="https://i.loli.net/2021/07/24/5feq7gFJo8dYST1.jpg"></p>
-<p><img src="https://i.loli.net/2021/07/24/V2W8kyxwnXQ1Y4h.jpg"></p>
-<ol>
-<li><p>cd到java文档存储的目录</p>
-</li>
-<li><p>使用javac程序对java文档进行编译</p>
-<p>语法：javac 文档名.java</p>
-<p>得到class文件，如图：</p>
-<p><img src="https://i.loli.net/2021/07/24/fMvcnLzK7yXsilS.jpg" alt="class"></p>
-</li>
-<li><p>使用java程序运行class文件</p>
-</li>
-<li><p>退到D盘我们再执行class文件，发现找不到文件。</p>
-<p>这是因为我们没有配置class文件的环境变量，为了让我们可以在任何路径执行class文件，我们需要配置classpath环境变量。</p>
-</li>
-<li><p>配置临时环境变量</p>
-<ul>
-<li><p>为什么要配置”临时”环境变量？</p>
-<p>java开发工具包一般存放在固定的文件夹里，所以我们只需要配置系统环境变量，并且平时几乎不需要改动。</p>
-<p>但是class文件我们一般并不是存储在一个目录（文件夹）里。这次此我们要执行A目录里的class文件，下一次我们就可能要执行B目录里的文件，总是对系统环境变量改来改去不仅麻烦而且容易遗忘。</p>
-<p>所以我们需要通过配置临时环境变量应对这种情况。</p>
-</li>
-<li><p>如何配置临时环境变量？</p>
-<p>以下指令可以在任意目录下执行：<br>//查看所有环境变量</p>
-<p>set</p>
-<p>//查看某个环境变量</p>
-<p>set Path</p>
-<p>//定义某个环境变量</p>
-<p>set classpath=路径</p>
-<p>//清除环境变量</p>
-<p>set classpath=</p>
-</li>
-<li><p>临时配置环境变量有什么特点？</p>
-<ol>
-<li>它实际上并不会改变系统的环境变量</li>
-<li>只临时起作用，命令行窗口关闭后所有设置全部清零</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>在D盘运行class文件</p>
-</li>
-<li><p>清楚classpath变量，并在D盘建立一个新的java文档并编译</p>
-<p><img src="https://i.loli.net/2021/07/24/lo2PkRQrcN6HdUA.jpg" alt="java"></p>
-<p><img src="https://i.loli.net/2021/07/24/VFwyWNLKcgT2CHP.jpg" alt="D"></p>
-</li>
-<li><p>在D盘运行Hello文件</p>
-</li>
-<li><p>分别以两种方式设置临时环境变量，并进行以下测试：</p>
-<ol>
-<li><p>设置classpath=路径；，执行Hello文件，删除”路径“中的class文件，并执行Hello文件</p>
-</li>
-<li><p>清除classpath，设置classpath=路径，执行Hello文件</p>
-</li>
-</ol>
-<ul>
-<li><p>测试结果的原理：<br>调用Java从程序执行class文件时，虚拟机会想寻找classpath中存储的目录下的class文件，之后分三种情况：</p>
-<ol>
-<li><p>没有设置classpath环境变量：</p>
-<p>直接在当前目录下寻找对应的class文件，有则运行，没有则”报错“。</p>
-</li>
-<li><p>设置了classpath=路径；</p>
-<p>虚拟机先查看存储在classpath中的目录下的class文件，若有则执行，若没有则查看当前目录下的class文件，若有则执行，若无则“报错”。</p>
-</li>
-<li><p>设置了classpath=路径</p>
-<p>虚拟机先查看存储在classpath中的目录下的class文件，若有则执行，若没有则 “报错”。</p>
-</li>
-</ol>
-</li>
-<li><p>*注：一般推荐使用 classpath=路径 的环境配置方式</p>
-</li>
-</ul>
-</li>
-</ol>
-]]></content>
+    <title>java语言的特点</title>
+    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
+<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
+<h3 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h3><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
+<p>ps：JVM是不能跨平台的</p>
+<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
+<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
+<p>C++应用程序的执行过程（从右往左）</p>
+<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -2584,61 +2109,6 @@
       <tags>
         <tag>java</tag>
         <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>java语言的特点</title>
-    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
-<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
-<h3 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h3><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
-<p>ps：JVM是不能跨平台的</p>
-<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
-<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
-<p>C++应用程序的执行过程（从右往左）</p>
-<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DOS命令行的简单操作</title>
-    <url>/2021/07/19/DOS%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="Dos命令行的作用"><a href="#Dos命令行的作用" class="headerlink" title="Dos命令行的作用"></a>Dos命令行的作用</h2><p>通过在控制台输入特定指令使计算机完成一些操作，实现人机交互。</p>
-<h2 id="打开控制台"><a href="#打开控制台" class="headerlink" title="打开控制台"></a>打开控制台</h2><p>开始+R打开快捷运行窗口，输入cmd打开控制台。</p>
-<p><img src="https://i.loli.net/2021/07/19/UAZIDxrnsKVYtpw.jpg" alt="控制台"></p>
-<h2 id="常见Dos命令行"><a href="#常见Dos命令行" class="headerlink" title="常见Dos命令行"></a>常见Dos命令行</h2><h4 id="打开当前目录"><a href="#打开当前目录" class="headerlink" title="打开当前目录"></a>打开当前目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">dir</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">列出当前目录下的文件和和文件夹。</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/07/19/wJghOLvdmNyX18Q.jpg" alt="dir"></p>
-<h4 id="创建新文件夹"><a href="#创建新文件夹" class="headerlink" title="创建新文件夹"></a>创建新文件夹</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">md</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">在当前目录新建文件夹</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/07/19/aX73l9xEOyFQiSW.jpg" alt="md"></p>
-<p><img src="https://i.loli.net/2021/07/19/DJYkxZCnpavQbrc.jpg" alt="md"></p>
-<h4 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">rd</span><br><span class="line">del</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">删除当前目录下的空文件夹</span><br><span class="line">删除当前目录下的文件或者清空文件夹</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/07/19/XMp1HDtzyrGA5cE.jpg" alt="rd"></p>
-<p><img src="https://i.loli.net/2021/07/19/FjOspAvorzPh3Lc.jpg" alt="del"></p>
-<h4 id="进入文件夹"><a href="#进入文件夹" class="headerlink" title="进入文件夹"></a>进入文件夹</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法：</span></span><br><span class="line">cd</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">进入文件</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/07/19/iXraNLjwC4Rv2gq.jpg" alt="进入D盘"></p>
-<p><img src="https://i.loli.net/2021/07/19/xoP2Yf71DcyIeGQ.jpg" alt="进入文件夹"></p>
-<p><img src="https://i.loli.net/2021/07/19/x9CauovqGc23wF1.jpg" alt="cd \ "></p>
-<p>)</p>
-<h4 id="返回上一级目录"><a href="#返回上一级目录" class="headerlink" title="返回上一级目录"></a>返回上一级目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法：</span></span><br><span class="line">cd..</span><br><span class="line">cd\</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">返回上一级目录</span><br><span class="line">返回主根目录</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/07/19/isV14gIWtjDwKBq.jpg" alt="cd..."></p>
-<p><img src="https://i.loli.net/2021/07/19/BitazJ3Yhf9MuS7.jpg" alt="cd \ "></p>
-<h4 id="退出dos命令行控制台"><a href="#退出dos命令行控制台" class="headerlink" title="退出dos命令行控制台"></a>退出dos命令行控制台</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line">exit</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">退出控制台</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/07/19/6bXLPRAMredIHQS.jpg" alt="exit"></p>
-]]></content>
-      <tags>
-        <tag>DOS命令行</tag>
       </tags>
   </entry>
   <entry>
@@ -3077,6 +2547,552 @@
       </categories>
       <tags>
         <tag>搭建博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>声明</title>
+    <url>/2021/07/17/%E5%A3%B0%E6%98%8E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="声明："><a href="#声明：" class="headerlink" title="声明："></a>声明：</h2><p>本博客的所有规划类文章都是以博主的现实情况为根据而写的。每个人的实际情况都是不同的，所以这类文章对小伙伴们只有参考价值，切勿照搬。</p>
+<p>每个人都是独一无二的个体，都有着自己的发展路线。不同的性格也没有高下之分，外向、活泼的人可以通过情商走向成功；内向、老实的人可以通过脚踏实地、不断钻研走向成功。每个人都有适合自己的路，不应该照搬别人的方法。</p>
+<p>规划是为自己做的，为自己做规划要时刻问自己：”这是否适合自己 ?”，千万不要做出”内向的人走了情商路线”这样本末倒置的事。</p>
+<p>比如说：</p>
+<p>博主抗压能力比较强（这个由于生长环境缘故 ）。对于博主来说每天敲6、7个小时代码，偶尔通宵都问题不大。但对于比较适合劳逸结合的人来说，一昧追求数量的累积反而会降低效率，甚至危害健康，得不偿失。</p>
+]]></content>
+      <categories>
+        <category>前言</category>
+      </categories>
+      <tags>
+        <tag>声明</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何解决Win 10环境变量配置时Path变量只显示一行的问题</title>
+    <url>/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
+<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
+<p>修改环境变量的时候特别麻烦。</p>
+<h2 id="Win-10的版本"><a href="#Win-10的版本" class="headerlink" title="Win 10的版本"></a>Win 10的版本</h2><p>到了Win 10版本后，这个问题就得到了解决</p>
+<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg"></p>
+<p>变量的显示不再是一行，而是变成了列表形式。</p>
+<h2 id="Win-10又更新了"><a href="#Win-10又更新了" class="headerlink" title="Win 10又更新了"></a>Win 10又更新了</h2><p>但后来，再次打开了环境变量，他又变成了原来的样子 -_-</p>
+<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
+<p>而实际上，并不是又回到了原来的版本，只是Win 10在更新后同时兼顾了两种查看方式。</p>
+<ul>
+<li><p>当%xxxxx%这种变量放在第一个时，就会按照第一行显示</p>
+</li>
+<li><p>当路径变量放在第一行时，就会按照列表显示。</p>
+<p><img src="https://i.loli.net/2021/09/07/XDrNMRWa217bjnJ.jpg"></p>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2021/09/07/ABe3Kvna2QLuhNz.jpg"></p>
+<p><img src="https://i.loli.net/2021/09/07/gy5Pv49reJSQnRj.jpg"></p>
+]]></content>
+      <categories>
+        <category>踩坑小记录</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>搭建环境</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/2021/09/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="数据-data"><a href="#数据-data" class="headerlink" title="数据(data)"></a>数据(data)</h2><ul>
+<li><p>什么是数据？</p>
+<p>数据就是描述客观事物的符号，可以是字符、数字、视频、音频、图片等。</p>
+</li>
+<li><p>数据有什么特点？</p>
+<ol>
+<li>可以被计算机识别</li>
+<li>可以被计算级操作</li>
+</ol>
+</li>
+</ul>
+<h2 id="数据元素-data-element"><a href="#数据元素-data-element" class="headerlink" title="数据元素(data element)"></a>数据元素(data element)</h2><p>数据元素是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。（也称结点、元素、记录或者顶点）</p>
+<blockquote>
+<p>比如：在畜禽类这个数据中，鸡、鸭、牛、羊就都是是数据元素。</p>
+</blockquote>
+<h2 id="数据项-（date-item）"><a href="#数据项-（date-item）" class="headerlink" title="数据项 （date item）"></a>数据项 （date item）</h2><p>一个数据元素可以由若干个数据项组成</p>
+<blockquote>
+<p>比如：人这样的数据元素可以有鼻子、嘴巴、眼睛、手、脚这样的数据项，也可以有名字、性别、年龄、家庭住址、身份证号这样的数据项。</p>
+</blockquote>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
+<li><p>数据项是不可分割的最小单位</p>
+</li>
+<li><p>通常研究时我们研究的基本单位是数据元素</p>
+<blockquote>
+<p>比如：当我们研究生物时，我们会以猪、牛、羊等数据元素为基本研究单位，而不是以牛的眼睛、牛的尾巴等数据项作为基本单位去研究。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="数据对象-data-object"><a href="#数据对象-data-object" class="headerlink" title="数据对象(data object)"></a>数据对象(data object)</h2><p>​     数据对象是<strong>性质相同</strong>的数据元素的集合，是数据的子集。</p>
+<ul>
+<li><p>什么是性质相同？</p>
+<p>性质相同就是两个数据元素具有相同数量和类型的数据项。</p>
+</li>
+<li><p>数据和数据对象</p>
+<p>由于数据对象是数据的子集，在实际应用中，数据对象往往和数据有相同的性质。在不产生混淆的情况下，我们都将数据对象简称为数据。</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">姓名</th>
+<th align="center">性别</th>
+<th align="center">年龄</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">小明</td>
+<td align="center">男</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">小红</td>
+<td align="center">女</td>
+<td align="center">11</td>
+</tr>
+<tr>
+<td align="center">小磊</td>
+<td align="center">男</td>
+<td align="center">13</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">课程名n</th>
+<th align="center">学时</th>
+<th align="center">学分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">数据结构与算法</td>
+<td align="center">40</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">计算机组成原理</td>
+<td align="center">25</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">操作系统</td>
+<td align="center">20</td>
+<td align="center">4</td>
+</tr>
+</tbody></table>
+<p>两个列表都是数据，两个列表是两个数据对象，列表的每一行都是一个数据元素，每一列都是数据项。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="数据结构-data-structure"><a href="#数据结构-data-structure" class="headerlink" title="数据结构(data structure)"></a>数据结构(data structure)</h1><p>数据之间都不是完全独立存在的，不同数据之间都特定的关系，这些关系就是<strong>结构</strong></p>
+<ul>
+<li>按照视角的不同，我们可以把数据结构分为<strong>逻辑结构</strong>和<strong>物理结构</strong></li>
+</ul>
+<h2 id="逻辑结构"><a href="#逻辑结构" class="headerlink" title="逻辑结构"></a>逻辑结构</h2><p>逻辑结构是数据对象中数据元素之间的相互关系</p>
+<ol>
+<li><p>集合结构</p>
+<p>集合结构中的数据元素除了在一个集合之外，没有任何其他关系。</p>
+<blockquote>
+<p>一些数学中的数字集合，比如数据对象自然数中的是数据元素1、2、3、4、5之间就没有任何和其他的逻辑关系。</p>
+</blockquote>
+</li>
+<li><p>线性结构</p>
+<p>线性结构中的数据元素是一对一的关系。</p>
+</li>
+<li><p>树形结构</p>
+<p>树形结构中的数据元素之间存在一对多的关系。</p>
+</li>
+<li><p>图形结构</p>
+<p>图形结构的是数据元素是多对多的关系。</p>
+</li>
+</ol>
+<h2 id="物理结构-存储结构"><a href="#物理结构-存储结构" class="headerlink" title="物理结构(存储结构)"></a>物理结构(存储结构)</h2><p>物理结构是指如何把数据元素储存在存储器中，因此也叫存储结构。数据的存储结构如何正确的反应数据元素之间的逻辑结构是物理结构的难点和重点。</p>
+<ol>
+<li><p>顺序存储结构</p>
+<p>顺序存储出结构是把数据元素存放在地址连续的存储单元里。</p>
+<blockquote>
+<p>数组的存储结构就是顺序存储结构</p>
+</blockquote>
+</li>
+<li><p>链式存储结构</p>
+<p>链式存储结构是把数据元素存放在任意的存储单元里，这组存储单元可以是连续的也可以是不连续的。</p>
+</li>
+</ol>
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><ul>
+<li><p>什么是数据类型？</p>
+<p>数据类型是指一组性质相同的值的集合及定义在此集合上的一些此操作的总称。</p>
+</li>
+<li><p>我们为什么要分出各种数据类型？</p>
+<p>根本原因是内存是十分珍贵的，我们必须以最小的内存存放最多的数据，从而降低成本。</p>
+</li>
+<li><p>数据是如何和被储存到内存当中的？</p>
+<p>要想把数据存储在内存中，必须在内存中开辟出一片空间出来，然后把数据塞到这片空间中，而且这片空间的大小必须大于等于是数据所占用的空间。</p>
+</li>
+<li><p>为什么需要设置各种数据类型？</p>
+<blockquote>
+<p>比如说：养鸡，我们有一个1平方千米的养鸡场。当我们养的鸡的数量比较少时，我们可以随意地把鸡撒到养鸡场里。这个时候养鸡场的空间价值并没有显得那么珍贵。但随着我们养的鸡的数量不断增多，我们不得通过设置篱笆等方式限制鸡的活动范围，从而使养鸡厂里能养更多的鸡。甚至到最后一个鸡一个笼子，大笼子装大鸡，小笼子装小鸡，把养鸡场的空间价值开发到极致。</p>
+</blockquote>
+<p>数据与内存的关系就是到了后期的鸡与养鸡场的关系，每一份内存都十分珍贵。如果我们把一个2字节的数据存放到一片8字节的空间中，这种操作是极为浪费的行为。因此我们为各种类型的数据设置了各种数据类型，把数据存储到对应数据开辟出的空间当中，既不会因为开辟的空间太小导致数据失真，有可以避免开辟的空间太大，造成过多的浪费。</p>
+</li>
+</ul>
+<h2 id="抽象数据类型"><a href="#抽象数据类型" class="headerlink" title="抽象数据类型"></a>抽象数据类型</h2><ul>
+<li><p>抽象是什么？</p>
+<p>抽象是指抽取出事物具有的普遍性的本质。</p>
+</li>
+<li><p>什么是抽象数据类型？</p>
+<p>一个数学学模型及定义在该模型上的是一组操作。</p>
+<blockquote>
+<p>比如：智能手机、PC、平板上都有整型数据，但他们在各种计算机中事务实现方式并不一样，所以这些整型又不完全相同。但由于整型的本质是1、2、3、4 . . . 等整形数据的集合，所以我们可以抽象出整型这个抽象数据类型。这个整型同时代指各个计算机上的整形数据，并且这个数据类型只用考虑其抽象出来的特性，其他特性都被隐藏不用考虑。</p>
+</blockquote>
+<p>当然，抽象数据类型的应用很广，我们甚至可以抽取几个变量的特性进而抽象出一个新的变量。</p>
+<blockquote>
+<p>比如：当我们编写绘图相关的软件的时候，总会有成对出现的x、y变量（代表横坐标轴和纵坐标轴）。为了方便，我们可以定义一个point的抽象数据类型，他有x、y两种整型变量。</p>
+</blockquote>
+</li>
+<li><p>抽象数据类型的核心理念：</p>
+<p>抽象数据类型体现了程序设计中<strong>问题分解</strong>、<strong>抽象</strong>和<strong>信息隐藏</strong>的特性。</p>
+<blockquote>
+<p>抽象数据类型把实际生活中的问题<strong>分解</strong>为多个规模小且容易处理的问题，然后<strong>建立</strong>一个计算机能处理的数据模型，并把每个功能模块的实现细节作为一个独立的单元，从而使具体实现过程<strong>隐藏</strong>起来。</p>
+</blockquote>
+</li>
+</ul>
+<p>​                                                                                                                                 </p>
+<p>​                                                                                                                                                     <strong>——参考资料《大话数据结构》</strong></p>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构与算法的简单规划</title>
+    <url>/2021/07/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="数据结构的的基本概念与术语"><a href="#数据结构的的基本概念与术语" class="headerlink" title="数据结构的的基本概念与术语"></a>数据结构的的基本概念与术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><ol>
+<li>数据</li>
+<li>数据元素</li>
+<li>数据项</li>
+<li>数据对象</li>
+<li>数据结构</li>
+</ol>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><ol>
+<li>逻辑结构</li>
+<li>物理结构</li>
+</ol>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ol>
+<li>数据类型</li>
+<li>抽象数据类型</li>
+</ol>
+<h2 id="算法的基本概念"><a href="#算法的基本概念" class="headerlink" title="算法的基本概念"></a>算法的基本概念</h2><h3 id="算法与数据结构"><a href="#算法与数据结构" class="headerlink" title="算法与数据结构"></a>算法与数据结构</h3><h3 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h3><h3 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h3><h3 id="算法设计的要求"><a href="#算法设计的要求" class="headerlink" title="算法设计的要求"></a>算法设计的要求</h3><h3 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><h3 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h3><h3 id="串"><a href="#串" class="headerlink" title="串"></a>串</h3><h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><h3 id="图"><a href="#图" class="headerlink" title="图"></a>图</h3><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续  . . ."></a>未完待续  . . .</h2><p>持续更新，未完待续，本规划参考《大话数据结构》</p>
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>规划</tag>
+        <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>算法</title>
+    <url>/2021/09/08/%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h2><p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列。并且每条指令表示一个或多个操作。</p>
+<h3 id="为什么要学习更加优秀的算法？"><a href="#为什么要学习更加优秀的算法？" class="headerlink" title="为什么要学习更加优秀的算法？"></a>为什么要学习更加优秀的算法？</h3><p>在此之前先讲一个伟大数学家高斯关于算法的故事：</p>
+<blockquote>
+<p>据说18世纪生于德国小村庄的高斯，上小学的一天，课堂很乱，老师非常生气。于是老师在放学时，就要求每个学生都计算1+2+3+···+100的结果，谁先算出来谁先回家。</p>
+<p>天才当然不会被这样的问题难倒，高斯很快就的处理了答案，是5050.老师非常惊讶，因为他自己也是通过1+2=3，3+3=6,6+4=10, ······，4950+100=5050这样算出来的，也算了很久很久，怕算错，还算了两三遍。可眼前这个少年，一个上小学的孩子为何可以这么快的得出结果？</p>
+<p>高斯解释道：sum=1+2+3+···+99+100</p>
+<p>​                     sum=100+99+98+···+2+1</p>
+<p>​                     2 x sum=101+101+101+···+101=101 x 100=10100</p>
+<p>​                     sum=5050                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </p>
+</blockquote>
+<p>这里老师和高斯就用了两种算法：</p>
+<p>老师的算法：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>,n=<span class="number">100</span>;</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    sum=sum+i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,sum);</span><br></pre></td></tr></table></figure>
+
+<p>高斯的算法：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>,n=<span class="number">100</span>;</span><br><span class="line">sum=(<span class="number">1</span>+n)*n/<span class="number">2</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,sum);</span><br></pre></td></tr></table></figure>
+
+<p>很明显，高斯的算法比老师的算法要好得多，尤其是当n的值越来越大时，高斯的算法简直是对老师算法降维打击。</p>
+<p>现在我们回到主题：<strong>为什么我们要学习更加优秀的算法？</strong></p>
+<p>很简单，节约算力。</p>
+<p>众所周知，计算机的算力要远远强于人类。但如果把n的值换成100亿，计算机用老师的算法，我们用高斯的算法，谁算的更快呢？很显然我们能够轻松地在两三分钟内算出结果，而计算机很可能算一年也算不出来，甚至可能直接嗝屁。</p>
+<p>所以说，一个优秀的算法能够让我们用有限的算力处理更复杂的问题，而且往往越秀的算法往往对垃圾算法是降维打击的。</p>
+<h2 id="算法的特性"><a href="#算法的特性" class="headerlink" title="算法的特性"></a>算法的特性</h2><p>算法有五个基本特性：<strong>输入</strong>、<strong>输出</strong>、<strong>有穷性</strong>、<strong>确定性</strong>和<strong>可行性</strong></p>
+<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><ul>
+<li><p>算法有零个或者多个输入</p>
+</li>
+<li><p>算法至少有一个或者多个输出</p>
+<p>这个输出值可以是打印输出，也可以是返回一个或多个值。</p>
+</li>
+</ul>
+<h3 id="有穷性"><a href="#有穷性" class="headerlink" title="有穷性"></a>有穷性</h3><p>指算法在执行有限的步骤后，自动结束而不会出现无限循环，并且每一个步骤在可接受的时间内完成。</p>
+<h3 id="确定性"><a href="#确定性" class="headerlink" title="确定性"></a>确定性</h3><p>算法的每一步骤都具有确定的含义，不会出现二义性。</p>
+<h3 id="可行性"><a href="#可行性" class="headerlink" title="可行性"></a>可行性</h3><p>算法的每一步都必须是可行的，也就是说，每一步都能够通过执行有限次数完成</p>
+<h2 id="算法的设计要求"><a href="#算法的设计要求" class="headerlink" title="算法的设计要求"></a>算法的设计要求</h2><p>我们要尽可能地去写一些好的算法，然而什么是好的算法呢？</p>
+<p>好的算法一般具有<strong>正确性</strong>、<strong>可读性</strong>、<strong>健壮性</strong>、<strong>时间效率高</strong>和<strong>存储量低</strong>的特点。</p>
+<h3 id="正确性"><a href="#正确性" class="headerlink" title="正确性"></a>正确性</h3><p>算法的正确性是指算法至少应该具有输入、输出和加工处理无歧义性能正确反应web提的需求，能够i要得到问题的正确答案。</p>
+<ul>
+<li>算法正确性的级别：<ol>
+<li>算法程序的语法没有错误</li>
+<li>算法程序对于合法的输入数据能够得到满足需求的输出结果</li>
+<li>算法程序对于非法的输入数据能够给出错误说明</li>
+<li>算法程序对于精心选择的、刁钻的测试数据都能给出满足需求的输出结果</li>
+</ol>
+</li>
+<li>一般我们对算法正确性的要求？<br>算法正确性的四个级别，第一层是最容易做到的，第四层是最难做到的。通常我们如果要写出第四层的算法会消耗大量的时间和精力。因此，综合考虑，一般情况下，我们把第三层作为一个算法是否正确的标准。</li>
+</ul>
+<h3 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h3><p>算法设计的另一目的是为了便于理解阅读和交流。</p>
+<p>算法不仅需要让自己读懂，而且需要让别人读懂。</p>
+<h3 id="健壮性"><a href="#健壮性" class="headerlink" title="健壮性"></a>健壮性</h3><p>健壮性指当输入数据不合法时，算法也能做出相应处理，而不是运行异常，或者输出莫名其妙的结果。</p>
+<h3 id="时间效率高和存储量低"><a href="#时间效率高和存储量低" class="headerlink" title="时间效率高和存储量低"></a>时间效率高和存储量低</h3><p> 好的算法应该具有时间效率高和存储量低的特性。</p>
+<h2 id="算法效率的度量方法"><a href="#算法效率的度量方法" class="headerlink" title="算法效率的度量方法"></a>算法效率的度量方法</h2><h3 id="事后统计法"><a href="#事后统计法" class="headerlink" title="事后统计法"></a>事后统计法</h3><p>事后统计法是指通过设计好的程序和数据来对不同的算法进行测试，比较它们运行的时间的多少。</p>
+<ul>
+<li>事后统计法的缺点：<ol>
+<li>必须把算法写出来后才能直达票算法的效率，如果算法不符合要求，写算法花费的工夫就会竹篮打水一场空。</li>
+<li>运行时间不完全依赖于算法，还和软件、操作系统、编译器等因素有关。甚至同一台计算机不同时候测试同一个算法，得到的运行时间也是不完全相同的，因为运行时间还和内存的占用情况相关。因此，测出的时间有时并不能反映什么。</li>
+<li>算法的测试数据实际困难，不同算法间运行速度的差异往往与数据规模有关。比如果我们要将0随机数排序，那么无论我们用任何算法，运行时间几乎都差不多。而如果给一百万个随机数排列，不同算法之间差异会很大，而且有些算法对CPU相当不友好0.0!</li>
+</ol>
+</li>
+</ul>
+<h3 id="事前分析估算法"><a href="#事前分析估算法" class="headerlink" title="事前分析估算法"></a>事前分析估算法</h3><ul>
+<li><p>一个高级语言编译的程序运行时间取决于哪些因素？</p>
+<ol>
+<li>算法采用的方法、策略</li>
+<li>编译产生的代码的质量</li>
+<li>问题的输入规模</li>
+<li>机器执行指令的速度</li>
+</ol>
+</li>
+</ul>
+<h2 id="函数的渐近增长"><a href="#函数的渐近增长" class="headerlink" title="函数的渐近增长"></a>函数的渐近增长</h2><h2 id="算法的时间复杂度"><a href="#算法的时间复杂度" class="headerlink" title="算法的时间复杂度"></a>算法的时间复杂度</h2><h3 id="算法时间复杂度定义"><a href="#算法时间复杂度定义" class="headerlink" title="算法时间复杂度定义"></a>算法时间复杂度定义</h3><h3 id="推导大O阶方法"><a href="#推导大O阶方法" class="headerlink" title="推导大O阶方法"></a>推导大<em>O</em>阶方法</h3><h3 id="常数阶"><a href="#常数阶" class="headerlink" title="常数阶"></a>常数阶</h3><h3 id="线性阶"><a href="#线性阶" class="headerlink" title="线性阶"></a>线性阶</h3><h3 id="对数阶"><a href="#对数阶" class="headerlink" title="对数阶"></a>对数阶</h3><h3 id="平方阶"><a href="#平方阶" class="headerlink" title="平方阶"></a>平方阶</h3><h2 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h2><h2 id="算法的空间复杂度"><a href="#算法的空间复杂度" class="headerlink" title="算法的空间复杂度"></a>算法的空间复杂度</h2>]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>线性表（二）——顺序储存结构</title>
+    <url>/2021/09/21/%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%A1%BA%E5%BA%8F%E5%82%A8%E5%AD%98%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> OK 1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR 0</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> TRUE 1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> FALSE 0</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXSIZE 20</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Sqlist</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>数据结构与算法</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>编译运行一个简单的Java程序&quot;Hello XX&quot;</title>
+    <url>/2021/07/24/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84Java%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>前言：</p>
+<p>java有些高级编译器用着是是非常方便的，但是对于初学者并不建议使用。编程过程中很多东西都会由高级编译器自动生成，不利于初学者对于底层原理的理解和手感的锻炼。所以建议初学者只用记事本和命令行进行初期的学习，不要嫌low，这对初学者的学习很有何好处。</p>
+</blockquote>
+<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="打开记事本"><a href="#打开记事本" class="headerlink" title="打开记事本"></a>打开记事本</h2><p>打开Windows开始界面–&gt;Windows附件–&gt;记事本</p>
+<p><img src="https://i.loli.net/2021/07/24/T4j3Qgrmxklpou6.jpg" alt="text"></p>
+<h2 id="写一个简单的代码"><a href="#写一个简单的代码" class="headerlink" title="写一个简单的代码"></a>写一个简单的代码</h2><p><img src="https://i.loli.net/2021/07/24/JsE95o2uUgTkyOp.jpg" alt="java"></p>
+<p>代码看不懂没关系西，以后总会看懂的 ! </p>
+<h2 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h2><p><img src="https://i.loli.net/2021/07/24/EJ3p9jyqVaIYAxw.jpg" alt="s"></p>
+<p>文件名：xxx.java</p>
+<p>编码要调到ANSI</p>
+<h1 id="打开命令行进行操作（敲黑板！！！）"><a href="#打开命令行进行操作（敲黑板！！！）" class="headerlink" title="打开命令行进行操作（敲黑板！！！）"></a>打开命令行进行操作（敲黑板！！！）</h1><p><img src="https://i.loli.net/2021/07/24/5feq7gFJo8dYST1.jpg"></p>
+<p><img src="https://i.loli.net/2021/07/24/V2W8kyxwnXQ1Y4h.jpg"></p>
+<ol>
+<li><p>cd到java文档存储的目录</p>
+</li>
+<li><p>使用javac程序对java文档进行编译</p>
+<p>语法：javac 文档名.java</p>
+<p>得到class文件，如图：</p>
+<p><img src="https://i.loli.net/2021/07/24/fMvcnLzK7yXsilS.jpg" alt="class"></p>
+</li>
+<li><p>使用java程序运行class文件</p>
+</li>
+<li><p>退到D盘我们再执行class文件，发现找不到文件。</p>
+<p>这是因为我们没有配置class文件的环境变量，为了让我们可以在任何路径执行class文件，我们需要配置classpath环境变量。</p>
+</li>
+<li><p>配置临时环境变量</p>
+<ul>
+<li><p>为什么要配置”临时”环境变量？</p>
+<p>java开发工具包一般存放在固定的文件夹里，所以我们只需要配置系统环境变量，并且平时几乎不需要改动。</p>
+<p>但是class文件我们一般并不是存储在一个目录（文件夹）里。这次此我们要执行A目录里的class文件，下一次我们就可能要执行B目录里的文件，总是对系统环境变量改来改去不仅麻烦而且容易遗忘。</p>
+<p>所以我们需要通过配置临时环境变量应对这种情况。</p>
+</li>
+<li><p>如何配置临时环境变量？</p>
+<p>以下指令可以在任意目录下执行：<br>//查看所有环境变量</p>
+<p>set</p>
+<p>//查看某个环境变量</p>
+<p>set Path</p>
+<p>//定义某个环境变量</p>
+<p>set classpath=路径</p>
+<p>//清除环境变量</p>
+<p>set classpath=</p>
+</li>
+<li><p>临时配置环境变量有什么特点？</p>
+<ol>
+<li>它实际上并不会改变系统的环境变量</li>
+<li>只临时起作用，命令行窗口关闭后所有设置全部清零</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>在D盘运行class文件</p>
+</li>
+<li><p>清楚classpath变量，并在D盘建立一个新的java文档并编译</p>
+<p><img src="https://i.loli.net/2021/07/24/lo2PkRQrcN6HdUA.jpg" alt="java"></p>
+<p><img src="https://i.loli.net/2021/07/24/VFwyWNLKcgT2CHP.jpg" alt="D"></p>
+</li>
+<li><p>在D盘运行Hello文件</p>
+</li>
+<li><p>分别以两种方式设置临时环境变量，并进行以下测试：</p>
+<ol>
+<li><p>设置classpath=路径；，执行Hello文件，删除”路径“中的class文件，并执行Hello文件</p>
+</li>
+<li><p>清除classpath，设置classpath=路径，执行Hello文件</p>
+</li>
+</ol>
+<ul>
+<li><p>测试结果的原理：<br>调用Java从程序执行class文件时，虚拟机会想寻找classpath中存储的目录下的class文件，之后分三种情况：</p>
+<ol>
+<li><p>没有设置classpath环境变量：</p>
+<p>直接在当前目录下寻找对应的class文件，有则运行，没有则”报错“。</p>
+</li>
+<li><p>设置了classpath=路径；</p>
+<p>虚拟机先查看存储在classpath中的目录下的class文件，若有则执行，若没有则查看当前目录下的class文件，若有则执行，若无则“报错”。</p>
+</li>
+<li><p>设置了classpath=路径</p>
+<p>虚拟机先查看存储在classpath中的目录下的class文件，若有则执行，若没有则 “报错”。</p>
+</li>
+</ol>
+</li>
+<li><p>*注：一般推荐使用 classpath=路径 的环境配置方式</p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机硬件的简单学习</title>
+    <url>/2021/07/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="计算机硬件总览"><a href="#计算机硬件总览" class="headerlink" title="计算机硬件总览"></a>计算机硬件总览</h2><p><img src="https://i.loli.net/2021/07/31/T2SMCboJLxkvnzi.jpg"></p>
+<p>*总线：搭建在主板上，数据就是通过总线在各个“设备”之间传递。</p>
+<h2 id="冯·诺伊曼体系结构"><a href="#冯·诺伊曼体系结构" class="headerlink" title="冯·诺伊曼体系结构"></a>冯·诺伊曼体系结构</h2><p><img src="https://i.loli.net/2021/07/31/HrKEZeTph6nbBIw.jpg"></p>
+<p>冯·诺伊曼体系结构是现代计算机的基础，现在大多数计算机仍是基于冯·诺伊曼体系结构，只是做了一些改进而已。冯·诺伊曼也因此被称为“计算机之父”。</p>
+<h2 id="IT行业三大定律"><a href="#IT行业三大定律" class="headerlink" title="IT行业三大定律"></a>IT行业三大定律</h2><ol>
+<li><p>摩尔定律：</p>
+<p>当价格不变时，集成电路上的元器件大约每隔18~24个月便会增加一倍，性能也会增加一倍。</p>
+</li>
+<li><p>安迪·比尔定律：</p>
+<p>当计算机硬件进行更新时，操作系统（软件）也会跟着更新。</p>
+<blockquote>
+<p>ps：这也是为什么我们更换了我们的计算机后，我们并没有感到计算机更加流畅原因。因为操作系统也随着硬件的更新而更新了。</p>
+</blockquote>
+</li>
+<li><p>反摩尔定律：</p>
+<p>一个IT公司如果今天卖出和18个月前同样多的、同样的商品，它的营业额减半。</p>
+</li>
+</ol>
+<blockquote>
+<p>ps：这三大定律其实更像是商业定律，IT行业迭代如此之快，某种意义上也是受了这三大定律的影响。毕竟，如果别的公司遵守这三大定律，而自己的公司不去追赶，早晚会被同行远远甩开。</p>
+</blockquote>
+<h2 id="中央处理器（CPU）"><a href="#中央处理器（CPU）" class="headerlink" title="中央处理器（CPU）"></a>中央处理器（CPU）</h2><p>CPU是计算机的大脑。它从内存中获取指令，然后执行指令。</p>
+<ol>
+<li><p>组成：</p>
+<ul>
+<li>控制单元：从内存中接受指令，并向其他设备、组件发出指令</li>
+<li>算术/逻辑单元：完成对数据的逻辑处理。</li>
+</ul>
+</li>
+<li><p>CPU的速度：CPU的速度用赫兹（Hz）表示，1Hz表示计算机每秒能发射一个电子脉冲（可以理解为高低电压电流，对于CPU来说就是‘０’‘１’信号），速度越快CPU在给定时间内执行的指令就越多。目前CPU的速度一般以千兆赫（ＧＨｚ）作为常用单位。</p>
+</li>
+<li><p>双核ＣＰＵ：</p>
+<p>双核CPU实际上就是两个小CPU组成了一个大CPU，只不过一般把小CPU称为“核”。多核可以提高CPU的处理能力。</p>
+</li>
+</ol>
+<h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h2><h3 id="比特（bit）和字节（byte）"><a href="#比特（bit）和字节（byte）" class="headerlink" title="比特（bit）和字节（byte）"></a>比特（bit）和字节（byte）</h3><ul>
+<li><p>计算机是一系列电路的集合，通过开和关来实现低电压电流（值为0）和高电压电流（值为1）。一个1或一个0存储为1个比特，比特也是计算机最小的存储单位。</p>
+</li>
+<li><p>字节是计算机的最基本存储单位，一个字节由8个连续的比特构成。</p>
+</li>
+<li><p>1千字节（KB）=1024字节（B）</p>
+<p>1兆字节（MB）=1024千字节（KB）</p>
+<p>1千兆字节（GB）=1024兆字节（MB）</p>
+<p>1万亿兆字节（TB）=1024千兆字节（GB）</p>
+</li>
+</ul>
+<h3 id="内存-1"><a href="#内存-1" class="headerlink" title="内存"></a>内存</h3><ul>
+<li><p>内存的特点：</p>
+<ol>
+<li>速度比硬盘快10倍以上，但比CPU慢的多的多。</li>
+<li>只能缓存数据，断电数据就会被清除</li>
+</ol>
+</li>
+<li><p>CPU只在内存中处理数据</p>
+<p>当需要CPU处理数据时，对应的数据会从硬盘中传递到内存中被CPU执行处理</p>
+<blockquote>
+<p>CPU的运算速度比硬盘快的太多，如果在硬盘中处理数据会导致速度奇慢（硬盘太慢了），因此CPU在内存中处理数据</p>
+</blockquote>
+</li>
+<li><p>内存越大与计算机速度越快，但如果内存占有没有饱和，内存增大，计算机速度不会增快。</p>
+</li>
+<li><p>内存的意义：</p>
+<p>相当于为电脑开了一个高速公路，解决了CPU在硬盘中处理数据过于缓慢的问题。</p>
+</li>
+<li><p>内存的每一个字节都对应一个唯一的地址。</p>
+</li>
+</ul>
+<h2 id="存储设备"><a href="#存储设备" class="headerlink" title="存储设备"></a>存储设备</h2><ol>
+<li><p>内存</p>
+<p>速度快，短暂缓存数据，断电即消失</p>
+</li>
+<li><p>硬盘</p>
+<p>速度慢，永久储存数据。</p>
+</li>
+</ol>
+<h2 id="输入输出设备"><a href="#输入输出设备" class="headerlink" title="输入输出设备"></a>输入输出设备</h2><h3 id="输入设备"><a href="#输入设备" class="headerlink" title="输入设备"></a>输入设备</h3><ul>
+<li>键盘</li>
+<li>鼠标</li>
+</ul>
+<h3 id="输出设备"><a href="#输出设备" class="headerlink" title="输出设备"></a>输出设备</h3><ul>
+<li>显示器</li>
+<li>打印机</li>
+<li>音箱</li>
+</ul>
+<h2 id="通信设备"><a href="#通信设备" class="headerlink" title="通信设备"></a>通信设备</h2><p>用于联网</p>
+<ul>
+<li>拨号调制解调器</li>
+<li>DSL（数字用户线）</li>
+<li>电缆调制解调器</li>
+<li>网络接口卡</li>
+<li>无线网络</li>
+</ul>
+]]></content>
+      <categories>
+        <category>计算机组成原理</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>计算机组成原理</tag>
       </tags>
   </entry>
 </search>
