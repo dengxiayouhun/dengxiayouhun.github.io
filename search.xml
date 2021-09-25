@@ -53,6 +53,87 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL的安装、删库、服务的开启、删除与登录</title>
+    <url>/2021/09/25/MySQL%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81%E5%88%A0%E5%BA%93%E3%80%81%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%BC%80%E5%90%AF%E3%80%81%E5%88%A0%E9%99%A4%E4%B8%8E%E7%99%BB%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h2><p>去官网下载压缩包然后把文件夹解压到自己喜欢放的位置，比如我是放在D盘。</p>
+<p><img src="https://i.loli.net/2021/09/25/mYq3V8h42ENWpPI.jpg"></p>
+<p><a href="https://dev.mysql.com/downloads/mysql/">官网传送门</a></p>
+<h2 id="创建my-ini配置文件"><a href="#创建my-ini配置文件" class="headerlink" title="创建my.ini配置文件"></a>创建my.ini配置文件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port=3306</span><br><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port=3306</span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir=D:\MySQL\mysql-8.0.26</span><br><span class="line"># 设置mysql数据库的数据的存放目录</span><br><span class="line">datadir=D:\MySQL\mysql-8.0.26\data</span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections=200</span><br><span class="line"># 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统</span><br><span class="line">max_connect_errors=10</span><br><span class="line"># 服务端使用的字符集默认为UTF8</span><br><span class="line">character-set-server=utf8</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine=INNODB</span><br><span class="line"># 默认使用“mysql_native_password”插件认证</span><br><span class="line">default_authentication_plugin=mysql_native_password</span><br><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集 </span><br><span class="line">default-character-set=utf8</span><br><span class="line">[client]</span><br><span class="line"># 设置mysql客户端连接服务端时默认使用的端口</span><br><span class="line">port=3306</span><br><span class="line">default-character-set=utf8</span><br></pre></td></tr></table></figure>
+
+<p>把里面的内容C+V到my.ini文件（自己创建）里，注意两个路径要改成你自己的路径。</p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>把bin的路径配置到Path系统变量里，可以参考Java配置环境变量</p>
+<p><a href="https://dengxiayouhun.github.io/2021/07/22/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Java环境变量配置—传送门</a></p>
+<h2 id="初始化MySQL"><a href="#初始化MySQL" class="headerlink" title="初始化MySQL"></a>初始化MySQL</h2><p>打开cmd命令行，cd到bin目录下，输入下面这条命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></table></figure>
+
+<p>记得截图保存初始密码，之后登陆MySQL要用，就是这个东西。</p>
+<p><img src="https://i.loli.net/2021/09/25/xHwdITAyCoWmg23.jpg"></p>
+<blockquote>
+<p>*在初始化MySQL之前是没有data文件夹的，初始化会自动生成，不要自己瞎搞一个data文件夹（没错,这个小可爱就是我）</p>
+</blockquote>
+<h2 id="安装MySQL服务"><a href="#安装MySQL服务" class="headerlink" title="安装MySQL服务"></a>安装MySQL服务</h2><p>打开cmd命令行（应该还没关吧），cd到bin目录下，输入下面这条命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysqld --install </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>其实原本命令是mysqld –install [服务名]，不过如果不写服务名就会默认是mysql。我奉劝各位小可爱不要瞎起名字，MySQL就挺好的。</p>
+</blockquote>
+<h2 id="启动MySQL服务"><a href="#启动MySQL服务" class="headerlink" title="启动MySQL服务"></a>启动MySQL服务</h2><p>在cmd命令行（默认各位都还开着）输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net start mysql</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>其实这个命令是net start 服务名，用来启动服务的。</p>
+</blockquote>
+<h2 id="登录MySQL"><a href="#登录MySQL" class="headerlink" title="登录MySQL"></a>登录MySQL</h2><p>在cmd命令行输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+
+<p>然后，输入密码，就是那个初始密码（没截图的可以重新初始化，重新获得密码）</p>
+<h2 id="退出MySQL"><a href="#退出MySQL" class="headerlink" title="退出MySQL"></a>退出MySQL</h2><p>输入以下指令任意一个即可</p>
+<p><img src="https://i.loli.net/2021/09/25/JFhHltpoGfvSuNw.png"></p>
+<h2 id="删库跑路"><a href="#删库跑路" class="headerlink" title="删库跑路"></a>删库跑路</h2><p>以为优秀的程序员要熟练删库操作（卸载MySQL），虽然写bug的样子很狼狈，但我们删库跑路的背影必须很靓仔</p>
+<p><img src="https://i.loli.net/2021/09/25/bN6EIpk9wacdBSH.jpg"></p>
+<ol>
+<li><p>首先我们要停止MySQL服务</p>
+<p>打开cmd输入以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net stop mysql</span><br></pre></td></tr></table></figure></li>
+<li><p>删掉MySQL文件夹</p>
+<p>就是那个解压的文件夹（记得把环境变量也清洗一下）</p>
+</li>
+<li><p>删掉注册表</p>
+<p>打开cmd命令行，输入regedit，运行，然后打开注册表，删除HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL文件夹</p>
+</li>
+<li><p>删除MySQL服务</p>
+<p>如果已经将MySQL卸载，但通过“开始-》所有应用-》Windows管理工具-》服务”查看到MySQL服务仍然残留在系统服务里。又不想改服务名，改怎么办呢。只要在CMD里输入一条命令就可以将服务删除：<br>　　sc delete mysql //这里的mysql是你要删除的服务名, 这样一来服务就被删除了。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>数据库</category>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据库的一些基本概念</title>
+    <url>/2021/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="什么是数据库"><a href="#什么是数据库" class="headerlink" title="什么是数据库"></a>什么是数据库</h3><p>数据库(database），简单来说就是存储数据的容器。</p>
+<h3 id="什么是数据库管理系统-？"><a href="#什么是数据库管理系统-？" class="headerlink" title="什么是数据库管理系统 ？"></a>什么是数据库管理系统 ？</h3><p>数据库管理系统（DBMS），顾名思义，就是用来操作管理数据库的工具。</p>
+<h3 id="什么是SQL-？"><a href="#什么是SQL-？" class="headerlink" title="什么是SQL ？"></a>什么是SQL ？</h3><p>是一种专门用来服务数据库的语言，DBMS一般用SQL来操作数据库。</p>
+<h3 id="什么是端口-？"><a href="#什么是端口-？" class="headerlink" title="什么是端口 ？"></a>什么是端口 ？</h3><p>类似于IP地址至于计算机。每一台计算机都有一个唯一的IP地址，而每一个计算机的服务都有一个独一无二的端口号（不同计算机的相同服务端口号是相同的）。</p>
+<h3 id="什么是MySQL-？"><a href="#什么是MySQL-？" class="headerlink" title="什么是MySQL ？"></a>什么是MySQL ？</h3><p>MySQL是一种特别常用的DBMS。</p>
+<h3 id="数据库、数据库管理系统与SQL的关系："><a href="#数据库、数据库管理系统与SQL的关系：" class="headerlink" title="数据库、数据库管理系统与SQL的关系："></a>数据库、数据库管理系统与SQL的关系：</h3><p><img src="https://i.loli.net/2021/09/25/cShzX5Re4qnyV1M.jpg"></p>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Scanner中的nextLine()与next()</title>
     <url>/2021/09/24/Scanner%E4%B8%AD%E7%9A%84nextLine-%E4%B8%8Ennext/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="情景回顾"><a href="#情景回顾" class="headerlink" title="情景回顾"></a>情景回顾</h2><p>今天练习代码，遇见了以下情况：</p>
