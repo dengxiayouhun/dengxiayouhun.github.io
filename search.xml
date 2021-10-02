@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java作业索引</title>
+    <url>/2021/10/02/Java%E4%BD%9C%E4%B8%9A%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th>日常作业：</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="">字符串练习</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>选做作业:</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://dengxiayouhun.github.io/2021/10/01/%E9%9A%8F%E6%9C%BA%E7%82%B9%E5%90%8D%E5%B0%8F%E7%A8%8B%E5%BA%8F/">随机点名小程序</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java踩坑小记录（目录）</title>
     <url>/2021/09/22/java%E8%B8%A9%E5%9D%91%E5%B0%8F%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><table>
@@ -41,7 +84,7 @@
     <url>/2021/10/01/%E9%9A%8F%E6%9C%BA%E7%82%B9%E5%90%8D%E5%B0%8F%E7%A8%8B%E5%BA%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="技能使用："><a href="#技能使用：" class="headerlink" title="技能使用："></a>技能使用：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 数组</span><br><span class="line">2. if语句、while语句、for语句</span><br><span class="line">3. random()方法</span><br></pre></td></tr></table></figure>
 
-<h2 id="任务描述："><a href="#任务描述：" class="headerlink" title="任务描述："></a>任务描述：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">任务描述：</span><br><span class="line"> 设计一个随机点名系统。</span><br><span class="line"> 要求：</span><br><span class="line"> 	（1）抽取数量任意定制</span><br><span class="line"> 	（2）屏幕显示学生班级和顺序号</span><br><span class="line">  *补充说明：</span><br><span class="line">  			一共有4个班，每个班30人。</span><br></pre></td></tr></table></figure>
+<h2 id="任务描述："><a href="#任务描述：" class="headerlink" title="任务描述："></a>任务描述：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">任务描述：</span><br><span class="line"> 设计一个随机点名系统。</span><br><span class="line"> 要求：</span><br><span class="line"> 	（1）抽取数量任意定制</span><br><span class="line"> 	（2）屏幕显示学生班级和顺序号</span><br><span class="line">  *补充说明：</span><br><span class="line">  	一共有4个班，每个班30人。</span><br></pre></td></tr></table></figure>
 
 <h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><ul>
 <li><p>java</p>
@@ -3139,6 +3182,43 @@
       </categories>
       <tags>
         <tag>搭建博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何连续的输出char类型的变量</title>
+    <url>/2021/10/02/%E5%A6%82%E4%BD%95%E8%BF%9E%E7%BB%AD%E7%9A%84%E8%BE%93%E5%87%BAchar%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>两个char类型输出时不能直接(chr[1] + chr[2]);的输出，这样 + 的连接符就不是连接符，编译器会直接将两者ASCII码值相加并转换为int类型输出。</p>
+<p>所以，我们可以连接一个空字符串进行输出，像这样：(chr[1] + “” + chr[2]);</p>
+]]></content>
+      <categories>
+        <category>踩坑小记录</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>字符串练习作业</title>
+    <url>/2021/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="任务1："><a href="#任务1：" class="headerlink" title="任务1："></a>任务1：</h1><h2 id="任务描述："><a href="#任务描述：" class="headerlink" title="任务描述："></a>任务描述：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">编写程序将“jdk16”全部变为大写，并输出到屏幕，截取子串“DK”并输出到屏幕。</span><br></pre></td></tr></table></figure>
+
+<h2 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h2><h3 id="代码逻辑："><a href="#代码逻辑：" class="headerlink" title="代码逻辑："></a>代码逻辑：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 用char数组存储“jdk16”</span><br><span class="line">2. 用for语句和if语句进行大写转换</span><br><span class="line">3. 用数组进行字串输出（也可以转换成字符串之后截取字串输出，但是完全没有必要）</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Two_String_1_1</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//建立char数组，存储“jdk16”</span></span><br><span class="line">		<span class="keyword">char</span>[] jdk = <span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">5</span>];</span><br><span class="line">		jdk[<span class="number">0</span>] = <span class="string">&#x27;j&#x27;</span>;</span><br><span class="line">		jdk[<span class="number">1</span>] = <span class="string">&#x27;d&#x27;</span>;</span><br><span class="line">		jdk[<span class="number">2</span>] = <span class="string">&#x27;k&#x27;</span>;</span><br><span class="line">		jdk[<span class="number">3</span>] = <span class="string">&#x27;1&#x27;</span>;</span><br><span class="line">		jdk[<span class="number">4</span>] = <span class="string">&#x27;6&#x27;</span>;</span><br><span class="line">		<span class="keyword">int</span> length = <span class="number">5</span>;</span><br><span class="line">		<span class="comment">//大写转换</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= length - <span class="number">1</span>; i ++) &#123;</span><br><span class="line">			<span class="keyword">if</span>(jdk[i] &gt;= <span class="number">97</span> &amp;&amp; jdk[i] &lt;= <span class="number">122</span>) &#123;</span><br><span class="line">				jdk[i] -= <span class="number">32</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//输出“DK”</span></span><br><span class="line">		System.out.println(jdk[<span class="number">1</span>] + <span class="string">&quot;&quot;</span> + jdk[<span class="number">2</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="运行检测："><a href="#运行检测：" class="headerlink" title="运行检测："></a>运行检测：</h3><p><img src="https://i.loli.net/2021/10/02/4NOatZSE59kdijQ.jpg"></p>
+<h3 id="代码评价："><a href="#代码评价：" class="headerlink" title="代码评价："></a>代码评价：</h3><ul>
+<li><p><strong>缺点：</strong></p>
+<p>方法常规，没有特色，</p>
+</li>
+<li><p><strong>优点：</strong></p>
+<p>容易想到QAQ</p>
+</li>
+</ul>
+<h3 id="收获："><a href="#收获：" class="headerlink" title="收获："></a>收获：</h3><p>[如何连续的输出两个char类型变量]</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
