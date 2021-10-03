@@ -54,6 +54,10 @@
 </tr>
 </thead>
 <tbody><tr>
+<td>Java输出语句中的println、print和printf</td>
+<td><a href="https://dengxiayouhun.github.io/2021/10/03/Java%E8%BE%93%E5%87%BA%E8%AF%AD%E5%8F%A5%E4%B8%AD%E7%9A%84println%E3%80%81print%E5%92%8Cprintf/">Java输出语句中的println、print和printf</a></td>
+</tr>
+<tr>
 <td>next()与nextLine()</td>
 <td><a href="https://dengxiayouhun.github.io/2021/09/24/Scanner%E4%B8%AD%E7%9A%84nextLine-%E4%B8%8Ennext/">Scanner中的nextLine()与next()</a></td>
 </tr>
@@ -3284,6 +3288,7 @@
 
 <h2 id="运行检测：-3"><a href="#运行检测：-3" class="headerlink" title="运行检测："></a>运行检测：</h2><p><img src="https://i.loli.net/2021/10/03/TxVX8nqWM1ejDI3.jpg"></p>
 <h2 id="自评：-4"><a href="#自评：-4" class="headerlink" title="自评："></a>自评：</h2><p>和任务三的代码逻辑一样，没有什么难度，任务三的代码稍加修改就是任务四</p>
+<h2 id="收获：-1"><a href="#收获：-1" class="headerlink" title="收获："></a>收获：</h2><p><a href="https://dengxiayouhun.github.io/2021/10/03/Java%E8%BE%93%E5%87%BA%E8%AF%AD%E5%8F%A5%E4%B8%AD%E7%9A%84println%E3%80%81print%E5%92%8Cprintf/">Java输出语句中的println、print和printf</a></p>
 <h1 id="任务五："><a href="#任务五：" class="headerlink" title="任务五："></a>任务五：</h1><h2 id="任务描述：-4"><a href="#任务描述：-4" class="headerlink" title="任务描述："></a>任务描述：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">编写一个程序，将下面的一段文本中的各个单词的字母顺序翻转，</span><br><span class="line">“To be or not to bo” 将变成</span><br><span class="line">”oT eb ro ton ot ob. ”。(后面加.) </span><br><span class="line"></span><br><span class="line">直接来个plus版本的，可将任意输入的文本座椅上变换</span><br></pre></td></tr></table></figure>
 
 <h2 id="代码逻辑：-5"><a href="#代码逻辑：-5" class="headerlink" title="代码逻辑："></a>代码逻辑：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 输入字符串：</span><br><span class="line">2. 使用split将字符串转化为字符串数组并存储到定义的字符串数组中</span><br><span class="line">3. 用for语句将对所有数组元素的翻转处理，转换成对单个数组元素的翻转处理。</span><br><span class="line">4. 对单个字符串的翻转处理：</span><br><span class="line">	用substring方法提取子串，然后反向拼接赋值给原字符串数组。</span><br><span class="line">5. 使用print和for语句输出字符串数组，并在最后添加一个“.”</span><br></pre></td></tr></table></figure>
