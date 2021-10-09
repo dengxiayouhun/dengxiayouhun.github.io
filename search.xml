@@ -36,49 +36,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java作业索引</title>
-    <url>/2021/10/02/Java%E4%BD%9C%E4%B8%9A%E7%B4%A2%E5%BC%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><table>
-<thead>
-<tr>
-<th>日常作业：</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://dengxiayouhun.github.io/2021/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%E4%BD%9C%E4%B8%9A/">字符串练习</a></td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>选做作业:</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://dengxiayouhun.github.io/2021/10/01/%E9%9A%8F%E6%9C%BA%E7%82%B9%E5%90%8D%E5%B0%8F%E7%A8%8B%E5%BA%8F/">随机点名小程序</a></td>
-</tr>
-<tr>
-<td></td>
-</tr>
-<tr>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Eclipse的使用教程</title>
     <url>/2021/09/03/Eclipse%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><p>跳转我的另一篇博客</p>
@@ -128,6 +85,72 @@
 <h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java中如何输出char字符</title>
+    <url>/2021/09/28/Java%E4%B8%AD%E5%A6%82%E4%BD%95%E8%BE%93%E5%87%BAchar%E5%AD%97%E7%AC%A6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="情景回顾："><a href="#情景回顾：" class="headerlink" title="情景回顾："></a>情景回顾：</h3><p>今天练习switch_case，遇到这么一个题：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">使用 switch 把小写类型的 char型转为大写。只转换 a, b, c, d, e. 其它的输</span></span><br><span class="line"><span class="comment">出 “other”。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>在这道题中，我们就不得不输入char类型的字符。</p>
+<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>在Java中我们通过Scanner类来完成输入操作，然而Scanner中没有char类型对应的方法。</p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>既然我们无法通过Scanner类的方法来输入char类型，那么我们可以通过其他类的方法来完成char字符的输入。</p>
+<p>String类是有一个一个的字符组成的，如果我们能获得String类的一个字符就能够获得char类型的字符，而String类也提供了这样的方法: charAt</p>
+<h4 id="API文档描述："><a href="#API文档描述：" class="headerlink" title="API文档描述："></a>API文档描述：</h4><p><img src="https://i.loli.net/2021/09/28/TGUHu97B8KqbrXE.jpg"></p>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Scanner_char_test</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner scan = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="comment">//输入一个char类型</span></span><br><span class="line">		System.out.println(<span class="string">&quot;请输入一个字母：&quot;</span>);</span><br><span class="line">		String str = scan.nextLine();</span><br><span class="line">		<span class="keyword">char</span> alphabet = str.charAt(<span class="number">0</span>);</span><br><span class="line">		<span class="comment">//输出输入的结果</span></span><br><span class="line">		System.out.println(<span class="string">&quot;您输入的字母是：&quot;</span> + alphabet);</span><br><span class="line">		<span class="comment">//释放scan申请的空间</span></span><br><span class="line">		scan.close();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码测试"><a href="#代码测试" class="headerlink" title="代码测试"></a>代码测试</h3><p><img src="https://i.loli.net/2021/09/28/cDahyjPEBIvVlM8.jpg"></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>踩坑小记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java作业索引</title>
+    <url>/2021/10/02/Java%E4%BD%9C%E4%B8%9A%E7%B4%A2%E5%BC%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><table>
+<thead>
+<tr>
+<th>日常作业：</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://dengxiayouhun.github.io/2021/10/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%83%E4%B9%A0%E4%BD%9C%E4%B8%9A/">字符串练习</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>选做作业:</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://dengxiayouhun.github.io/2021/10/01/%E9%9A%8F%E6%9C%BA%E7%82%B9%E5%90%8D%E5%B0%8F%E7%A8%8B%E5%BA%8F/">随机点名小程序</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>java</tag>
@@ -427,29 +450,6 @@
       <tags>
         <tag>java</tag>
         <tag>规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java中如何输出char字符</title>
-    <url>/2021/09/28/Java%E4%B8%AD%E5%A6%82%E4%BD%95%E8%BE%93%E5%87%BAchar%E5%AD%97%E7%AC%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="情景回顾："><a href="#情景回顾：" class="headerlink" title="情景回顾："></a>情景回顾：</h3><p>今天练习switch_case，遇到这么一个题：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">使用 switch 把小写类型的 char型转为大写。只转换 a, b, c, d, e. 其它的输</span></span><br><span class="line"><span class="comment">出 “other”。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<p>在这道题中，我们就不得不输入char类型的字符。</p>
-<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>在Java中我们通过Scanner类来完成输入操作，然而Scanner中没有char类型对应的方法。</p>
-<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>既然我们无法通过Scanner类的方法来输入char类型，那么我们可以通过其他类的方法来完成char字符的输入。</p>
-<p>String类是有一个一个的字符组成的，如果我们能获得String类的一个字符就能够获得char类型的字符，而String类也提供了这样的方法: charAt</p>
-<h4 id="API文档描述："><a href="#API文档描述：" class="headerlink" title="API文档描述："></a>API文档描述：</h4><p><img src="https://i.loli.net/2021/09/28/TGUHu97B8KqbrXE.jpg"></p>
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Scanner_char_test</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner scan = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="comment">//输入一个char类型</span></span><br><span class="line">		System.out.println(<span class="string">&quot;请输入一个字母：&quot;</span>);</span><br><span class="line">		String str = scan.nextLine();</span><br><span class="line">		<span class="keyword">char</span> alphabet = str.charAt(<span class="number">0</span>);</span><br><span class="line">		<span class="comment">//输出输入的结果</span></span><br><span class="line">		System.out.println(<span class="string">&quot;您输入的字母是：&quot;</span> + alphabet);</span><br><span class="line">		<span class="comment">//释放scan申请的空间</span></span><br><span class="line">		scan.close();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="代码测试"><a href="#代码测试" class="headerlink" title="代码测试"></a>代码测试</h3><p><img src="https://i.loli.net/2021/09/28/cDahyjPEBIvVlM8.jpg"></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>踩坑小记录</tag>
       </tags>
   </entry>
   <entry>
@@ -988,6 +988,26 @@
 
 <p><img src="https://i.loli.net/2021/08/25/jKEdhQa5lUSWAY6.jpg"></p>
 ]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>java语言的特点</title>
+    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
+<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
+<h3 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h3><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
+<p>ps：JVM是不能跨平台的</p>
+<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
+<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
+<p>C++应用程序的执行过程（从右往左）</p>
+<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -2404,26 +2424,6 @@
       </tags>
   </entry>
   <entry>
-    <title>java语言的特点</title>
-    <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
-<h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
-<h3 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h3><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
-<p>ps：JVM是不能跨平台的</p>
-<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><p>Java应用程序的执行过程（从左往右）</p>
-<p><img src="https://i.loli.net/2021/07/20/Lp43gtW526G9zEk.jpg" alt="Java应用程序"></p>
-<p>C++应用程序的执行过程（从右往左）</p>
-<p><img src="https://i.loli.net/2021/07/20/Frm6JiXpPf3VkZT.jpg" alt="C++应用程序的执行过程"></p>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续 . . ."></a>未完待续 . . .</h2>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java面向对象之面向对象的理解</title>
     <url>/2021/10/06/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%8E%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
@@ -2740,6 +2740,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Scanner中的nextLine()与next()</title>
+    <url>/2021/09/24/Scanner%E4%B8%AD%E7%9A%84nextLine-%E4%B8%8Enext/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="情景回顾"><a href="#情景回顾" class="headerlink" title="情景回顾"></a>情景回顾</h2><p>今天练习代码，遇见了以下情况：</p>
+<p>（1）</p>
+<p><img src="https://i.loli.net/2021/09/24/v6KTuUzXsmFDWwt.jpg"></p>
+<p>(2)</p>
+<p><img src="https://i.loli.net/2021/09/24/PuIBwLNlz69bjgE.jpg"></p>
+<p>(3)<img src="https://i.loli.net/2021/09/24/C5qyg1R8stJrZMf.jpg"></p>
+<p>(4)<img src="https://i.loli.net/2021/09/24/a8NvhbSqoBdreJi.jpg"></p>
+<p>基本就是只要nextLine()前面有输入语句，那么nextLine()就会直接结束不会输入任何字符串。而将nextLine()换成next()就不会有这种情况。</p>
+<h2 id="这是为什么呢？"><a href="#这是为什么呢？" class="headerlink" title="这是为什么呢？"></a>这是为什么呢？</h2><p>nextLine()相比于nextInt()、nextDouble()、next()等方法缺少一个类似于保护机制的东西。</p>
+<p>比如：</p>
+<p><img src="https://i.loli.net/2021/09/24/a8NvhbSqoBdreJi.jpg"></p>
+<p>当我们输入“1”并按下回车键时，“1”会被nextInt()接受，而回车却被留在标准输入流当中了，如果下一个就是nextLine()，那么nextLine()就会直接读取到回车键，然后执行，这样我们就无法输入任何数据。</p>
+<p>那么为什么把换成next()就没事了呢，因为next()如果没有读取到任何数据是不会结束的，nextDouble()、nextInt()等都有这个保护机制。</p>
+<p>比如：<img src="https://i.loli.net/2021/09/24/ao2Kz3MFE1Xp7ke.jpg"></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>踩坑小记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL的安装、删库、服务的开启、删除与登录</title>
     <url>/2021/09/25/MySQL%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81%E5%88%A0%E5%BA%93%E3%80%81%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%BC%80%E5%90%AF%E3%80%81%E5%88%A0%E9%99%A4%E4%B8%8E%E7%99%BB%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="安装MySQL"><a href="#安装MySQL" class="headerlink" title="安装MySQL"></a>安装MySQL</h2><p>去官网下载压缩包然后把文件夹解压到自己喜欢放的位置，比如我是放在D盘。</p>
@@ -2804,32 +2830,6 @@
       <tags>
         <tag>数据库</tag>
         <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Scanner中的nextLine()与next()</title>
-    <url>/2021/09/24/Scanner%E4%B8%AD%E7%9A%84nextLine-%E4%B8%8Enext/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="情景回顾"><a href="#情景回顾" class="headerlink" title="情景回顾"></a>情景回顾</h2><p>今天练习代码，遇见了以下情况：</p>
-<p>（1）</p>
-<p><img src="https://i.loli.net/2021/09/24/v6KTuUzXsmFDWwt.jpg"></p>
-<p>(2)</p>
-<p><img src="https://i.loli.net/2021/09/24/PuIBwLNlz69bjgE.jpg"></p>
-<p>(3)<img src="https://i.loli.net/2021/09/24/C5qyg1R8stJrZMf.jpg"></p>
-<p>(4)<img src="https://i.loli.net/2021/09/24/a8NvhbSqoBdreJi.jpg"></p>
-<p>基本就是只要nextLine()前面有输入语句，那么nextLine()就会直接结束不会输入任何字符串。而将nextLine()换成next()就不会有这种情况。</p>
-<h2 id="这是为什么呢？"><a href="#这是为什么呢？" class="headerlink" title="这是为什么呢？"></a>这是为什么呢？</h2><p>nextLine()相比于nextInt()、nextDouble()、next()等方法缺少一个类似于保护机制的东西。</p>
-<p>比如：</p>
-<p><img src="https://i.loli.net/2021/09/24/a8NvhbSqoBdreJi.jpg"></p>
-<p>当我们输入“1”并按下回车键时，“1”会被nextInt()接受，而回车却被留在标准输入流当中了，如果下一个就是nextLine()，那么nextLine()就会直接读取到回车键，然后执行，这样我们就无法输入任何数据。</p>
-<p>那么为什么把换成next()就没事了呢，因为next()如果没有读取到任何数据是不会结束的，nextDouble()、nextInt()等都有这个保护机制。</p>
-<p>比如：<img src="https://i.loli.net/2021/09/24/ao2Kz3MFE1Xp7ke.jpg"></p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>踩坑小记录</tag>
       </tags>
   </entry>
   <entry>
@@ -2898,7 +2898,7 @@
 </li>
 </ol>
 <p>当然，以上的方法并不能让我们鼓起兴趣去学习，只是让我们从颓废的状态下解放出来，重新提起精神。如果我们本身就不愿意学习，那么即便提起精神，我们更大的可能应该是去打游戏（-_-）.</p>
-<p>来几张涩图，活跃活跃气氛 ！(绅士和淑女请自觉回避 （&gt;_&lt;） )</p>
+<p><strong>来几张涩图，活跃活跃气氛 ！(绅士和淑女请自觉回避 （&gt;_&lt;） )</strong></p>
 <p><img src="https://i.loli.net/2021/10/08/32XBtGKoDTYH1gS.jpg"></p>
 <p><img src="https://i.loli.net/2021/10/08/5VEFpYJHt62QZd7.jpg"></p>
 <p><img src="https://i.loli.net/2021/10/08/etcDahAXdMRO6FP.jpg"></p>
@@ -2936,6 +2936,36 @@
       <tags>
         <tag>学习笔记</tag>
         <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何解决Win 10环境变量配置时Path变量只显示一行的问题</title>
+    <url>/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
+<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
+<p>修改环境变量的时候特别麻烦。</p>
+<h2 id="Win-10的版本"><a href="#Win-10的版本" class="headerlink" title="Win 10的版本"></a>Win 10的版本</h2><p>到了Win 10版本后，这个问题就得到了解决</p>
+<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg"></p>
+<p>变量的显示不再是一行，而是变成了列表形式。</p>
+<h2 id="Win-10又更新了"><a href="#Win-10又更新了" class="headerlink" title="Win 10又更新了"></a>Win 10又更新了</h2><p>但后来，再次打开了环境变量，他又变成了原来的样子 -_-</p>
+<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
+<p>而实际上，并不是又回到了原来的版本，只是Win 10在更新后同时兼顾了两种查看方式。</p>
+<ul>
+<li><p>当%xxxxx%这种变量放在第一个时，就会按照第一行显示</p>
+</li>
+<li><p>当路径变量放在第一行时，就会按照列表显示。</p>
+<p><img src="https://i.loli.net/2021/09/07/XDrNMRWa217bjnJ.jpg"></p>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2021/09/07/ABe3Kvna2QLuhNz.jpg"></p>
+<p><img src="https://i.loli.net/2021/09/07/gy5Pv49reJSQnRj.jpg"></p>
+]]></content>
+      <categories>
+        <category>踩坑小记录</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>搭建环境</tag>
       </tags>
   </entry>
   <entry>
@@ -2982,36 +3012,6 @@
       <tags>
         <tag>学习笔记</tag>
         <tag>数据结构与算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何解决Win 10环境变量配置时Path变量只显示一行的问题</title>
-    <url>/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
-<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
-<p>修改环境变量的时候特别麻烦。</p>
-<h2 id="Win-10的版本"><a href="#Win-10的版本" class="headerlink" title="Win 10的版本"></a>Win 10的版本</h2><p>到了Win 10版本后，这个问题就得到了解决</p>
-<p><img src="https://i.loli.net/2021/07/23/S7vPB56arGyzcOg.jpg"></p>
-<p>变量的显示不再是一行，而是变成了列表形式。</p>
-<h2 id="Win-10又更新了"><a href="#Win-10又更新了" class="headerlink" title="Win 10又更新了"></a>Win 10又更新了</h2><p>但后来，再次打开了环境变量，他又变成了原来的样子 -_-</p>
-<p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
-<p>而实际上，并不是又回到了原来的版本，只是Win 10在更新后同时兼顾了两种查看方式。</p>
-<ul>
-<li><p>当%xxxxx%这种变量放在第一个时，就会按照第一行显示</p>
-</li>
-<li><p>当路径变量放在第一行时，就会按照列表显示。</p>
-<p><img src="https://i.loli.net/2021/09/07/XDrNMRWa217bjnJ.jpg"></p>
-</li>
-</ul>
-<p><img src="https://i.loli.net/2021/09/07/ABe3Kvna2QLuhNz.jpg"></p>
-<p><img src="https://i.loli.net/2021/09/07/gy5Pv49reJSQnRj.jpg"></p>
-]]></content>
-      <categories>
-        <category>踩坑小记录</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>搭建环境</tag>
       </tags>
   </entry>
   <entry>
