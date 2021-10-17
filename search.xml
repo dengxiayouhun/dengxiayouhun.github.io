@@ -84,6 +84,91 @@
       </tags>
   </entry>
   <entry>
+    <title>Java面向对象之封装的理解</title>
+    <url>/2021/10/17/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%B0%81%E8%A3%85%E6%80%A7%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么才算是Java面向对象？"><a href="#什么才算是Java面向对象？" class="headerlink" title="什么才算是Java面向对象？"></a>什么才算是Java面向对象？</h2><p>很多人把面向对象的内容学完了都搞不懂这个问题。</p>
+<p>Java面向对象的知识大概分为三个部分<strong>类以及其成员</strong>、<strong>关键字</strong>和<strong>面向对象的特征</strong>。</p>
+<p>那么，用类和关键字写的程序就是面向对象吗？</p>
+<p>显然不是，我就经常用Java的类和关键字写面向过程。</p>
+<p><strong>那么，究竟什么样的程序才算得上是面向对象呢？</strong></p>
+<p><strong>答案：</strong>用类和关键字写的具有<strong>面向对象特征</strong>的程序是面向对象的程序。</p>
+<p>所以说面向对象的知识中，类和关键字只是工具，面向对象的特征才是灵魂。</p>
+<p>所以，这篇文章我们来谈谈面向对象中的<strong>封装</strong>。</p>
+<h2 id="什么是封装？"><a href="#什么是封装？" class="headerlink" title="什么是封装？"></a>什么是封装？</h2><p>封装就是字面上的意思，就是打包。</p>
+<p>然而，严格上来说，这个封装指的是<strong>封装和隐藏</strong>。</p>
+<p>也就是打包的同时还不能让“包”外面的人看到包里面的东西。也就是很多老程序员嘴里说的黑盒。</p>
+<h2 id="封装有什么好处？"><a href="#封装有什么好处？" class="headerlink" title="封装有什么好处？"></a>封装有什么好处？</h2><ol>
+<li><p><strong>不容易出那种很恐怖的bug:</strong></p>
+<p>有一种很恐怖的bug很多人都遇到过：改好了这里，那边就出问题了，那里改好了，另一边又出问题了。</p>
+<p>封装就能很好的解决这种问题，因为被封装的个体相互独立型都很强，不容易出现那种连锁的bug。就算出现了，由于封装性低耦合的特点也很容易顺藤摸瓜找到bug。</p>
+</li>
+<li><p><strong>安全性高：</strong></p>
+<p>因为，封装具有隐藏的特点，所以黑盒内部的代码权限被限制的死死的外界想要随意调用是不可能的。因此，黑盒内的信息只要权限限制的好，安全性都会非常的高。</p>
+</li>
+<li><p><strong>便于修改：</strong></p>
+<p>因为各种功能都被封装成一个个的黑盒，彼此之间相互独立。所以当我们需要为程序添加新功能时，只需要新建一个黑盒即可，不需要考虑太多别的代码的影响。</p>
+</li>
+</ol>
+<h2 id="封装的要求是什么？"><a href="#封装的要求是什么？" class="headerlink" title="封装的要求是什么？"></a>封装的要求是什么？</h2><p>说到封装的要求就需要分成<strong>封装</strong>和<strong>隐藏</strong>两个部分展开。</p>
+<ol>
+<li><p><strong>封装的要求:</strong></p>
+<p>也就是怎么把功能打包成盒子。</p>
+<p>把功能打包要遵循<strong>高内聚</strong>和<strong>低耦合</strong>的原则：</p>
+<p><strong>内聚：</strong></p>
+<p>内聚是指黑盒内代码的联系性。</p>
+<p>高内聚是指黑盒内部的代码必须保持高度的联系性，如果联系性不高，那就删掉，不能删就拆成两个或者多个黑盒。以此来提高内聚性。</p>
+<p><strong>耦合：</strong></p>
+<p>耦合就是指模块与模块之间的联系，也就是黑盒与黑盒之间的联系。</p>
+<p>低耦合就是尽量减少黑盒之间的联系，如果耦合很强，并且降低不了你，那就合并成一个黑盒。</p>
+<blockquote>
+<p>高内聚和低耦合的目的就是让打包起来的黑盒具有高度的独立性。</p>
+</blockquote>
+</li>
+<li><p><strong>隐藏的要求：</strong></p>
+<p>一句话概括：<strong>用不到的权限就别给！</strong></p>
+<p>隐藏的主要目的是为了安全，防止在黑盒外通过除了黑盒提供的接口（不是关键字那个接口）以外的途径调用黑盒内部的信息。因此，在黑盒内的代码要严格限制其权限不要闭着眼都给public，能少给就少给，千万别多给。</p>
+</li>
+</ol>
+<h2 id="怎么完成封装？"><a href="#怎么完成封装？" class="headerlink" title="怎么完成封装？"></a>怎么完成封装？</h2><p>还是分为<strong>封装</strong>和<strong>隐藏</strong>两个部分来讲：</p>
+<ol>
+<li><p><strong>封装：</strong></p>
+<p>其实没啥可说的，就是遵循<strong>高内聚</strong>、<strong>低耦合</strong>的原则进行封装，内聚低了就拆，耦合高了就合并。用多了就有经验了。</p>
+</li>
+<li><p><strong>隐藏：</strong></p>
+<p>隐藏说白了也就是权限的事，知道怎么限制权限也就知道了怎么隐藏。</p>
+<p>权限限制通过四个权限修饰符来实现，分别是：<strong>private</strong>、<strong>缺省</strong>、<strong>protected</strong>和<strong>public</strong>。</p>
+<p>他们对权限的限制如下图所示：</p>
+<p><img src="https://i.loli.net/2021/10/17/2FRLvGi3tsHY6q5.png"></p>
+<p>特别提醒：</p>
+<p>类的属性必须设置成private</p>
+<p>类的方法因其需要给与不同的权限，用不到的地方不要给。</p>
+<p>类（不包括内部类）的权限不能是private。</p>
+</li>
+</ol>
+<h2 id="特别提醒："><a href="#特别提醒：" class="headerlink" title="特别提醒："></a>特别提醒：</h2><ol>
+<li><p><strong>黑盒到底是啥？</strong></p>
+<p>有的同学疑问黑盒到底是类还是方法？</p>
+<p>其实都是，只要是被封装了，都是黑盒。而且黑盒一般都是黑盒套黑盒。比如说，我设计一个学生信息管理系统，其中学生成绩管理是一个黑盒，而学生成绩管理下的增删改查也都是一个一个的黑盒，甚至存储学生信息的线性表也是一个黑盒。只不过他们有的是方法、有的是类。这也是为什么说面向对象里万物皆对象，万物皆黑盒（后面这句我加的）的原因。</p>
+</li>
+<li><p><strong>面向对象的程序设计的规范</strong></p>
+<p>初次接触面向对象的小伙伴们可能会觉的面向对象好自由，万物皆对象，想把谁当对象都行，爱咋封装咋封装。这也导致很多程序写的五花八门，有的简直没眼看。</p>
+<p>实际上，面向对象确实自由，但也不是无限自由，封装的好叫黑盒，封装的不好，写了一个高耦合低内聚的程序，那就不叫黑盒了，那叫透明玻璃缸（比如刚学面向对象时的我）。</p>
+<p>所以说，当大家严格遵守封装的特性去设计面向对象的程序时，我们的程序的质量就会提升起来。这也是为什么有的人写的面向对象的程序说不出来哪里好，但就是感觉比自己高级，实际上是他们把握住了面向对象的三大特性，其中之一就有封装。</p>
+</li>
+</ol>
+<p>给大家一个学生成绩管理系统的代码，看看大家能不能体会到面向对象的奥妙。其中有标准版、Plus版和Plus+版，分别对应面向过程、粗糙的面向对象、和具有封装特性的面向对象。</p>
+<p><a href="https://dengxiayouhun.github.io/2021/10/14/%E5%AD%A6%E7%94%9F%E6%88%90%E7%BB%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">学生成绩管理系统</a></p>
+<p><img src="https://i.loli.net/2021/10/17/6NpUSQegfTVo3XZ.gif"></p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于我与厌学情绪斗智斗勇的那些事</title>
     <url>/2021/10/08/%E5%85%B3%E4%BA%8E%E6%88%91%E4%B8%8E%E5%8E%8C%E5%AD%A6%E6%83%85%E7%BB%AA%E6%96%97%E6%99%BA%E6%96%97%E5%8B%87%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
