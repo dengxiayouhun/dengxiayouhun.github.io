@@ -84,6 +84,67 @@
       </tags>
   </entry>
   <entry>
+    <title>Java面向对象之类的成员：构造器</title>
+    <url>/2021/10/18/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98%EF%BC%9A%E6%9E%84%E9%80%A0%E5%99%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么是构造器？"><a href="#什么是构造器？" class="headerlink" title="什么是构造器？"></a>什么是构造器？</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person()&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中Person(){}就是一个构造器（空构造器）。</p>
+<h2 id="构造器有什么用？"><a href="#构造器有什么用？" class="headerlink" title="构造器有什么用？"></a>构造器有什么用？</h2><p>两个作用，<strong>创建对象</strong>和<strong>对象的的属性初始化赋值</strong>。</p>
+<ol>
+<li><p><strong>创建对象：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    Person p1 = <span class="keyword">new</span> Person();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个功能其实我们一直在用，new Person()就是调用了构造器，不过调用的是默认的空构造器。</p>
+</li>
+<li><p><strong>对象的属性初始化赋值：</strong></p>
+<p>默认的空构造器是不具备这个功能的，但是我们可以写一个可以赋值的构造器。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    Person p1 = <span class="keyword">new</span> Person(<span class="string">&quot;老王&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person(String e)&#123;</span><br><span class="line">    	name = e;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如此我们就可以在创建对象的同时对对象的属性进行初始化赋值操作。</p>
+</li>
+</ol>
+<h2 id="用不用写构造器，怎么写构造器？"><a href="#用不用写构造器，怎么写构造器？" class="headerlink" title="用不用写构造器，怎么写构造器？"></a>用不用写构造器，怎么写构造器？</h2><p>这个问题要看我们用不用对对象的属性进行初始化赋值。</p>
+<ol>
+<li><p><strong>不写构造器：</strong></p>
+<p>当我们不需要对类的对象的属性进行赋值时，我们就没必要写构造器，默认的构造器就够用。</p>
+</li>
+<li><p><strong>写一个构造器：</strong></p>
+<p>如果我们有明确的属性初始化赋值需求那么我们就需要写一个构造器。</p>
+</li>
+<li><p><strong>重载多个构造器：</strong></p>
+<p>可能一些大型的程序要创建多个对象，有的需要初始化赋值一个属性，有的需要初始化赋值两个，有的需要初始化赋值多个。这个时候我们就需要重载多个构造器，以应对不同对象的需求。</p>
+<blockquote>
+<p>友情提示：当我们写一个构造器时，默认构造器就不会被提供。</p>
+</blockquote>
+</li>
+<li><p><strong>特殊情况：</strong></p>
+<p>某些特殊情况下，我们也需要自己写一个构造器，就是一些要求在创建对象的同时输出一些语句之类的。多出现于一些大学教学用的题当中。</p>
+<p>其实完全没必要。因为构造器的主要功能是：创建对象和对象属性初始化赋值。至于这些特殊要求完全可以写一个方法来实现。在构造器里加上这写东西，我个人认为有点. . . </p>
+</li>
+</ol>
+<h2 id="构造器是不是特殊的方法？"><a href="#构造器是不是特殊的方法？" class="headerlink" title="构造器是不是特殊的方法？"></a>构造器是不是特殊的方法？</h2><p>好多人都认为构造器是一种特殊的方法，主要原因就是因为它们长得比较像。</p>
+<p>我认为他们没有关系：</p>
+<ul>
+<li><p><strong>从功能上讲：</strong></p>
+<p>构造器的创建对象功能是方法不能办到的（可能能办到，只是我不知道）。</p>
+</li>
+<li><p><strong>从使用上来讲：</strong></p>
+<p>方法不能用new调用，构造器也不能用 对象.构造器的方式调用。</p>
+</li>
+</ul>
+<p>因此，两者并没有谁包含于谁的关系，各有各的作用，只不过在某些方面有一点点的交叉而已，并不能说构造器是一种特殊的方法。</p>
+<p>构造器就是构造器，和方法一样是类的一个成员，并不属于类其他的某个成员。</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+        <tag>java面向对象</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java面向对象之封装的理解</title>
     <url>/2021/10/17/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%B0%81%E8%A3%85%E6%80%A7%E7%9A%84%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么才算是Java面向对象？"><a href="#什么才算是Java面向对象？" class="headerlink" title="什么才算是Java面向对象？"></a>什么才算是Java面向对象？</h2><p>很多人把面向对象的内容学完了都搞不懂这个问题。</p>
@@ -166,6 +227,7 @@
       <tags>
         <tag>java</tag>
         <tag>学习笔记</tag>
+        <tag>java面向对象</tag>
       </tags>
   </entry>
   <entry>
@@ -403,7 +465,7 @@
 <p>如果你是计算机专业并且和我一样选的Java后端开发路线，那么无论你多么讨厌面向对象，你也必须选择面向对象编程。除非你是学着玩的，那 . . . 你随便选，爱咋选择就咋选择，就当是培养兴趣了。</p>
 </li>
 </ol>
-<h2 id="我学会了类的相关知识是不是就学会了面向对象？"><a href="#我学会了类的相关知识是不是就学会了面向对象？" class="headerlink" title="我学会了类的相关知识是不是就学会了面向对象？"></a>我学会了类的相关知识是不是就学会了面向对象？</h2><p>不是！</p>
+<h2 id="我学会了类的相关知识是不是就学会了面向对象？"><a href="#我学会了类的相关知识是不是就学会了面向对象？" class="headerlink" title="我学会了类的相关知识是不是就学会了面向对象？"></a>我学会了类的相关知识是不是就学会了面向对象？</h2><p>不是。</p>
 <p>我也能用Java类的知识写一个面向过程设计的程序。类不等于面向对象。</p>
 <p>学会面向对象是指你会用面向对象的思想设计代码逻辑，然后用类相关知识将代码逻辑实现为实际的代码。两者都很重要，缺一不可。</p>
 ]]></content>
@@ -413,6 +475,7 @@
       <tags>
         <tag>java</tag>
         <tag>学习笔记</tag>
+        <tag>java面向对象</tag>
       </tags>
   </entry>
   <entry>
@@ -3405,7 +3468,11 @@
   <entry>
     <title>Markdown语法简单教程</title>
     <url>/2021/07/16/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>markdown语言是一种轻量级的标记语言，主要通过一些简单的符号对文本进行处理，可以说是程序员写博客的首选语言。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>前情提要：</p>
+<p>博主只是一个软工大二本科生，并非以从事工作多年的程序员。博客只具备参考价值，限于眼界原因，有一些断电并不一定是正确的。</p>
+</blockquote>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>markdown语言是一种轻量级的标记语言，主要通过一些简单的符号对文本进行处理，可以说是程序员写博客的首选语言。</p>
 <h1 id="程序员为什么比较偏爱markdown-？"><a href="#程序员为什么比较偏爱markdown-？" class="headerlink" title="程序员为什么比较偏爱markdown ？"></a>程序员为什么比较偏爱markdown ？</h1><ul>
 <li><p><strong>markdown比较符合程序员的平时习惯</strong></p>
 <p>程序员平时做的最多的就是敲代码。而在敲代码的过程中，鼠标就成为了一个很“碍事”的东西。每一次使用鼠标都会不同程度上的打断程序员的思维，从而给编程带来很多麻烦。而且，程序员的很多工作本身也不需要怎么使用鼠标。因此，久而久之，程序员多少有些抗拒使用鼠标。</p>
@@ -3423,7 +3490,10 @@
 <p>markdown就不存在这种问题，只要是支持markdown语言的，无论在哪里打开都不会乱。这也算是个相当省头发特性。</p>
 </li>
 </ul>
-<h1 id="Markdown语法快速入门（typora）："><a href="#Markdown语法快速入门（typora）：" class="headerlink" title="Markdown语法快速入门（typora）："></a>Markdown语法快速入门（typora）：</h1><h2 id="代码块："><a href="#代码块：" class="headerlink" title="代码块："></a>代码块：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码块语法：</span></span><br><span class="line">​~~~语言名</span><br><span class="line">比如：~~~java</span><br><span class="line">     ~~~c++</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以上均为个人使用体验加上网上查询资料后的感受（也有一些个人臆想）</p>
+</blockquote>
+<h1 id="Markdown语法快速入门（typora）："><a href="#Markdown语法快速入门（typora）：" class="headerlink" title="Markdown语法快速入门（typora）："></a>Markdown语法快速入门（typora）：</h1><h2 id="代码块："><a href="#代码块：" class="headerlink" title="代码块："></a>代码块：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码块语法：</span></span><br><span class="line">~~~语言名</span><br><span class="line">比如：~~~java</span><br><span class="line">     ~~~c++</span><br></pre></td></tr></table></figure>
 
 <p><strong>Java代码块</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.yrp.po;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br></pre></td></tr></table></figure>
@@ -3475,7 +3545,7 @@
 <li>标签</li>
 <li>分类</li>
 </ol>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">/s/建议用快捷键：Ctrl+T</span><br><span class="line"><span class="comment">//表格语法</span></span><br><span class="line">|数据结构与算法| 计算机组成原理|计算机网络|</span><br><span class="line">|-|-|-|</span><br><span class="line">| 操作系统|编译原理|汇编语言| </span><br><span class="line">|Java SE|Java Web||</span><br></pre></td></tr></table></figure>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//建议用快捷键：Ctrl+T</span></span><br><span class="line"><span class="comment">//表格语法</span></span><br><span class="line">|数据结构与算法| 计算机组成原理|计算机网络|</span><br><span class="line">|-|-|-|</span><br><span class="line">| 操作系统|编译原理|汇编语言| </span><br><span class="line">|Java SE|Java Web||</span><br></pre></td></tr></table></figure>
 
 
 
