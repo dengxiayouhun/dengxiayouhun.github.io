@@ -84,6 +84,48 @@
       </tags>
   </entry>
   <entry>
+    <title>Java面向对象之关键字（一）this</title>
+    <url>/2021/10/19/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%88%E4%B8%80%EF%BC%89this/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="this关键字有什么用？"><a href="#this关键字有什么用？" class="headerlink" title="this关键字有什么用？"></a>this关键字有什么用？</h2><p>this关键字的作用就是调用，作为一个动态的对象调用当前类的成员，也就是属性，构造器和方法。</p>
+<h2 id="this的使用区域是什么？"><a href="#this的使用区域是什么？" class="headerlink" title="this的使用区域是什么？"></a>this的使用区域是什么？</h2><p>类内的方法和构造器内都可以用this。</p>
+<h2 id="不怎么见this，是不是this不常用？"><a href="#不怎么见this，是不是this不常用？" class="headerlink" title="不怎么见this，是不是this不常用？"></a>不怎么见this，是不是this不常用？</h2><p>不是，这是因为，类内的this是默认隐藏的。比如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(String e)</span></span>&#123;</span><br><span class="line">        name = e;<span class="comment">//①</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>①号中的name实际上就是 this.name 只不过name被默认隐藏了。</p>
+<h2 id="this怎么调用？"><a href="#this怎么调用？" class="headerlink" title="this怎么调用？"></a>this怎么调用？</h2><ol>
+<li><p><strong>调用属性：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">this</span>.name</span><br></pre></td></tr></table></figure>
+
+<p>一般不用this，用于强调属性或者参数和属性同名时可以用</p>
+</li>
+<li><p><strong>调用方法：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">this</span>.setName(<span class="string">&quot;老王&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>一般不用，一般出于强调作用才会用。</p>
+</li>
+<li><p><strong>调用构造器：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;调用了构造器&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">   	Person(String e)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">this</span>();</span><br><span class="line">        name = e;</span><br><span class="line">	&#125;</span><br><span class="line">    Person(String e, <span class="keyword">int</span> n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">this</span>(e);</span><br><span class="line">        age = n;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(String e)</span></span>&#123;</span><br><span class="line">        name = e;<span class="comment">//①</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>根据参数调用不同的构造器，效果是调用构造器内的逻辑代码，并不会再创建一次对象。</p>
+<p>有两个要求：</p>
+<ol>
+<li>调用语句必须放在第一行</li>
+<li>不能一个构造器调用多个构造器</li>
+<li>调用构造器不能形成递归</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+        <tag>java面向对象</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java面向对象之类的成员：构造器</title>
     <url>/2021/10/18/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98%EF%BC%9A%E6%9E%84%E9%80%A0%E5%99%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么是构造器？"><a href="#什么是构造器？" class="headerlink" title="什么是构造器？"></a>什么是构造器？</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person()&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
