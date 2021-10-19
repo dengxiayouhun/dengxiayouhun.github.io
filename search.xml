@@ -89,14 +89,14 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么是构造器？"><a href="#什么是构造器？" class="headerlink" title="什么是构造器？"></a>什么是构造器？</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person()&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>其中Person(){}就是一个构造器（空构造器）。</p>
-<h2 id="构造器有什么用？"><a href="#构造器有什么用？" class="headerlink" title="构造器有什么用？"></a>构造器有什么用？</h2><p>两个作用，<strong>创建对象</strong>和<strong>对象的的属性初始化赋值</strong>。</p>
+<h2 id="构造器有什么用？"><a href="#构造器有什么用？" class="headerlink" title="构造器有什么用？"></a>构造器有什么用？</h2><p>两个作用，<strong>创建对象</strong>和<strong>对象属性的初始化赋值</strong>。</p>
 <ol>
 <li><p><strong>创建对象：</strong></p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    Person p1 = <span class="keyword">new</span> Person();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>这个功能其实我们一直在用，new Person()就是调用了构造器，不过调用的是默认的空构造器。</p>
 </li>
-<li><p><strong>对象的属性初始化赋值：</strong></p>
+<li><p><strong>对象属性的初始化赋值：</strong></p>
 <p>默认的空构造器是不具备这个功能的，但是我们可以写一个可以赋值的构造器。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    Person p1 = <span class="keyword">new</span> Person(<span class="string">&quot;老王&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person(String e)&#123;</span><br><span class="line">    	name = e;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -149,18 +149,18 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么才算是Java面向对象？"><a href="#什么才算是Java面向对象？" class="headerlink" title="什么才算是Java面向对象？"></a>什么才算是Java面向对象？</h2><p>很多人把面向对象的内容学完了都搞不懂这个问题。</p>
 <p>Java面向对象的知识大概分为三个部分<strong>类以及其成员</strong>、<strong>关键字</strong>和<strong>面向对象的特征</strong>。</p>
 <p>那么，用类和关键字写的程序就是面向对象吗？</p>
-<p>显然不是，我就经常用Java的类和关键字写面向过程。</p>
-<p><strong>那么，究竟什么样的程序才算得上是面向对象呢？</strong></p>
+<p>显然不是，Java也是可以写面型过程的，比如我就经常用Java的类和关键字写面向过程。</p>
+<p><strong>那么，究竟什么样的程序才称得上是面向对象呢？</strong></p>
 <p><strong>答案：</strong>用类和关键字写的具有<strong>面向对象特征</strong>的程序是面向对象的程序。</p>
 <p>所以说面向对象的知识中，类和关键字只是工具，面向对象的特征才是灵魂。</p>
-<p>所以，这篇文章我们来谈谈面向对象中的<strong>封装</strong>。</p>
+<p>那么，这篇文章我们来谈谈面向对象中的<strong>封装</strong>特性。</p>
 <h2 id="什么是封装？"><a href="#什么是封装？" class="headerlink" title="什么是封装？"></a>什么是封装？</h2><p>封装就是字面上的意思，就是打包。</p>
-<p>然而，严格上来说，这个封装指的是<strong>封装和隐藏</strong>。</p>
-<p>也就是打包的同时还不能让“包”外面的人看到包里面的东西。也就是很多老程序员嘴里说的黑盒。</p>
+<p>然而，严格上来说，这里的封装还有<strong>隐藏</strong>的意思。</p>
+<p>也就是打包的同时不能让“包”外面的人看到包里面的东西，更不能让包外面的人私自动包里的东西。也就是很多老程序员所说的黑盒。</p>
 <h2 id="封装有什么好处？"><a href="#封装有什么好处？" class="headerlink" title="封装有什么好处？"></a>封装有什么好处？</h2><ol>
 <li><p><strong>不容易出那种很恐怖的bug:</strong></p>
-<p>有一种很恐怖的bug很多人都遇到过：改好了这里，那边就出问题了，那里改好了，另一边又出问题了。</p>
-<p>封装就能很好的解决这种问题，因为被封装的个体相互独立型都很强，不容易出现那种连锁的bug。就算出现了，由于封装性低耦合的特点也很容易顺藤摸瓜找到bug。</p>
+<p>有一种很恐怖的bug相信很多人都遇到过：改好了这里，那边就出问题了，那边改好了，另一边又出问题了。</p>
+<p>封装就能很好的解决这种问题，因为被封装的个体相互独立型很强，不容易出现那种连锁的bug。就算出现了，由于封装性低耦合的特点也很容易顺藤摸瓜找到bug。</p>
 </li>
 <li><p><strong>安全性高：</strong></p>
 <p>因为，封装具有隐藏的特点，所以黑盒内部的代码权限被限制的死死的外界想要随意调用是不可能的。因此，黑盒内的信息只要权限限制的好，安全性都会非常的高。</p>
@@ -176,10 +176,10 @@
 <p>把功能打包要遵循<strong>高内聚</strong>和<strong>低耦合</strong>的原则：</p>
 <p><strong>内聚：</strong></p>
 <p>内聚是指黑盒内代码的联系性。</p>
-<p>高内聚是指黑盒内部的代码必须保持高度的联系性，如果联系性不高，那就删掉，不能删就拆成两个或者多个黑盒。以此来提高内聚性。</p>
+<p>==高内聚==是指黑盒内部的代码必须保持高度的联系性，如果联系性不高，那就删掉，不能删就拆成两个或者多个黑盒。以此来提高内聚性。</p>
 <p><strong>耦合：</strong></p>
 <p>耦合就是指模块与模块之间的联系，也就是黑盒与黑盒之间的联系。</p>
-<p>低耦合就是尽量减少黑盒之间的联系，如果耦合很强，并且降低不了你，那就合并成一个黑盒。</p>
+<p>==低耦合==就是尽量减少黑盒之间的联系，如果耦合很强，并且降低不了你，那就合并成一个黑盒。</p>
 <blockquote>
 <p>高内聚和低耦合的目的就是让打包起来的黑盒具有高度的独立性。</p>
 </blockquote>
@@ -208,7 +208,7 @@
 <h2 id="特别提醒："><a href="#特别提醒：" class="headerlink" title="特别提醒："></a>特别提醒：</h2><ol>
 <li><p><strong>黑盒到底是啥？</strong></p>
 <p>有的同学疑问黑盒到底是类还是方法？</p>
-<p>其实都是，只要是被封装了，都是黑盒。而且黑盒一般都是黑盒套黑盒。比如说，我设计一个学生信息管理系统，其中学生成绩管理是一个黑盒，而学生成绩管理下的增删改查也都是一个一个的黑盒，甚至存储学生信息的线性表也是一个黑盒。只不过他们有的是方法、有的是类。这也是为什么说面向对象里万物皆对象，万物皆黑盒（后面这句我加的）的原因。</p>
+<p>其实都是，只要是被封装了，都是黑盒。而且黑盒一般都是黑盒套黑盒。比如说，我设计一个学生信息管理系统，其中学生成绩管理是一个黑盒，而学生成绩管理下的增删改查也都是一个一个的黑盒，甚至存储学生信息的线性表也是一个黑盒。只不过他们有的是方法、有的是类。这也是为什么说面向对象里万物皆对象，万物皆黑盒（不用去百度，后面这句是我加的）的原因。</p>
 </li>
 <li><p><strong>面向对象的程序设计的规范</strong></p>
 <p>初次接触面向对象的小伙伴们可能会觉的面向对象好自由，万物皆对象，想把谁当对象都行，爱咋封装咋封装。这也导致很多程序写的五花八门，有的简直没眼看。</p>
