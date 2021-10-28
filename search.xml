@@ -89,14 +89,14 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="All-My-Life-计划的大概描述："><a href="#All-My-Life-计划的大概描述：" class="headerlink" title="All My Life 计划的大概描述："></a>All My Life 计划的大概描述：</h2><p>在大二暑假之前，设计并搭建一个能够记录自己<strong>所有生活信息</strong>的网站——<strong>All My Life</strong>。并以此作为自己大二暑假找暑期实习的项目经验。并且，在大三对网站的各个部分进行性能优化，作为大四实习的主要项目经验之一。</p>
 <h2 id="All-My-Life-计划的起因："><a href="#All-My-Life-计划的起因：" class="headerlink" title="All My  Life 计划的起因："></a>All My  Life 计划的起因：</h2><ol>
 <li><p><strong>调用各种组件搭建的傻瓜式博客不能满足当下的需求：</strong></p>
-<p>我在大一暑假期间就搭建了一个傻瓜式的静态博客，总体来说还算不错但是在各个方面槽点很多。</p>
+<p>我在大一暑假期间搭建了一个傻瓜式的静态博客，总体来说还算不错但是在各个方面槽点很多。</p>
 <p><img src="https://i.loli.net/2021/10/28/G4lcFgqjhyPDEx1.jpg"></p>
 <p><img src="https://i.loli.net/2021/10/28/JWMfDhdGrn1C49z.jpg"></p>
 <p>随便列举几个：</p>
 <ol>
-<li><p>文章区分鸡肋：</p>
-<p>目前这个傻瓜式博客只能通过分类和标签来对文章进行分区，当各个类型的文章较多时，这种简单的分类特别鸡肋，让人头疼。</p>
-<p>我理想当中的分类应该是像B站那样分为科技区、知识区、搞笑区（鬼畜区）、生活区、游戏区、电影区、音乐区、番剧区、吐槽区（牢骚区），每一分区下分为视频和专栏等。只不过B站存储的是不同人的生活。而All My Life存储的是一个人的生活信息。</p>
+<li><p>文章分区鸡肋：</p>
+<p>目前这个傻瓜式博客只能通过分类和标签来对文章进行分区。当各个类型的文章较多时，这种简单的分类会显得特别鸡肋，基本只能通过搜索功能查找文章，让人脑壳疼。</p>
+<p>我理想当中的分类应该是像B站那样分为科技区、知识区、搞笑区（鬼畜区）、生活区、游戏区、电影区、音乐区、番剧区、吐槽区（牢骚区），每一分区下分为视频和专栏等。不同的是B站存储的是不同人的生活。而All My Life存储的是一个人的生活信息。</p>
 </li>
 <li><p>文章显示让人难受：</p>
 <ul>
@@ -106,15 +106,16 @@
 <p><img src="https://i.loli.net/2021/10/28/p3ROoZdwrvqhx2Y.jpg"></p>
 </li>
 <li><p>代码块显示拉跨：</p>
-<p>这个傻瓜博客的代码块显示让我特别难受。</p>
+<p>这个傻瓜式博客的代码块显示让我一直很难受。</p>
 <p><img src="https://i.loli.net/2021/10/28/DXogmOCUNbknRq5.jpg"></p>
-<p>我心目中的代码块是这样的：</p>
+<p>我心目中的代码块显示是这样的：</p>
 <p><img src="https://i.loli.net/2021/10/28/wP8LY7lUnDKqBx4.jpg"></p>
 </li>
 </ul>
 </li>
 </ol>
-<p>还有其他各种槽点，我就不一一列举了。一开始我还想直接改源码，但随着各种不满意越来越多，我反而懒得改了。与其去看别人的源码一点点去改（看别人的源码好头疼），还不如自己写一个网站，而且自己写的网站还可以作为一个项目写到简历上。</p>
+<p>还有其他各种槽点，我就不一一列举了。</p>
+<p>一开始我还想直接改源码，但随着后来各种不满意越来越多，我反而懒得改了。与其去看别人的源码一点点去改（看别人的源码好头疼），还不如自己写一个网站。而且自己写的网站还可以作为一个项目写到简历上。</p>
 </li>
 <li><p><strong>客观需求：</strong></p>
 <ol>
@@ -129,7 +130,7 @@
 </ol>
 </li>
 </ol>
-<h2 id="All-My-Life的设计构想："><a href="#All-My-Life的设计构想：" class="headerlink" title="All My Life的设计构想："></a>All My Life的设计构想：</h2><p>其实目前只有一个大概，以目前这个傻瓜式博客为基石，以B站的大体设计框架对其进行重构。细节方面到时用的事后再考虑。</p>
+<h2 id="All-My-Life的设计构想："><a href="#All-My-Life的设计构想：" class="headerlink" title="All My Life的设计构想："></a>All My Life的设计构想：</h2><p>目前其实只有一个大概的设想：以目前这个傻瓜式博客为基石，以B站的大体设计框架对其进行重构，再增添一些个性化的功能。细节方面到开始动手实施的事后再仔细考虑。</p>
 <h2 id="顺口提一下别的一些事："><a href="#顺口提一下别的一些事：" class="headerlink" title="顺口提一下别的一些事："></a>顺口提一下别的一些事：</h2><p>我并不是大二暑假前要全身心投入到这个项目上，All My Life作为一个大的工程会一直不断驱动我去锻炼学习新的知识，并且成为一把一直悬在我头上的一把刀(就是那种紧迫感)。像平时算法题该刷还是得刷，学校的一些作业该”应付“还是得继续”应付“。甚至还要去做天猫商城之类的网红项目练手</p>
 ]]></content>
       <categories>
