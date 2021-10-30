@@ -32,7 +32,7 @@
 <td><a href="https://dengxiayouhun.github.io/2021/10/14/%E5%AD%A6%E7%94%9F%E6%88%90%E7%BB%A9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">学生成绩管理系统</a></td>
 </tr>
 <tr>
-<td></td>
+<td><a href="https://dengxiayouhun.github.io/2021/10/26/%E5%AE%A2%E6%88%B7%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86/">客户信息管理系统</a></td>
 </tr>
 </tbody></table>
 ]]></content>
@@ -81,6 +81,56 @@
       <tags>
         <tag>java</tag>
         <tag>踩坑记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java面向对象之多态性的理解</title>
+    <url>/2021/10/30/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%A4%9A%E6%80%81%E6%80%A7%E7%9A%84%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>前言：</p>
+<p>其实我一直不敢写这篇文章，原因就是多态性太“难”了。</p>
+<p>多态性本身其实十分简单，简单到多态性的定义其实只有一句。但掌握多态性却并不容易，因为它本身没什么用但是确实很多结构的基石。比如接口和抽象类，某种意义上多态性就是这二者的基石。</p>
+<p>封装性和继承性其实很好理解，往往我们了解了封装性和继承性的定义，我们就能大概知道这二者的存在有什么意义。而多态性不一样，当我们理解了多态性的定义，大概率我们完全不知道多态性有什么用。</p>
+<p>多态性就像是地基，它本身没有什么明显的作用，但是很多其他的一些结构是建立在多态性这块基石之上的。因此，接下来的文章当中，小伙伴们觉得多态性好像没啥用是很正常的，但不要真的就认为多态性没用，多态性不重要.</p>
+</blockquote>
+<h2 id="什么是多态性"><a href="#什么是多态性" class="headerlink" title="什么是多态性?"></a>什么是多态性?</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">What</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Person p1 = <span class="keyword">new</span> Chinese();<span class="comment">//多态性</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="comment">//属性：</span></span><br><span class="line">	String name;</span><br><span class="line">	String sex;</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">	<span class="comment">//方法：</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;人会说话&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chinese</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="comment">//方法：</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;中国人会说汉语！&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>==Person p1 = new Chinese();==就是多态性(也被称为对象的<strong>多态性</strong>)。</p>
+<p>简单来说就是：声明一个父类的引用变量，这个引用变量指向子类的对象。</p>
+<h2 id="怎么使用多态性？"><a href="#怎么使用多态性？" class="headerlink" title="怎么使用多态性？"></a>怎么使用多态性？</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">What</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Person p1 = <span class="keyword">new</span> Chinese();<span class="comment">//多态性</span></span><br><span class="line">		p1.talk();<span class="comment">//使用</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="comment">//属性：</span></span><br><span class="line">	String name;</span><br><span class="line">	String sex;</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">	<span class="comment">//方法：</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;人会说话&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chinese</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">	<span class="comment">//方法：</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">&quot;中国人会说汉语！&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/10/30/s3JXQ97SnYeyMqK.jpg"></p>
+<p>多态性的使用也被称为<strong>虚拟方法</strong>的使用。</p>
+<ul>
+<li><strong>要点：</strong><ol>
+<li>类型是父类</li>
+<li>对象是子类</li>
+<li>调用重写的方法调用的是子类的方法</li>
+</ol>
+</li>
+</ul>
+<p>很多人看到这里会议就感到一头雾水，感觉多态性好像还是没什么用，而且很别扭。</p>
+<p>这是因为，我们现在经验还太少，没遇到过这种情况，或者说没有注意到这种情况。我们目前只需要记住Java有这个特性，当我们 面临这种场景时，我们要知道这是用了多态性或者在需要用多态性解决的时候，要知道使用多态性即可。</p>
+<h2 id="举一个常见的多态性的例子："><a href="#举一个常见的多态性的例子：" class="headerlink" title="举一个常见的多态性的例子："></a>举一个常见的多态性的例子：</h2><p>敲代码比较多的同学可能都使用过equals()这个方法，equals()方法就应用了多态性。</p>
+<p>equals()方法是Object类里的方法，然后在其他子类(比如：String类)里重写。</p>
+<ul>
+<li><p>Object类：</p>
+<p><img src="https://i.loli.net/2021/10/30/pwnU5KosVubcgAq.jpg"></p>
+</li>
+<li><p>String类equals方法的API文档:</p>
+<p><strong>方法的权限返回值和参数列表：</strong>public boolean equals(Object anObject)</p>
+<p><strong>方法的功能：</strong>将此字符串与指定的对象比较。当且仅当该参数不为 null，并且是与此对象表示相同字符序列的 String 对象时，结果才为 true。 </p>
+<p><strong>继承关系：</strong>父类：Object类<br><strong>参数：</strong><br>anObject ： 与此 String 进行比较的对象。<br><strong>返回：</strong><br>如果给定对象表示的 String 与此 String 相等，则返回 true；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+        <tag>java面向对象</tag>
       </tags>
   </entry>
   <entry>
