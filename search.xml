@@ -86,7 +86,11 @@
   <entry>
     <title>Java面向对象之关键字（二）static</title>
     <url>/2021/11/03/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%88%E4%BA%8C%EF%BC%89static/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p><strong>目录：</strong></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、可参考、等待重置</p>
+</blockquote>
+<hr>
+<p><strong>目录：</strong></p>
 <ol>
 <li><strong>为什么引入了static关键字？</strong></li>
 <li><strong>怎么使用static关键字？</strong></li>
@@ -148,6 +152,10 @@
 <p>多态性本身其实很简单，其定义只有一句。但掌握多态性却并不容易，因为它本身看起来没什么用，却是很多结构的基石。比如接口和抽象类。因此，多态性的应用是非常广泛的。</p>
 <p>本身没什么用，但十分重要，应用还十分广泛这就导致多态性有种“形散神聚”的意思，不太好学</p>
 </blockquote>
+<blockquote>
+<p>参考价值：已完结、但不一定正确、仅供参考、但不能作为标准答案、等待重置</p>
+</blockquote>
+<hr>
 <h2 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h2><ol>
 <li><p><strong>什么是多态性？</strong></p>
 </li>
@@ -186,7 +194,10 @@
   <entry>
     <title>All My Life 计划</title>
     <url>/2021/10/28/All-My-Life-%E8%AE%A1%E5%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="All-My-Life-计划的大概描述："><a href="#All-My-Life-计划的大概描述：" class="headerlink" title="All My Life 计划的大概描述："></a>All My Life 计划的大概描述：</h2><p>在大二暑假之前，设计并搭建一个能够记录自己<strong>所有生活信息</strong>的网站——<strong>All My Life</strong>。并以此作为自己大二暑假找暑期实习的项目经验。并且，在大三对网站的各个部分进行性能优化，作为大四实习的主要项目经验之一。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：未完成、个人计划、没有参考价值</p>
+</blockquote>
+<h2 id="All-My-Life-计划的大概描述："><a href="#All-My-Life-计划的大概描述：" class="headerlink" title="All My Life 计划的大概描述："></a>All My Life 计划的大概描述：</h2><p>在大二暑假之前，设计并搭建一个能够记录自己<strong>所有生活信息</strong>的网站——<strong>All My Life</strong>。并以此作为自己大二暑假找暑期实习的项目经验。并且，在大三对网站的部分进行性能优化，作为大四实习的主要项目经验之一。</p>
 <h2 id="All-My-Life-计划的起因："><a href="#All-My-Life-计划的起因：" class="headerlink" title="All My  Life 计划的起因："></a>All My  Life 计划的起因：</h2><ol>
 <li><p><strong>调用各种组件搭建的傻瓜式博客不能满足当下的需求：</strong></p>
 <p>我在大一暑假期间搭建了一个傻瓜式的静态博客，总体来说还算不错，但是各个方面的槽点很多。</p>
@@ -244,7 +255,10 @@
   <entry>
     <title>Java面向对象之继承性的理解（关键字super）</title>
     <url>/2021/10/27/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E7%BB%A7%E6%89%BF%E6%80%A7%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%88%E5%85%B3%E9%94%AE%E5%AD%97super%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么是继承性？"><a href="#什么是继承性？" class="headerlink" title="什么是继承性？"></a>什么是继承性？</h2><p>就是字面上的意思，一个类继承了另一个类的属性和方法就叫继承。继承的是子类被继承的是父类。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、但不一定正确、仅供参考、但不能作为标准答案、等待重置</p>
+</blockquote>
+<h2 id="什么是继承性？"><a href="#什么是继承性？" class="headerlink" title="什么是继承性？"></a>什么是继承性？</h2><p>就是字面上的意思，一个类继承了另一个类的属性和方法就叫继承。继承的是子类被继承的是父类。</p>
 <h2 id="继承有什么好处？"><a href="#继承有什么好处？" class="headerlink" title="继承有什么好处？"></a>继承有什么好处？</h2><ol>
 <li>减少了代码的冗余，增强了代码的复用性。</li>
 <li>便于扩展代码的功能</li>
@@ -290,7 +304,10 @@
   <entry>
     <title>Java面向对象之关键字（一）this、package、import</title>
     <url>/2021/10/19/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%88%E4%B8%80%EF%BC%89this/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="this关键字："><a href="#this关键字：" class="headerlink" title="this关键字："></a>this关键字：</h1><h2 id="this关键字有什么用？"><a href="#this关键字有什么用？" class="headerlink" title="this关键字有什么用？"></a>this关键字有什么用？</h2><p>this关键字的作用就是调用，作为一个动态的对象调用当前类的成员，也就是属性，构造器和方法。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、可以参考、等待重置</p>
+</blockquote>
+<h1 id="this关键字："><a href="#this关键字：" class="headerlink" title="this关键字："></a>this关键字：</h1><h2 id="this关键字有什么用？"><a href="#this关键字有什么用？" class="headerlink" title="this关键字有什么用？"></a>this关键字有什么用？</h2><p>this关键字的作用就是调用，作为一个动态的对象调用当前类的成员，也就是属性，构造器和方法。</p>
 <h2 id="this的使用区域是什么？"><a href="#this的使用区域是什么？" class="headerlink" title="this的使用区域是什么？"></a>this的使用区域是什么？</h2><p>类内的方法和构造器内都可以用this。</p>
 <h2 id="不怎么见this，是不是this不常用？"><a href="#不怎么见this，是不是this不常用？" class="headerlink" title="不怎么见this，是不是this不常用？"></a>不怎么见this，是不是this不常用？</h2><p>不是，这是因为类内的this是默认隐藏的。比如：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">setName</span><span class="params">(String e)</span></span>&#123;</span><br><span class="line">        name = e;<span class="comment">//①</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -345,7 +362,10 @@
   <entry>
     <title>Java面向对象之类的成员：构造器</title>
     <url>/2021/10/18/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E7%B1%BB%E7%9A%84%E6%88%90%E5%91%98%EF%BC%9A%E6%9E%84%E9%80%A0%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么是构造器？"><a href="#什么是构造器？" class="headerlink" title="什么是构造器？"></a>什么是构造器？</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person()&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、可以参考、等待重置</p>
+</blockquote>
+<h2 id="什么是构造器？"><a href="#什么是构造器？" class="headerlink" title="什么是构造器？"></a>什么是构造器？</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//属性：</span></span><br><span class="line">    String name;</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">    <span class="keyword">boolean</span> isMale;</span><br><span class="line">    <span class="comment">//构造器：</span></span><br><span class="line">    Person()&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//方法：</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Print</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>其中Person(){}就是一个构造器（空构造器）。</p>
 <h2 id="构造器有什么用？"><a href="#构造器有什么用？" class="headerlink" title="构造器有什么用？"></a>构造器有什么用？</h2><p>两个作用，<strong>创建对象</strong>和<strong>对象属性的初始化赋值</strong>。</p>
@@ -405,7 +425,11 @@
   <entry>
     <title>Java面向对象之封装的理解</title>
     <url>/2021/10/17/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%B0%81%E8%A3%85%E6%80%A7%E7%9A%84%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么才算是Java面向对象？"><a href="#什么才算是Java面向对象？" class="headerlink" title="什么才算是Java面向对象？"></a>什么才算是Java面向对象？</h2><p>很多人把面向对象的内容学完了都搞不懂这个问题。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、但不一定正确、参考价值较高、但不能作为标准答案、等待重置</p>
+</blockquote>
+<hr>
+<h2 id="什么才算是Java面向对象？"><a href="#什么才算是Java面向对象？" class="headerlink" title="什么才算是Java面向对象？"></a>什么才算是Java面向对象？</h2><p>很多人把面向对象的内容学完了都搞不懂这个问题。</p>
 <p>Java面向对象的知识大概分为三个部分<strong>类以及其成员</strong>、<strong>关键字</strong>和<strong>面向对象的特征</strong>。</p>
 <p>那么，用类和关键字写的程序就是面向对象吗？</p>
 <p>显然不是，Java也是可以写面型过程的，比如我就经常用Java的类和关键字写面向过程。</p>
@@ -494,6 +518,10 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
 <p>这篇文章类似于“谈谈自己”的生活分享类文章，所以就不怎么注重排版了，只会把重点的地方加粗，加高亮。</p>
 </blockquote>
+<blockquote>
+<p>参考价值：已完结、个人经验分享、可参考，但不一定适合每一个人。</p>
+</blockquote>
+<hr>
 <p>厌学情绪相信大家都遇到过，就是那种不知道为什么整个人就陷入了一种比较颓废的状态当中，身体也不怎么累，但就是提不起力气，提不起精神，什么都不想干，更不想学习。</p>
 <p>这种状态其实我也经常遇到。作为一位<strong>高考卷王大省</strong>——<strong>河南</strong>高中毕业的学子，以及目前每天自学时间高达6~10个小时的“奋斗”大学生，我和厌学情绪可谓是斗智斗勇，也算是经验丰富了。</p>
 <p>首先说说我厌学的频率。上高中的时候，可能是学习环境的原因，虽然很累（参照衡水那个程度，比那个低一点）但是基本没有什么厌学的时候。大多会在考试前后有一段时间会厌学。至于现在大学生活，没有环境逼迫外加确实比较苦，基本每隔3、4天就会产生厌学情绪，啥都不想干，无精打采的。</p>
@@ -529,8 +557,11 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
 <p>前言：</p>
 <p>面向对象时Java中十分重要的一个概念，很多工作多年的程序员也很难说清楚什么是面向对象。我在这里也只是阐述一下当下我对面向对象的理解。</p>
-<p>也就是说，我的理解并不一定是正确的，而且随着以后我对面向对象的理解的改变，这篇文章的内容也会改变。（也可能我会忘记更改）</p>
 </blockquote>
+<blockquote>
+<p>参考价值：已完结、但不一定正确、仅供参考、但不能作为标准答案、等待重置</p>
+</blockquote>
+<hr>
 <h2 id="什么是面向对象？"><a href="#什么是面向对象？" class="headerlink" title="什么是面向对象？"></a>什么是面向对象？</h2><h3 id="面向对象的本质是什么？"><a href="#面向对象的本质是什么？" class="headerlink" title="面向对象的本质是什么？"></a>面向对象的本质是什么？</h3><p>面向对象的本质是一种思想。</p>
 <h3 id="什么是思想？"><a href="#什么是思想？" class="headerlink" title="什么是思想？"></a>什么是思想？</h3><p>思想是一个人面对问题时选择解决方法的指导原则。</p>
 <p>比如：</p>
@@ -739,7 +770,11 @@
   <entry>
     <title>Java基础程序设计之数组(未完)</title>
     <url>/2021/10/05/Java%E5%9F%BA%E7%A1%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%8B%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="什么是数组？"><a href="#什么是数组？" class="headerlink" title="什么是数组？"></a>什么是数组？</h2><h3 id="数组的基本属性："><a href="#数组的基本属性：" class="headerlink" title="数组的基本属性："></a>数组的基本属性：</h3><ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：未完善，无错误、不建议参考，等待重置</p>
+</blockquote>
+<hr>
+<h2 id="什么是数组？"><a href="#什么是数组？" class="headerlink" title="什么是数组？"></a>什么是数组？</h2><h3 id="数组的基本属性："><a href="#数组的基本属性：" class="headerlink" title="数组的基本属性："></a>数组的基本属性：</h3><ol>
 <li><p><strong>类型：</strong></p>
 <ul>
 <li>数组的类型：引用数据类型</li>
@@ -905,7 +940,10 @@
   <entry>
     <title>数据库的一些基本概念</title>
     <url>/2021/09/25/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="什么是数据库"><a href="#什么是数据库" class="headerlink" title="什么是数据库"></a>什么是数据库</h3><p>数据库(database），简单来说就是存储数据的容器。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、无错误、可参考</p>
+</blockquote>
+<h3 id="什么是数据库"><a href="#什么是数据库" class="headerlink" title="什么是数据库"></a>什么是数据库</h3><p>数据库(database），简单来说就是存储数据的容器。</p>
 <h3 id="什么是数据库管理系统-？"><a href="#什么是数据库管理系统-？" class="headerlink" title="什么是数据库管理系统 ？"></a>什么是数据库管理系统 ？</h3><p>数据库管理系统（DBMS），顾名思义，就是用来操作管理数据库的工具。</p>
 <h3 id="什么是SQL-？"><a href="#什么是SQL-？" class="headerlink" title="什么是SQL ？"></a>什么是SQL ？</h3><p>是一种专门用来服务数据库的语言，DBMS一般用SQL来操作数据库。</p>
 <h3 id="什么是端口-？"><a href="#什么是端口-？" class="headerlink" title="什么是端口 ？"></a>什么是端口 ？</h3><p>类似于IP地址至于计算机。每一台计算机都有一个唯一的IP地址，而每一个计算机的服务都有一个独一无二的端口号（不同计算机的相同服务端口号是相同的）。</p>
@@ -923,7 +961,11 @@
   <entry>
     <title>线性表（二）——顺序储存结构（未完成）</title>
     <url>/2021/09/21/%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E9%A1%BA%E5%BA%8F%E5%82%A8%E5%AD%98%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">operation</span></span><br><span class="line"><span class="function">    <span class="title">InitList</span><span class="params">(L)</span>:初始化操作，建立一个空的线性表L。</span></span><br><span class="line"><span class="function">	<span class="title">ListEmpty</span><span class="params">(L)</span>:若线性表为空，返回<span class="literal">true</span>，否则返回<span class="literal">false</span>。</span></span><br><span class="line"><span class="function">	<span class="title">ClearList</span><span class="params">(*L)</span>:将线性表清空。</span></span><br><span class="line"><span class="function">	<span class="title">GetElem</span><span class="params">(L,i,*e)</span>:将线性表L的第i个位置元素返回给e。</span></span><br><span class="line"><span class="function">    <span class="title">LocateElem</span><span class="params">(L,e)</span>:在线性表L中查找与给定值e相等的元素，如果查找成功，返回该元素在表中的序号表示成功，否则，返回0表示失败。</span></span><br><span class="line"><span class="function">    <span class="title">ListInsert</span><span class="params">(*L,i,e)</span>:在线性表L中的第i个位置插入新元素e。</span></span><br><span class="line"><span class="function">    <span class="title">ListDelet</span><span class="params">(*L,i,*e)</span>:删除线性表L中第i个位置的元素，并用e返回其值。</span></span><br><span class="line"><span class="function">    <span class="title">ListLength</span><span class="params">(L)</span>:返回线性表L的元素个数。</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值: 未完善、有错误、但方法连接没有错误可以拷贝使用</p>
+</blockquote>
+<hr>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">operation</span></span><br><span class="line"><span class="function">    <span class="title">InitList</span><span class="params">(L)</span>:初始化操作，建立一个空的线性表L。</span></span><br><span class="line"><span class="function">	<span class="title">ListEmpty</span><span class="params">(L)</span>:若线性表为空，返回<span class="literal">true</span>，否则返回<span class="literal">false</span>。</span></span><br><span class="line"><span class="function">	<span class="title">ClearList</span><span class="params">(*L)</span>:将线性表清空。</span></span><br><span class="line"><span class="function">	<span class="title">GetElem</span><span class="params">(L,i,*e)</span>:将线性表L的第i个位置元素返回给e。</span></span><br><span class="line"><span class="function">    <span class="title">LocateElem</span><span class="params">(L,e)</span>:在线性表L中查找与给定值e相等的元素，如果查找成功，返回该元素在表中的序号表示成功，否则，返回0表示失败。</span></span><br><span class="line"><span class="function">    <span class="title">ListInsert</span><span class="params">(*L,i,e)</span>:在线性表L中的第i个位置插入新元素e。</span></span><br><span class="line"><span class="function">    <span class="title">ListDelet</span><span class="params">(*L,i,*e)</span>:删除线性表L中第i个位置的元素，并用e返回其值。</span></span><br><span class="line"><span class="function">    <span class="title">ListLength</span><span class="params">(L)</span>:返回线性表L的元素个数。</span></span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -968,7 +1010,11 @@
   <entry>
     <title>算法(未完成)</title>
     <url>/2021/09/08/%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h2><p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列。并且每条指令表示一个或多个操作。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：未完结、臃肿、不完善、不建议参考使用</p>
+</blockquote>
+<hr>
+<h2 id="算法的定义"><a href="#算法的定义" class="headerlink" title="算法的定义"></a>算法的定义</h2><p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列。并且每条指令表示一个或多个操作。</p>
 <h3 id="为什么要学习更加优秀的算法？"><a href="#为什么要学习更加优秀的算法？" class="headerlink" title="为什么要学习更加优秀的算法？"></a>为什么要学习更加优秀的算法？</h3><p>在此之前先讲一个伟大数学家高斯关于算法的故事：</p>
 <blockquote>
 <p>据说18世纪生于德国小村庄的高斯，上小学的一天，课堂很乱，老师非常生气。于是老师在放学时，就要求每个学生都计算1+2+3+···+100的结果，谁先算出来谁先回家。</p>
@@ -1049,7 +1095,11 @@
   <entry>
     <title>数据结构</title>
     <url>/2021/09/06/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="数据-data"><a href="#数据-data" class="headerlink" title="数据(data)"></a>数据(data)</h2><ul>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、可作为教程使用</p>
+</blockquote>
+<hr>
+<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><h2 id="数据-data"><a href="#数据-data" class="headerlink" title="数据(data)"></a>数据(data)</h2><ul>
 <li><p>什么是数据？</p>
 <p>数据就是描述客观事物的符号，可以是字符、数字、视频、音频、图片等。</p>
 </li>
@@ -1223,7 +1273,11 @@
   <entry>
     <title>Eclipse的使用教程</title>
     <url>/2021/09/03/Eclipse%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><p>跳转我的另一篇博客</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值;已完结，无错误、但比较初级、可作为初级教程参考使用</p>
+</blockquote>
+<hr>
+<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><p>跳转我的另一篇博客</p>
 <p><a href="https://dengxiayouhun.github.io/2021/07/22/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Java环境搭建</a></p>
 <h2 id="下载Eclipse"><a href="#下载Eclipse" class="headerlink" title="下载Eclipse"></a>下载Eclipse</h2><p><a href="https://www.eclipse.org/">官网下载</a></p>
 <h2 id="创建一个工作区（workspace）"><a href="#创建一个工作区（workspace）" class="headerlink" title="创建一个工作区（workspace）"></a>创建一个工作区（workspace）</h2><p>工作区就是一个目录，用于存放程序和程序所用到的资源，中间缓存文件也在工作区中。</p>
@@ -1278,7 +1332,11 @@
   <entry>
     <title>Java的基本程序设计结构（未完）</title>
     <url>/2021/08/23/Java%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：未完成，较为臃肿、没有错误，短时间不会重置，不建议参考，可以作为工具查找信息（但更建议用课本）</p>
+</blockquote>
+<hr>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
 <li><p>//注释(单行注释)</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//打印Hello World！</span></span><br><span class="line">        System.out.println(<span class="string">&quot;HHello World!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>/* 注释 */(多行注释)</p>
@@ -3105,7 +3163,11 @@
   <entry>
     <title>计算机硬件的简单学习</title>
     <url>/2021/07/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6%E7%9A%84%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="计算机硬件总览"><a href="#计算机硬件总览" class="headerlink" title="计算机硬件总览"></a>计算机硬件总览</h2><p><img src="https://i.loli.net/2021/07/31/T2SMCboJLxkvnzi.jpg"></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、无错误、但比较浅显，可作为参考教程使用。</p>
+</blockquote>
+<hr>
+<h2 id="计算机硬件总览"><a href="#计算机硬件总览" class="headerlink" title="计算机硬件总览"></a>计算机硬件总览</h2><p><img src="https://i.loli.net/2021/07/31/T2SMCboJLxkvnzi.jpg"></p>
 <p>*总线：搭建在主板上，数据就是通过总线在各个“设备”之间传递。</p>
 <h2 id="冯·诺伊曼体系结构"><a href="#冯·诺伊曼体系结构" class="headerlink" title="冯·诺伊曼体系结构"></a>冯·诺伊曼体系结构</h2><p><img src="https://i.loli.net/2021/07/31/HrKEZeTph6nbBIw.jpg"></p>
 <p>冯·诺伊曼体系结构是现代计算机的基础，现在大多数计算机仍是基于冯·诺伊曼体系结构，只是做了一些改进而已。冯·诺伊曼也因此被称为“计算机之父”。</p>
@@ -3213,6 +3275,10 @@
 <p>前言：</p>
 <p>java有些高级编译器用着是是非常方便的，但是对于初学者并不建议使用。编程过程中很多东西都会由高级编译器自动生成，不利于初学者对于底层原理的理解和手感的锻炼。所以建议初学者只用记事本和命令行进行初期的学习，不要嫌low，这对初学者的学习很有何好处。</p>
 </blockquote>
+<blockquote>
+<p>参考价值：已完结、无错误，可作为教程使用。</p>
+</blockquote>
+<hr>
 <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="打开记事本"><a href="#打开记事本" class="headerlink" title="打开记事本"></a>打开记事本</h2><p>打开Windows开始界面–&gt;Windows附件–&gt;记事本</p>
 <p><img src="https://i.loli.net/2021/07/24/T4j3Qgrmxklpou6.jpg" alt="text"></p>
 <h2 id="写一个简单的代码"><a href="#写一个简单的代码" class="headerlink" title="写一个简单的代码"></a>写一个简单的代码</h2><p><img src="https://i.loli.net/2021/07/24/JsE95o2uUgTkyOp.jpg" alt="java"></p>
@@ -3306,7 +3372,11 @@
   <entry>
     <title>Java环境搭建</title>
     <url>/2021/07/22/Java%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h1 id="JRE与JDK"><a href="#JRE与JDK" class="headerlink" title="JRE与JDK"></a>JRE与JDK</h1><h2 id="什么是JRE"><a href="#什么是JRE" class="headerlink" title="什么是JRE ?"></a>什么是JRE ?</h2><p>JRE全称Java Runtime Environment，即Java运行环境。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结，无错误、可实现，可作为教程使用</p>
+</blockquote>
+<hr>
+<h1 id="JRE与JDK"><a href="#JRE与JDK" class="headerlink" title="JRE与JDK"></a>JRE与JDK</h1><h2 id="什么是JRE"><a href="#什么是JRE" class="headerlink" title="什么是JRE ?"></a>什么是JRE ?</h2><p>JRE全称Java Runtime Environment，即Java运行环境。</p>
 <p>其主要包括Java虚拟机和Java的一些核心类库，用来运行Java程序。</p>
 <h2 id="什么是JDK？"><a href="#什么是JDK？" class="headerlink" title="什么是JDK？"></a>什么是JDK？</h2><p>JDK全称Java Development Kit , 即Java开发工具包。</p>
 <p>其主要包括Java的开发工具（编译工具、打包工具等），也包括了JRE，用来开发运行Java程序。</p>
@@ -3375,7 +3445,11 @@
   <entry>
     <title>java语言的特点</title>
     <url>/2021/07/20/Java%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：没有错误、但不完善、仅供参考、等待重置（遥遥无期）</p>
+</blockquote>
+<hr>
+<h2 id="跨平台性"><a href="#跨平台性" class="headerlink" title="跨平台性"></a>跨平台性</h2><h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><p>这里的平台是指计算机的系统平台，也就是Windows、Linux、Mac等。所有软件（可以看成代码集合体）都是基于平台运行的。</p>
 <h3 id="什么叫做跨平台性？"><a href="#什么叫做跨平台性？" class="headerlink" title="什么叫做跨平台性？"></a>什么叫做跨平台性？</h3><p>软件是基于平台进行运行的，也就是说一个又C++编写的软件能够在Windows上运行，但如果换一个平台就不能运行了，所以说C++不具备跨平台性（相对来说是这样，在源码级别，C++还是跨平台的）。而一个用java’编写的软件能够在所有平台上运行，因此java具有跨平台性。</p>
 <h3 id="为什么Java能够跨平台"><a href="#为什么Java能够跨平台" class="headerlink" title="为什么Java能够跨平台"></a>为什么Java能够跨平台</h3><p>实际上，Java应用程序并不是在新系统平台上运行的，它是由在Java虚拟机（JVM）上运行，然后发送指令给计算机进行操作的。因此，我们只需要在计算机上装一个JVM，就可以领java应用程序在计算机上运行。</p>
 <p>ps：JVM是不能跨平台的</p>
@@ -3395,7 +3469,11 @@
   <entry>
     <title>DOS命令行的简单操作</title>
     <url>/2021/07/19/DOS%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="Dos命令行的作用"><a href="#Dos命令行的作用" class="headerlink" title="Dos命令行的作用"></a>Dos命令行的作用</h2><p>通过在控制台输入特定指令使计算机完成一些操作，实现人机交互。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结，可作为教程学习</p>
+</blockquote>
+<hr>
+<h2 id="Dos命令行的作用"><a href="#Dos命令行的作用" class="headerlink" title="Dos命令行的作用"></a>Dos命令行的作用</h2><p>通过在控制台输入特定指令使计算机完成一些操作，实现人机交互。</p>
 <h2 id="打开控制台"><a href="#打开控制台" class="headerlink" title="打开控制台"></a>打开控制台</h2><p>开始+R打开快捷运行窗口，输入cmd打开控制台。</p>
 <p><img src="https://i.loli.net/2021/07/19/UAZIDxrnsKVYtpw.jpg" alt="控制台"></p>
 <h2 id="常见Dos命令行"><a href="#常见Dos命令行" class="headerlink" title="常见Dos命令行"></a>常见Dos命令行</h2><h4 id="打开当前目录"><a href="#打开当前目录" class="headerlink" title="打开当前目录"></a>打开当前目录</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//语法:</span></span><br><span class="line">dir</span><br><span class="line"><span class="comment">//作用：</span></span><br><span class="line">列出当前目录下的文件和和文件夹。</span><br></pre></td></tr></table></figure>
@@ -3436,6 +3514,10 @@
 <p><img src="https://i.loli.net/2021/07/18/Ipn9jcsRz63wLGE.png" alt="滑稽"></p>
 <p>友情提示：右下角点击设置，可开启极简阅读模式 ！</p>
 </blockquote>
+<blockquote>
+<p>参考价值：极高，可作为定制个人学习计划的参考资料。</p>
+</blockquote>
+<hr>
 <h2 id="编程基础"><a href="#编程基础" class="headerlink" title="编程基础"></a>编程基础</h2><h3 id="Java语言"><a href="#Java语言" class="headerlink" title="Java语言"></a>Java语言</h3><ul>
 <li><p>语言基础</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 基础语法</span><br><span class="line"><span class="number">2.</span> 面向对象</span><br><span class="line"><span class="number">3.</span> 接口</span><br><span class="line"><span class="number">4.</span> 容器</span><br><span class="line"><span class="number">5.</span> 异常</span><br><span class="line"><span class="number">6.</span> 泛式</span><br><span class="line"><span class="number">7.</span> 反射</span><br><span class="line"><span class="number">8.</span> 注解</span><br><span class="line"><span class="number">9.</span> I/O</span><br><span class="line"><span class="number">10.</span> ~~图形化（Spring）~~</span><br></pre></td></tr></table></figure></li>
@@ -3666,7 +3748,7 @@
 <p>​             很恐怖！兄弟们，有没有还没有入门就已经入土的感觉呀！不过不用过分担心，这些很多东西都不是在大学就需要学完的。而且，并不是每一项都需要深入学习，有些只需要了解即可。当然，学的越多竞争力越大这是肯定的。</p>
 <p><img src="https://i.loli.net/2021/07/18/x1cbzBjWm3CfvhQ.png" alt="吃瓜ing"></p>
 <hr>
-<h2 id="学习计划（暂定）"><a href="#学习计划（暂定）" class="headerlink" title="学习计划（暂定）"></a>学习计划（暂定）</h2><table>
+<h2 id="学习计划（已废弃）"><a href="#学习计划（已废弃）" class="headerlink" title="学习计划（已废弃）"></a>学习计划（已废弃）</h2><table>
 <thead>
 <tr>
 <th>阶段</th>
@@ -3727,24 +3809,24 @@
     <title>Markdown语法简单教程</title>
     <url>/2021/07/16/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
-<p>前情提要：</p>
-<p>博主只是一个软工大二本科生，并非以从事工作多年的程序员。博客只具备参考价值，限于眼界原因，有一些断电并不一定是正确的。</p>
+<p>参考价值：无错误，可当作教程学习。</p>
 </blockquote>
+<hr>
 <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>markdown语言是一种轻量级的标记语言，主要通过一些简单的符号对文本进行处理，可以说是程序员写博客的首选语言。</p>
 <h1 id="程序员为什么比较偏爱markdown-？"><a href="#程序员为什么比较偏爱markdown-？" class="headerlink" title="程序员为什么比较偏爱markdown ？"></a>程序员为什么比较偏爱markdown ？</h1><ul>
 <li><p><strong>markdown比较符合程序员的平时习惯</strong></p>
-<p>程序员平时做的最多的就是敲代码。而在敲代码的过程中，鼠标就成为了一个很“碍事”的东西。每一次使用鼠标都会不同程度上的打断程序员的思维，从而给编程带来很多麻烦。而且，程序员的很多工作本身也不需要怎么使用鼠标。因此，久而久之，程序员多少有些抗拒使用鼠标。</p>
+<p>程序员平时做的最多的就是敲代码。而在敲代码的过程中，鼠标就成为了一个很“碍事”的东西。每一次使用鼠标都会不同程度上的打断程序员的思维，从而给编程带来麻烦。程序员的工作也不需要大量使用鼠标，久而久之，程序员对频繁使用鼠标就有了一定的抗拒。</p>
 <p>markdown语言就是一个能够解放鼠标的语言。平时我们使用word编辑文档时，需要使用鼠标点击达到各种格式，比如：字体调节，列表，定标题等。对于平时不怎么喜欢使用鼠标的程序员来说，这是一种心灵上的折磨。因此，markdown因其可以通过各种符号进行文本处理的特性就成为了程序员的最佳选择。</p>
 </li>
 <li><p><strong>markdown语言格式统一，便于阅读</strong></p>
-<p>在丰富度方面，word是碾压mark down的，有些人总会通过自己的脑洞用word搞出各种奇葩的文章风格，搞得其他人阅读起来就会很吃力。而markdown的各种处理都是固定的，这也导致用markdown写出来的文章风格几乎一模一样。</p>
-<p>格式简洁、单一看似是markdown的缺点，实际上却是markdown的真正魅力所在。如果100个人用word写文章，会有100种风格，而1000个人用markdown写文章也只有一种风格。一个人习惯了自己的风格，再去看别人的风格的文章就会形成阅读壁垒，从而造成不必要的障碍。而markdown就不存在这种问题，因为它只有一种风格，只要我们习惯了自己的风格，再去看其他程序员的技术博客就不会有阅读壁垒，因为风格都是一样的。</p>
+<p>在丰富度方面，word是碾压mark down的，基于word丰富的功能，总会很多人通过自己的脑洞用word搞出各种奇葩的文章风格。而markdown的各种处理都是固定的，因此用markdown写出来的文章风格几乎都一模一样。</p>
+<p>格式简洁、单一看似是markdown的缺点，实际上却是markdown的真正魅力所在。如果100个人用word写文章，会有100种风格，而1000个人用markdown写文章也只有一种风格。一个人习惯了自己的风格，再去看别人的风格的文章就会形成阅读壁垒，从而降低阅读效率。而markdown就不存在这种问题，因为它只有一种风格，只要我们习惯了自己的风格，再去看其他程序员的技术博客就不会有阅读壁垒，因为大家都用markdown，大家的风格都是一样的。</p>
 </li>
 <li><p><strong>格式简约，更多的注意力都聚焦于文章内容</strong></p>
-<p>程序员的博客大多都是技术博客和知识分享博客，这些大多都聚焦于文章内容，过于花里胡哨的格式反而会令文章价值大打折扣，而markdown的格式就是走的极致简约路线，很符合程序员的需求。</p>
+<p>程序员的博客大多是技术博客和知识分享博客，这些文章的价值主要聚焦于其内容，过于花里胡哨的格式反而会令文章价值大打折扣，而markdown走的就是极致简约路线，很符合技术博客的需求。</p>
 </li>
 <li><p><strong>稳定性强，可移植性强</strong></p>
-<p>word最令人诟病的一点就是文章稳定性差，可移植性极差，往往一篇文章在自己电脑里排版的整整齐齐，换一台设备打开，文章排版就会被打乱，一般都需要转成PDF在别的设备上的开。</p>
+<p>word最令人诟病的一点就是文章稳定性差，可移植性极差，往往一篇文章在自己电脑里排版的整整齐齐，换一台设备打开，排版就会被打乱，一般都需要转成PDF在别的设备上的开。</p>
 <p>markdown就不存在这种问题，只要是支持markdown语言的，无论在哪里打开都不会乱。这也算是个相当省头发特性。</p>
 </li>
 </ul>
@@ -3941,7 +4023,11 @@
   <entry>
     <title>为什么Java中代码可以正常运行，封装成方法后却出现bug？(未完)</title>
     <url>/2021/10/17/%E4%B8%BA%E4%BB%80%E4%B9%88Java%E4%B8%AD%E4%BB%A3%E7%A0%81%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C%EF%BC%8C%E5%B0%81%E8%A3%85%E6%88%90%E6%96%B9%E6%B3%95%E5%90%8E%E5%8D%B4%E5%87%BA%E7%8E%B0bug%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="解决标题问题需要以下知识点："><a href="#解决标题问题需要以下知识点：" class="headerlink" title="解决标题问题需要以下知识点："></a>解决标题问题需要以下知识点：</h2><ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：未完善，不建议参考、等待重置（遥遥无期）</p>
+</blockquote>
+<hr>
+<h2 id="解决标题问题需要以下知识点："><a href="#解决标题问题需要以下知识点：" class="headerlink" title="解决标题问题需要以下知识点："></a>解决标题问题需要以下知识点：</h2><ol>
 <li><strong>栈和堆</strong></li>
 <li><strong>基础数据类型和引用数据类型</strong></li>
 <li><strong>局部变量</strong></li>
@@ -4206,7 +4292,11 @@
   <entry>
     <title>如何连续的输出char类型的变量</title>
     <url>/2021/10/02/%E5%A6%82%E4%BD%95%E8%BF%9E%E7%BB%AD%E7%9A%84%E8%BE%93%E5%87%BAchar%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><p>两个char类型输出时不能直接(chr[1] + chr[2]);的输出，这样 + 的连接符就不是连接符，编译器会直接将两者ASCII码值相加并转换为int类型输出。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结，可以参考</p>
+</blockquote>
+<hr>
+<p>两个char类型输出时不能直接(chr[1] + chr[2]);的输出，这样 + 的连接符就不是连接符，编译器会直接将两者ASCII码值相加并转换为int类型输出。</p>
 <p>所以，我们可以连接一个空字符串进行输出，像这样：(chr[1] + “” + chr[2]);</p>
 ]]></content>
       <categories>
@@ -4437,7 +4527,11 @@
   <entry>
     <title>Java中如何输出char字符</title>
     <url>/2021/09/28/Java%E4%B8%AD%E5%A6%82%E4%BD%95%E8%BE%93%E5%87%BAchar%E5%AD%97%E7%AC%A6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="情景回顾："><a href="#情景回顾：" class="headerlink" title="情景回顾："></a>情景回顾：</h3><p>今天练习switch_case，遇到这么一个题：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、无错误、可以参考</p>
+</blockquote>
+<hr>
+<h3 id="情景回顾："><a href="#情景回顾：" class="headerlink" title="情景回顾："></a>情景回顾：</h3><p>今天练习switch_case，遇到这么一个题：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">使用 switch 把小写类型的 char型转为大写。只转换 a, b, c, d, e. 其它的输</span></span><br><span class="line"><span class="comment">出 “other”。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
 <p>在这道题中，我们就不得不输入char类型的字符。</p>
@@ -4585,7 +4679,11 @@
   <entry>
     <title>Scanner中的nextLine()与next()</title>
     <url>/2021/09/24/Scanner%E4%B8%AD%E7%9A%84nextLine-%E4%B8%8Enext/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="情景回顾"><a href="#情景回顾" class="headerlink" title="情景回顾"></a>情景回顾</h2><p>今天练习代码，遇见了以下情况：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、可以参考</p>
+</blockquote>
+<hr>
+<h2 id="情景回顾"><a href="#情景回顾" class="headerlink" title="情景回顾"></a>情景回顾</h2><p>今天练习代码，遇见了以下情况：</p>
 <p>（1）</p>
 <p><img src="https://i.loli.net/2021/09/24/v6KTuUzXsmFDWwt.jpg"></p>
 <p>(2)</p>
@@ -4611,7 +4709,11 @@
   <entry>
     <title>如何解决Win 10环境变量配置时Path变量只显示一行的问题</title>
     <url>/2021/09/07/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3Win10%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E6%97%B6Path%E5%8F%98%E9%87%8F%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E8%A1%8C%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
+<p>参考价值：已完结、无错误、可以作为教程。</p>
+</blockquote>
+<hr>
+<h2 id="以前的版本"><a href="#以前的版本" class="headerlink" title="以前的版本"></a>以前的版本</h2><p>以前的版本，编辑环境变量时，变量总是显示一行，像这样：</p>
 <p><img src="https://i.loli.net/2021/09/07/Nk5V7XeoCUQBLSa.jpg"></p>
 <p>修改环境变量的时候特别麻烦。</p>
 <h2 id="Win-10的版本"><a href="#Win-10的版本" class="headerlink" title="Win 10的版本"></a>Win 10的版本</h2><p>到了Win 10版本后，这个问题就得到了解决</p>
