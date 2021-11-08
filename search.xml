@@ -84,6 +84,50 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL的常见命令和语法规范</title>
+    <url>/2021/11/08/MySQL%E7%9A%84%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E5%92%8C%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="MySQL的常见命令："><a href="#MySQL的常见命令：" class="headerlink" title="MySQL的常见命令："></a>MySQL的常见命令：</h2><ol>
+<li><p>查看当前所有数据库：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure></li>
+<li><p>打开指定的库：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use 库名;</span><br></pre></td></tr></table></figure></li>
+<li><p>查看当前库所有表：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show tables;</span><br></pre></td></tr></table></figure></li>
+<li><p>查看其它库的所有表：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show tables from 库名;</span><br></pre></td></tr></table></figure></li>
+<li><p>创建表：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名(</span><br><span class="line">	列名 列类型;</span><br><span class="line">    列名 列类型;</span><br><span class="line">    ...</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li>
+<li><p>查看表结构：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">desc 表名;</span><br></pre></td></tr></table></figure></li>
+<li><p>查看服务器版本：</p>
+<p>方式一：登录到MySQL服务端</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select version();</span><br></pre></td></tr></table></figure>
+
+<p>方式二：未登陆到MySQL服务端</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql --version</span><br><span class="line">或</span><br><span class="line">mysql --V</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="MySQL的语法规范："><a href="#MySQL的语法规范：" class="headerlink" title="MySQL的语法规范："></a>MySQL的语法规范：</h2><ol>
+<li><p>不区分大小写，但建议关键字大写，表明，列名小写</p>
+</li>
+<li><p>每条命令最好用分号结尾</p>
+</li>
+<li><p>每条命令根据需要，可以进行缩进或换行</p>
+</li>
+<li><p>注释：</p>
+<p>单行注释：#注释文字</p>
+<p>单行注释：– 注释文字</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计算机科班生大学期间应该做什么？</title>
     <url>/2021/11/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E7%8F%AD%E7%94%9F%E5%A4%A7%E5%AD%A6%E5%BA%94%E8%AF%A5%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><blockquote>
@@ -134,16 +178,21 @@
 <p>职位：后端开发                            公司：大厂</p>
 <ol>
 <li><p>主语言：</p>
-<p>必须达到熟练掌握（靠学校讲的那种程度根本不够），并且至少对主语言原理的理解达到内存层面。以Java为例，至少要通读一遍《Java核心技术 卷一》，不要求完全理解，但是不能囫囵吞枣的读，有能力的话去读一下《java编程思想》</p>
+<p>至少掌握java或者C语言，且必须达到熟练掌握（需要自学，并进行大量练习）并且至少对主语言原理的理解达到内存层面。以Java为例，至少要通读一遍《Java核心技术 卷一》，不要求完全理解，但是不能囫囵吞枣的读，有能力的话去读一下《java编程思想》</p>
 </li>
 <li><p>计算机四大基础课：</p>
 <p>数据结构熟练掌握，算法达到 LeetCode 800+题的程度(或者达到能够稳定做出LeetCode中等题的水平），计算机网络掌握基础即可，主要是辅助理解前端知识，操作系统和计算机组成原理需要熟练掌握（要求没有算法那么高），需要能够把这两门的知识运用到后端的功能优化中。</p>
 </li>
 <li><p>前端技能：</p>
-<p>掌握前端三大件（html、css、JavaScript），不要求像主语言那么熟练，但至少要结合计算机网络知识自己手写几个web页面（跟着教程走也可以），不用追求页面多么精美，能写出来即可。学会使用vue、react等框架中的一个，不用熟练掌握，能够做到边百度边用的水平就够。（严格来说vue和react不算是框架）</p>
+<p>掌握前端基础三大件（html、css、JavaScript），不要求像主语言那么熟练，但至少要结合计算机网络知识自己手写几个web页面（跟着教程走也可以），不用追求页面多么精美，能写出来即可。学会使用vue、react等框架中的一个，不用熟练掌握，能够做到边百度边用的水平就够。（严格来说vue和react不算是框架）</p>
 </li>
 <li><p>后端：</p>
-<p>掌握数据库和框架，不用学太深，掌握即可，主要还是以语言为主，至于分布式微服务之类的我了解的信息不多，不敢乱说，</p>
+<p>数据库方面掌握MySQL，熟练运用SQL语句，并且逐渐培养设计数据库的能力；</p>
+<p>框架方面需要学习基本使用，不用深入，但要多使用，主要用来优化自己的烂代码；</p>
+<p>掌握Git工具的使用，会用即可；</p>
+<p>熟悉Linux操作；</p>
+<p>学习使用设计模式；</p>
+<p>微服务、网络编程、容器也要学习（头疼）。</p>
 </li>
 <li><p>竞赛：</p>
 <p>没有要求，如果在ACM上拿了比较好的名次，是加分项</p>
@@ -4275,6 +4324,11 @@
       <tags>
         <tag>markdown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>SQL语言</title>
+    <url>/2021/11/08/SQL%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script>]]></content>
   </entry>
   <entry>
     <title>客户信息管理系统</title>
