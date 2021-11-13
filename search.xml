@@ -84,6 +84,21 @@
       </tags>
   </entry>
   <entry>
+    <title>Java面向对象之关键字Interface(未完)</title>
+    <url>/2021/11/11/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%85%B3%E9%94%AE%E5%AD%97Interface/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="为什么引入了接口？"><a href="#为什么引入了接口？" class="headerlink" title="为什么引入了接口？"></a>为什么引入了接口？</h2><p>Java为了令结构更加简单，易于使用，放弃了 C++ 的多继承，使用了单继承的特性，而这也导致了Java中的类功能并不完善，或者为了完善功能会导致大量的代码冗余。</p>
+<p>例如：火箭类的父类是武器类，飞机类的父类是交通工具类，然而武器类和交通工具类都没用飞行这个方法。那么如果我们想要令火箭具有</p>
+<h2 id="接口有什么用？"><a href="#接口有什么用？" class="headerlink" title="接口有什么用？"></a>接口有什么用？</h2><h2 id="接口怎么使用？"><a href="#接口怎么使用？" class="headerlink" title="接口怎么使用？"></a>接口怎么使用？</h2><h3 id="标准使用："><a href="#标准使用：" class="headerlink" title="标准使用："></a>标准使用：</h3><h3 id="匿名方式的使用："><a href="#匿名方式的使用：" class="headerlink" title="匿名方式的使用："></a>匿名方式的使用：</h3><h2 id="Java-8-新特性为接口增添了什么功能？"><a href="#Java-8-新特性为接口增添了什么功能？" class="headerlink" title="Java 8 新特性为接口增添了什么功能？"></a>Java 8 新特性为接口增添了什么功能？</h2>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>学习笔记</tag>
+        <tag>java面向对象</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL的常见命令和语法规范</title>
     <url>/2021/11/08/MySQL%E7%9A%84%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E5%92%8C%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="MySQL的常见命令："><a href="#MySQL的常见命令：" class="headerlink" title="MySQL的常见命令："></a>MySQL的常见命令：</h2><ol>
