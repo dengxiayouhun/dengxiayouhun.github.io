@@ -84,6 +84,518 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL杂记</title>
+    <url>/2021/11/20/MySQL%E6%9D%82%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="MySQL操作："><a href="#MySQL操作：" class="headerlink" title="MySQL操作："></a>MySQL操作：</h2><h3 id="MySQL-安装："><a href="#MySQL-安装：" class="headerlink" title="MySQL 安装："></a>MySQL 安装：</h3><p>完成！</p>
+<h3 id="MySQL-管理："><a href="#MySQL-管理：" class="headerlink" title="MySQL 管理："></a>MySQL 管理：</h3><p>完成</p>
+<h3 id="MySQL-PHP语法："><a href="#MySQL-PHP语法：" class="headerlink" title="MySQL PHP语法："></a>MySQL PHP语法：</h3><h3 id="MySQL-连接："><a href="#MySQL-连接：" class="headerlink" title="MySQL 连接："></a>MySQL 连接：</h3><h3 id="MySQL-创建数据库："><a href="#MySQL-创建数据库：" class="headerlink" title="MySQL 创建数据库："></a>MySQL 创建数据库：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-删除数据库："><a href="#MySQL-删除数据库：" class="headerlink" title="MySQL 删除数据库："></a>MySQL 删除数据库：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名;</span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-选择数据库："><a href="#MySQL-选择数据库：" class="headerlink" title="MySQL 选择数据库："></a>MySQL 选择数据库：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use 数据库名;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-数据类型："><a href="#MySQL-数据类型：" class="headerlink" title="MySQL 数据类型："></a>MySQL 数据类型：</h3><h3 id="数值类型："><a href="#数值类型：" class="headerlink" title="数值类型："></a>数值类型：</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>范围（有符号）</th>
+<th>范围（无符号）</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TINYINT</td>
+<td>1 Bytes</td>
+<td>(-128, 127)</td>
+<td>(0, 255)</td>
+<td>小整数值</td>
+</tr>
+<tr>
+<td>SMALLINT</td>
+<td>2 Bytes</td>
+<td>(-32 768, 32 767)</td>
+<td>(0, 65 535)</td>
+<td>大整数值</td>
+</tr>
+<tr>
+<td>MEDIUMINT</td>
+<td>3 Bytes</td>
+<td>(-8 388 608, 8 388 607)</td>
+<td>(0, 16 777 215)</td>
+<td>大整数值</td>
+</tr>
+<tr>
+<td>INT/INTEGER</td>
+<td>4 Bytes</td>
+<td>(-2 147 483 648，2 147 483 647)</td>
+<td>(0，4 294 967 295)</td>
+<td>大整数值</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>8 Bytes</td>
+<td>(-9,223,372,036,854,775,808，9 223 372 036 854 775 807)</td>
+<td>(0，18 446 744 073 709 551 615)</td>
+<td>极大整数值</td>
+</tr>
+<tr>
+<td>FLOAT</td>
+<td>4 Bytes</td>
+<td>(-3.402 823 466 E+38，-1.175 494 351 E-38)，0，(1.175 494 351 E-38，3.402 823 466 351 E+38)</td>
+<td>(0,1.175 494 351 E-38，3.402 823 466 E+38 )</td>
+<td>单精度浮点数值</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>8 Bytes</td>
+<td>(-1.797 693 134 862 315 7 E+308，-2.225 073 858 507 201 4 E-308)，0，(2.225 073 858 507 201 4 E-308，1.797 693 134 862 315 7 E+308)</td>
+<td>(0, 2.225 073 858 507 201 4 E-308，1.797 693 134 862 315 7 E+308)</td>
+<td>双精度浮点数值</td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td>对DECIMAL(M,D) ，如果M&gt;D，为M+2否则为D+2</td>
+<td>依赖于M和D的值</td>
+<td>依赖于M和D的值</td>
+<td>小数值</td>
+</tr>
+</tbody></table>
+<h4 id="日期和时间类型："><a href="#日期和时间类型：" class="headerlink" title="日期和时间类型："></a>日期和时间类型：</h4><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小（bytes）</th>
+<th>范围</th>
+<th>格式</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DATE</td>
+<td>3</td>
+<td>1000-01-01/9999-12-31</td>
+<td>YYYY-MM-DD</td>
+<td>日期值</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>3</td>
+<td>‘-838:59:59’/‘838:59:59’</td>
+<td>HH:MM:SS</td>
+<td>时间值或持续时间</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>1</td>
+<td>1901/2155</td>
+<td>YYYY</td>
+<td>年份值</td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>8</td>
+<td>1000-01-01 00:00:00/9999-12-31 23:59:59</td>
+<td>YYYY-MM-DD HH:MM:SS</td>
+<td>混合日期和时间值</td>
+</tr>
+<tr>
+<td>TIMETAMP</td>
+<td>4</td>
+<td>1970-01-01 00:00:00/2038</td>
+<td>YYYYMMDD HHMMS</td>
+<td>混合日期和时间值，时间戳</td>
+</tr>
+</tbody></table>
+<h4 id="字符串类型："><a href="#字符串类型：" class="headerlink" title="字符串类型："></a>字符串类型：</h4><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>大小</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CHAR</td>
+<td>0-255 bytes</td>
+<td>定长字符串</td>
+</tr>
+<tr>
+<td>VARCHAR</td>
+<td>0-65535 bytes</td>
+<td>变长字符串</td>
+</tr>
+<tr>
+<td>TINYBLOB</td>
+<td>0-255 bytes</td>
+<td>不超过 255 个字符的二进制字符串</td>
+</tr>
+<tr>
+<td>TINYTEXT</td>
+<td>0-255 bytes</td>
+<td>短文本字符串</td>
+</tr>
+<tr>
+<td>BLOB</td>
+<td>0-65 535 bytes</td>
+<td>二进制形式的长文本数据</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td>0-65 535 bytes</td>
+<td>长文本数据</td>
+</tr>
+<tr>
+<td>MEDIUMBLOB</td>
+<td>0-16 777 215 bytes</td>
+<td>二进制形式的中等长度文本数据</td>
+</tr>
+<tr>
+<td>MEDIUMTEXT</td>
+<td>0-16 777 215 bytes</td>
+<td>中等长度文本数据</td>
+</tr>
+<tr>
+<td>LONGBLOB</td>
+<td>0-4 294 967 295 bytes</td>
+<td>二进制形式的极大文本数据</td>
+</tr>
+<tr>
+<td>LONGTEXT</td>
+<td>0-4 294 967 295 bytes</td>
+<td>极大文本数据</td>
+</tr>
+</tbody></table>
+<h3 id="MySQL-创建数据表："><a href="#MySQL-创建数据表：" class="headerlink" title="MySQL 创建数据表："></a>MySQL 创建数据表：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table 表名（</span><br><span class="line">字段名 字段类型,</span><br><span class="line">字段名 字段类型,</span><br><span class="line">......</span><br><span class="line">）</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>如果你不想字段为 <strong>NULL</strong> 可以设置字段的属性为 <strong>NOT NULL</strong>， 在操作数据库时如果输入该字段的数据为<strong>NULL</strong> ，就会报错。</li>
+<li>AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。</li>
+<li>PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。</li>
+<li>ENGINE 设置存储引擎，CHARSET 设置编码。</li>
+</ul>
+<p>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql&gt; CREATE TABLE runoob_tbl(</span><br><span class="line">   -&gt; runoob_id INT NOT NULL AUTO_INCREMENT,</span><br><span class="line">   -&gt; runoob_title VARCHAR(100) NOT NULL,</span><br><span class="line">   -&gt; runoob_author VARCHAR(40) NOT NULL,</span><br><span class="line">   -&gt; submission_date DATE,</span><br><span class="line">   -&gt; PRIMARY KEY ( runoob_id )</span><br><span class="line">   -&gt; )ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
+
+<h5 id="查看表结构："><a href="#查看表结构：" class="headerlink" title="查看表结构："></a>查看表结构：</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">desc 表名;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-删除数据表："><a href="#MySQL-删除数据表：" class="headerlink" title="MySQL 删除数据表："></a>MySQL 删除数据表：</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop table 表名;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-插入数据："><a href="#MySQL-插入数据：" class="headerlink" title="MySQL 插入数据："></a>MySQL 插入数据：</h3><p>使用SQL语法向MySQL数据表插入数据：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> </span><br><span class="line">表名(字段名<span class="number">1</span>，字段名<span class="number">2</span>，字段名<span class="number">3</span>，...字段名n)</span><br><span class="line"><span class="keyword">values</span></span><br><span class="line">(数据<span class="number">1</span>，数据<span class="number">2</span>，数据<span class="number">3</span>，...数据n);</span><br></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span></span><br><span class="line">user_common(name_common,account_common,password_common)</span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">(&quot;秦始皇&quot;,&quot;root1&quot;,&quot;root1&quot;);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="MySQL-查询数据："><a href="#MySQL-查询数据：" class="headerlink" title="MySQL 查询数据："></a>MySQL 查询数据：</h3><p>使用SQL语句查询MySQL数据库的数据</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> 字段名 <span class="keyword">from</span> 表名;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查询语句中你可以使用一个或者多个表，表之间使用逗号(,)分割，并使用WHERE语句来设定查询条件。</li>
+<li>SELECT 命令可以读取一条或者多条记录。</li>
+<li>你可以使用星号（*）来代替其他字段，SELECT语句会返回表的所有字段数据</li>
+<li>你可以使用 WHERE 语句来包含任何条件。</li>
+<li>你可以使用 LIMIT 属性来设定返回的记录数。</li>
+<li>你可以通过OFFSET指定SELECT语句开始查询的数据偏移量。默认情况下偏移量为0。</li>
+</ul>
+<p>实例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">name_common</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">user_common;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">user_common;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line">name_common,account_common</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">user_common;</span><br></pre></td></tr></table></figure>
+
+<h4 id="AS"><a href="#AS" class="headerlink" title="AS"></a>AS</h4><ul>
+<li>重命名一个列</li>
+<li>紧跟列名，也可以<strong>在列名和别名之间加入关键字AS，别名使用双引号</strong>，以便在别名中包含空格或特殊的字符并区分别大小写。</li>
+<li>AS 可以省略</li>
+</ul>
+<p>案例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line">number <span class="keyword">AS</span> &quot;序号&quot;,id <span class="keyword">AS</span> &quot;学号&quot;,NAME <span class="keyword">AS</span> &quot;姓名&quot;,age <span class="keyword">AS</span> &quot;年龄&quot;</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">software;</span><br></pre></td></tr></table></figure>
+
+<h4 id="去除重复行："><a href="#去除重复行：" class="headerlink" title="去除重复行："></a>去除重复行：</h4><ul>
+<li><p><strong>在 SELECT 语句中使用关键字 DISTINCT去除重复行</strong></p>
+</li>
+<li><p>**DISTINCT **需要放到所有列名的前面，如果写成</p>
+<p>**SELECT **</p>
+<p>salary, <strong>DISTINCT</strong> department_id </p>
+<p>**FROM **</p>
+<p>employees </p>
+<p>会报错。</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span></span><br><span class="line">age <span class="keyword">AS</span> &quot;年龄&quot;</span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">software;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-WHERE语句："><a href="#MySQL-WHERE语句：" class="headerlink" title="MySQL WHERE语句："></a>MySQL WHERE语句：</h3><p>如需有条件地从表中选取数据，可将 WHERE 子句添加到 SELECT 语句中。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> </span><br><span class="line">字段名 </span><br><span class="line"><span class="keyword">from</span> </span><br><span class="line">表名</span><br><span class="line"><span class="keyword">where</span> 条件<span class="number">1</span>（<span class="keyword">and</span><span class="operator">/</span><span class="keyword">or</span> 条件<span class="number">2.</span>...）;</span><br></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">student</span><br><span class="line"><span class="keyword">WHERE</span> grade_student <span class="operator">=</span> &quot;软件工程2001&quot;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">student</span><br><span class="line"><span class="keyword">WHERE</span> grade_student <span class="operator">=</span> &quot;软件工程2001&quot; <span class="keyword">OR</span> grade_student <span class="operator">=</span> &quot;软件工程2003&quot;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">student</span><br><span class="line"><span class="keyword">WHERE</span> grade_student <span class="operator">=</span> &quot;软件工程2001&quot; <span class="keyword">AND</span> age_student <span class="operator">=</span> &quot;20&quot;;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>查询语句中你可以使用一个或者多个表，表之间使用逗号**,** 分割，并使用WHERE语句来设定查询条件。</li>
+<li>你可以在 WHERE 子句中指定任何条件。</li>
+<li>你可以使用 AND 或者 OR 指定一个或多个条件。</li>
+<li>WHERE 子句也可以运用于 SQL 的 DELETE 或者 UPDATE 命令。</li>
+<li>WHERE 子句类似于程序语言中的 if 条件，根据 MySQL 表中的字段值来读取指定的数据。</li>
+</ul>
+<p>以下为操作符列表，可用于 WHERE 子句中。</p>
+<p>下表中实例假定 A 为 10, B 为 20</p>
+<table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">等号，检测两个值是否相等，如果相等返回true</td>
+<td align="left">(A = B) 返回false。</td>
+</tr>
+<tr>
+<td align="left">&lt;&gt;, !=</td>
+<td align="left">不等于，检测两个值是否相等，如果不相等返回true</td>
+<td align="left">(A != B) 返回 true。</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">大于号，检测左边的值是否大于右边的值, 如果左边的值大于右边的值返回true</td>
+<td align="left">(A &gt; B) 返回false。</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">小于号，检测左边的值是否小于右边的值, 如果左边的值小于右边的值返回true</td>
+<td align="left">(A &lt; B) 返回 true。</td>
+</tr>
+<tr>
+<td align="left">&gt;=</td>
+<td align="left">大于等于号，检测左边的值是否大于或等于右边的值, 如果左边的值大于或等于右边的值返回true</td>
+<td align="left">(A &gt;= B) 返回false。</td>
+</tr>
+<tr>
+<td align="left">&lt;=</td>
+<td align="left">小于等于号，检测左边的值是否小于或等于右边的值, 如果左边的值小于或等于右边的值返回true</td>
+<td align="left">(A &lt;= B) 返回 true。</td>
+</tr>
+</tbody></table>
+<h4 id="类型运算符："><a href="#类型运算符：" class="headerlink" title="类型运算符："></a>类型运算符：</h4><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>名称</th>
+<th>作用</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IS NULL</td>
+<td>为空运算符</td>
+<td>判断值、字符串或表达式是否为空</td>
+<td><strong>SELECT</strong>   B    <strong>FROM</strong>   TABLE    <strong>WHERE</strong>   A  <strong>IS NULL</strong></td>
+</tr>
+<tr>
+<td>IS NOTNULL</td>
+<td>不为空运算符</td>
+<td>判断值、字符串或表达式是否不为空</td>
+<td><strong>SELECT</strong>   B    <strong>FROM</strong>   TABLE    <strong>WHERE</strong>   A   <strong>IS NOT NULL</strong></td>
+</tr>
+<tr>
+<td>LEAST</td>
+<td>最小值运算符</td>
+<td>在多个值中返回最小值</td>
+<td><strong>SELECT</strong>   D    <strong>FROM</strong>    TABLE   <strong>WHERE</strong>   C   <strong>LEAST(A , B)</strong></td>
+</tr>
+<tr>
+<td>GREATEST</td>
+<td>最大值运算符</td>
+<td>在多个值中返回最大值</td>
+<td><strong>SELECT</strong>   D   <strong>FROM</strong>   TABLE    <strong>WHERE</strong>   C   <strong>GREATEST(A , B)</strong></td>
+</tr>
+<tr>
+<td>BETWEEN AND</td>
+<td>两值之间的运算符</td>
+<td>判断一个值是否在两个值之间</td>
+<td><strong>SELECT</strong>   D   <strong>FROM</strong>   TABLE    <strong>WHERE</strong>   C   <strong>BETWEEN</strong> A <strong>AND</strong> B</td>
+</tr>
+<tr>
+<td>ISNULL</td>
+<td>为空运算符</td>
+<td>判断一个值、字符串或表达式是否为空</td>
+<td><strong>SELECT</strong>   B   <strong>FROM</strong>   TABLE    <strong>WHERE</strong>    A   <strong>ISNULL</strong></td>
+</tr>
+<tr>
+<td>IN</td>
+<td>属于运算符</td>
+<td>判断一个值是否为列表中的任意一个值</td>
+<td><strong>SELECT</strong>   D   <strong>FROM</strong>   TABLE    **WHERE **  C   <strong>IN(<strong>A <strong>,</strong> B</strong>)</strong></td>
+</tr>
+<tr>
+<td>NOT IN</td>
+<td>不属于运算符</td>
+<td>判断一个值是否不是一个列表中的任意一个值</td>
+<td><strong>SELECT</strong>   D   <strong>FROM</strong>   TABLE   <strong>WHERE</strong>   C   <strong>NOT IN(<strong>A <strong>,</strong> B</strong>)</strong></td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>模糊匹配运算符</td>
+<td>判断一个值是否符合模糊匹配规则</td>
+<td><strong>SELECT</strong>   C   <strong>FROM</strong>   TABLE   <strong>WHERE</strong>   A   <strong>LIKE</strong>   B</td>
+</tr>
+<tr>
+<td>REGEXP</td>
+<td>正则表达式运算符</td>
+<td>判断一个值是否符合正则表达式的规则</td>
+<td><strong>SELECT</strong>   C   <strong>FROM</strong>   TABLE   <strong>WHERE</strong>   A   <strong>REGEXP</strong>   B</td>
+</tr>
+<tr>
+<td>RLIKE</td>
+<td>正则表达式运算符</td>
+<td>判断一个值是否符合正则表达式的规则</td>
+<td><strong>SELECT</strong>   C   <strong>FROM</strong>   TABLE    <strong>WHERE</strong>   A   <strong>RLIKE</strong>   B</td>
+</tr>
+</tbody></table>
+<p>案例：</p>
+<ol>
+<li><strong>空运算符：</strong></li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">software</span><br><span class="line"><span class="keyword">WHERE</span> NAME <span class="keyword">IS</span> <span class="keyword">NULL</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">software</span><br><span class="line"><span class="keyword">WHERE</span> NAME <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-UPDATE语句："><a href="#MySQL-UPDATE语句：" class="headerlink" title="MySQL UPDATE语句："></a>MySQL UPDATE语句：</h3><p>使用SQL语法修改MySQL中的数据</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">update 表名 </span><br><span class="line"><span class="keyword">set</span> </span><br><span class="line">字段名 <span class="operator">=</span> 新数据,</span><br><span class="line">字段名 <span class="operator">=</span> 新数据,</span><br><span class="line">...</span><br><span class="line"><span class="keyword">where</span> 条件;</span><br></pre></td></tr></table></figure>
+
+<p>案例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">UPDATE</span><br><span class="line">student</span><br><span class="line"><span class="keyword">SET</span></span><br><span class="line">grade_student <span class="operator">=</span> &quot;计算机科学与技术2003&quot;,</span><br><span class="line">age_student <span class="operator">=</span> &quot;19&quot;</span><br><span class="line"><span class="keyword">WHERE</span> name_student <span class="operator">=</span> &quot;陈某人&quot;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-DELETE语句："><a href="#MySQL-DELETE语句：" class="headerlink" title="MySQL DELETE语句："></a>MySQL DELETE语句：</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">where</span> 条件;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果没有 WHERE 条件则会清空指定表内的所有数据</li>
+<li>如果想要删除某条或者某几条数据，可以通过添加 WHERE 条件做到</li>
+</ul>
+<p>案例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span></span><br><span class="line">test</span><br><span class="line"><span class="keyword">WHERE</span> age <span class="operator">=</span> &quot;19&quot;;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span></span><br><span class="line">test;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-LIKE子句："><a href="#MySQL-LIKE子句：" class="headerlink" title="MySQL LIKE子句："></a>MySQL LIKE子句：</h3><p>在WHERE语句中我们会通过 字段名 = ？的方式来筛选出数据来进行查询或者删除</p>
+<p>但有些时候我们不需要这么精确。比如，我们要查询软件工程专业的所有学生，那么我们就不能通过WHERE grade = “软件工程2001” 这样的条件来进行筛选查询。</p>
+<p>我们需要一个能够达到模糊查询的方式来实现查找所有软件工程专业学生的数据。</p>
+<p>因此，我们在WHERE语句中引入了LIKE子句，来达到这种目的。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> </span><br><span class="line">字段名</span><br><span class="line"><span class="keyword">from</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">where</span></span><br><span class="line">字段名 <span class="keyword">like</span> ？（<span class="keyword">and</span><span class="operator">/</span><span class="keyword">or</span> 条件<span class="number">2.</span>...）;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<p>LIKE 子句要搭配 % 和 _ 一起使用，具体使用如下：</p>
+<table>
+<thead>
+<tr>
+<th>where 字段 like “x%”</th>
+<th>查找以x开头的数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>where 字段 like “% x”</td>
+<td>查找以 x 结尾的数据</td>
+</tr>
+<tr>
+<td>where 字段 like “% x %”</td>
+<td>查找该字段中有 x 的数据</td>
+</tr>
+<tr>
+<td>where 字段 like “_ x %”</td>
+<td>查找第二个位置为 x 的数据</td>
+</tr>
+<tr>
+<td>where 字段 like “x % y”</td>
+<td>查找以 x 开头，以 y 结尾的数据</td>
+</tr>
+<tr>
+<td>where 字段 like “x _ % _%”</td>
+<td>查找以 x 开头，且长度至少为3的数据</td>
+</tr>
+<tr>
+<td>where 字段 like “x _% y _%”</td>
+<td>查找。。。。。。。（自己猜）</td>
+</tr>
+</tbody></table>
+<p>还有很多，总之 _ 代表的意思是单个字符</p>
+<p>案例:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">student</span><br><span class="line"><span class="keyword">WHERE</span></span><br><span class="line">grade_student <span class="keyword">LIKE</span> &quot;%软件工程%&quot;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-UNION操作符："><a href="#MySQL-UNION操作符：" class="headerlink" title="MySQL UNION操作符："></a>MySQL UNION操作符：</h3><p>MySQL UNION 操作符用于连接两个以上的 SELECT 语句的结果组合到一个结果集合中。多个 SELECT 语句会删除重复的数据。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> </span><br><span class="line">字段<span class="number">1</span></span><br><span class="line"><span class="keyword">from</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">where</span> 条件<span class="number">1</span></span><br><span class="line"><span class="keyword">union</span> (参数)</span><br><span class="line"><span class="keyword">select</span></span><br><span class="line">字段<span class="number">2</span></span><br><span class="line"><span class="keyword">from</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">where</span> 条件<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>案例：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">user_common</span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span></span><br><span class="line"><span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">user_manage;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>参数有 <strong>DISTINCT</strong> 和 <strong>ALL</strong></li>
+<li><strong>DISTINCT:</strong> 可选，删除结果集中重复的数据。默认情况下 UNION 操作符已经删除了重复数据，所以 DISTINCT 修饰符对结果没啥影响。</li>
+<li><strong>ALL:</strong> 可选，返回所有结果集，包含重复数据。</li>
+</ul>
+<h3 id="MySQL-排序（ORDER-BY-语句）："><a href="#MySQL-排序（ORDER-BY-语句）：" class="headerlink" title="MySQL 排序（ORDER BY 语句）："></a>MySQL 排序（ORDER BY 语句）：</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> </span><br><span class="line">字段名</span><br><span class="line"><span class="keyword">from</span></span><br><span class="line">表名</span><br><span class="line"><span class="keyword">order</span> <span class="keyword">by</span> 字段名（参数）</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>参数：ASC 和 DESC（默认ASC）</li>
+<li>ASC：升序排列</li>
+<li>DESC：降序排列</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">student </span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> age_student <span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> </span><br><span class="line"><span class="operator">*</span> </span><br><span class="line"><span class="keyword">FROM</span></span><br><span class="line">student </span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> age_student;</span><br></pre></td></tr></table></figure>
+
+<p>ORDER BY 也是子句，可以和 WHERE 组合使用。</p>
+<h3 id="MySQL-分组（GROUP-BY语句）："><a href="#MySQL-分组（GROUP-BY语句）：" class="headerlink" title="MySQL 分组（GROUP BY语句）："></a>MySQL 分组（GROUP BY语句）：</h3><p>GROUP BY 语句根据一个或多个列对结果集进行分组。</p>
+<p>在分组的列上我们可以使用 COUNT, SUM, AVG,等函数。</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="MySQL-连接的使用："><a href="#MySQL-连接的使用：" class="headerlink" title="MySQL 连接的使用："></a>MySQL 连接的使用：</h3><h3 id="MySQL-NULL值处理："><a href="#MySQL-NULL值处理：" class="headerlink" title="MySQL NULL值处理："></a>MySQL NULL值处理：</h3><h3 id="MySQL-正则表达式："><a href="#MySQL-正则表达式：" class="headerlink" title="MySQL 正则表达式："></a>MySQL 正则表达式：</h3><h3 id="MySQL-事务："><a href="#MySQL-事务：" class="headerlink" title="MySQL 事务："></a>MySQL 事务：</h3><h3 id="MySQL-ALTER命令："><a href="#MySQL-ALTER命令：" class="headerlink" title="MySQL ALTER命令："></a>MySQL ALTER命令：</h3><h3 id="MySQL-索引："><a href="#MySQL-索引：" class="headerlink" title="MySQL 索引："></a>MySQL 索引：</h3><h3 id="MySQL-临时表："><a href="#MySQL-临时表：" class="headerlink" title="MySQL 临时表："></a>MySQL 临时表：</h3><h3 id="MySQL-复制表："><a href="#MySQL-复制表：" class="headerlink" title="MySQL 复制表："></a>MySQL 复制表：</h3><h3 id="MySQL-元数据："><a href="#MySQL-元数据：" class="headerlink" title="MySQL 元数据："></a>MySQL 元数据：</h3><h3 id="MySQL-序列使用："><a href="#MySQL-序列使用：" class="headerlink" title="MySQL 序列使用："></a>MySQL 序列使用：</h3><h3 id="MySQL-处理重复数据："><a href="#MySQL-处理重复数据：" class="headerlink" title="MySQL 处理重复数据："></a>MySQL 处理重复数据：</h3><h3 id="MySQL-及SQL注入："><a href="#MySQL-及SQL注入：" class="headerlink" title="MySQL 及SQL注入："></a>MySQL 及SQL注入：</h3><h3 id="MySQL-导出数据："><a href="#MySQL-导出数据：" class="headerlink" title="MySQL 导出数据："></a>MySQL 导出数据：</h3><h3 id="MySQL-导入数据："><a href="#MySQL-导入数据：" class="headerlink" title="MySQL 导入数据："></a>MySQL 导入数据：</h3><h3 id="MySQL-函数："><a href="#MySQL-函数：" class="headerlink" title="MySQL 函数："></a>MySQL 函数：</h3><h3 id="MySQL-运算符："><a href="#MySQL-运算符：" class="headerlink" title="MySQL 运算符："></a>MySQL 运算符：</h3><h2 id="高级语言连接数据库"><a href="#高级语言连接数据库" class="headerlink" title="高级语言连接数据库:"></a>高级语言连接数据库:</h2><h2 id="Flask-Rest-API-构建："><a href="#Flask-Rest-API-构建：" class="headerlink" title="Flask Rest API 构建："></a>Flask Rest API 构建：</h2><h2 id="数据库设计："><a href="#数据库设计：" class="headerlink" title="数据库设计："></a>数据库设计：</h2>]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java面向对象之关键字Interface(未完)</title>
     <url>/2021/11/11/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B9%8B%E5%85%B3%E9%94%AE%E5%AD%97Interface/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h2 id="为什么引入了接口？"><a href="#为什么引入了接口？" class="headerlink" title="为什么引入了接口？"></a>为什么引入了接口？</h2><p>Java为了令结构更加简单，易于使用，放弃了 C++ 的多继承，使用了单继承的特性，而这也导致了Java中的类功能并不完善，或者为了完善功能会导致大量的代码冗余。</p>
@@ -138,8 +650,8 @@
         <category>数据库</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>MySQL</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -1357,8 +1869,8 @@
         <category>数据库</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>MySQL</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -4339,11 +4851,6 @@
       <tags>
         <tag>markdown</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>SQL语言</title>
-    <url>/2021/11/08/SQL%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script>]]></content>
   </entry>
   <entry>
     <title>客户信息管理系统</title>
